@@ -4451,3 +4451,531 @@ margin-bottom: 0;
     }
 
 }
+/* ========================================
+   EDITORIAL ARTICLES
+======================================== */
+
+.article-page {
+    background: var(--cream);
+    color: var(--brown);
+}
+
+
+/* ARTICLE HERO */
+
+.article-hero {
+    width: min(1100px, calc(100% - 80px));
+    margin: 0 auto;
+    padding: 120px 0 75px;
+    text-align: center;
+}
+
+.article-hero .eyebrow {
+    margin-bottom: 18px;
+}
+
+.article-hero h1 {
+    max-width: 950px;
+    margin: 0 auto 28px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(4rem, 6vw, 6.5rem);
+    font-weight: 400;
+    line-height: 0.96;
+}
+
+.article-deck {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.article-meta {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    color: var(--brown);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+/* QUICK ANSWER */
+
+.article-quick-answer {
+    width: min(900px, calc(100% - 80px));
+    margin: 0 auto 90px;
+    padding: 38px 42px;
+    border-top: 1px solid rgba(58, 44, 36, 0.2);
+    border-bottom: 1px solid rgba(58, 44, 36, 0.2);
+}
+
+.quick-answer-label {
+    display: block;
+    margin-bottom: 14px;
+    color: var(--terracotta);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.article-quick-answer p {
+    margin: 0;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+    line-height: 1.45;
+}
+
+
+/* MAIN ARTICLE */
+
+.article-content {
+    width: min(760px, calc(100% - 80px));
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+
+.article-content > p {
+    margin-bottom: 24px;
+    font-size: 1.04rem;
+    line-height: 1.9;
+}
+
+.article-intro {
+    color: var(--cocoa);
+    font-size: 1.2rem !important;
+    line-height: 1.85 !important;
+}
+
+.article-content h2 {
+    margin: 75px 0 22px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+.article-content h3 {
+    margin: 35px 0 14px;
+    color: var(--cocoa);
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+}
+
+
+/* CHECKLIST BOX */
+
+.article-check {
+    margin: 40px 0;
+    padding: 32px 36px;
+    background: rgba(232, 217, 168, 0.32);
+    border-left: 3px solid var(--ochre);
+}
+
+.article-check h3 {
+    margin: 0 0 18px;
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.45rem;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.article-check ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.article-check li {
+    margin: 10px 0;
+    line-height: 1.65;
+}
+
+
+/* ROOT & ROOM TIP */
+
+.article-tip {
+    margin: 45px 0;
+    padding: 32px 36px;
+    border: 1px solid rgba(58, 44, 36, 0.18);
+}
+
+.article-tip > span {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--terracotta);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.article-tip p {
+    margin: 0;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.3rem;
+    line-height: 1.55;
+}
+
+
+/* DIAGNOSIS */
+
+.article-diagnosis {
+    width: min(1100px, calc(100vw - 80px));
+    margin: 100px 50% 90px;
+    transform: translateX(-50%);
+    padding: 70px;
+    background: var(--cocoa);
+}
+
+.article-diagnosis > .eyebrow {
+    color: var(--butter);
+}
+
+.article-diagnosis > h2 {
+    max-width: 650px;
+    margin: 10px 0 45px;
+    color: var(--cream);
+}
+
+.diagnosis-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1px;
+    background: rgba(247, 241, 227, 0.18);
+    border: 1px solid rgba(247, 241, 227, 0.18);
+}
+
+.diagnosis-grid > div {
+    padding: 28px;
+    background: var(--cocoa);
+}
+
+.diagnosis-grid span {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.2rem;
+}
+
+.diagnosis-grid p {
+    margin: 0;
+    color: rgba(247, 241, 227, 0.72);
+    line-height: 1.65;
+}
+
+
+/* RELATED PLANT */
+
+.article-related-plant {
+    margin: 90px 0 70px;
+    padding: 50px 0;
+    border-top: 1px solid rgba(58, 44, 36, 0.2);
+    border-bottom: 1px solid rgba(58, 44, 36, 0.2);
+}
+
+.article-related-plant h2 {
+    margin: 8px 0 18px;
+}
+
+.article-related-plant p {
+    max-width: 620px;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+
+/* SOURCES */
+
+.article-sources {
+    margin-top: 70px;
+}
+
+.article-sources h2 {
+    margin-bottom: 18px;
+    font-size: 2rem;
+}
+
+.article-sources p,
+.article-sources li {
+    font-size: 0.9rem;
+    line-height: 1.75;
+}
+
+.article-sources ul {
+    padding-left: 20px;
+}
+
+.article-sources li {
+    margin-bottom: 10px;
+}
+
+
+/* ARTICLE END CTA */
+
+.article-next {
+    padding: 110px 40px;
+    background: var(--butter);
+    text-align: center;
+}
+
+.article-next h2 {
+    margin: 10px 0 18px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 400;
+}
+
+.article-next > p:not(.eyebrow) {
+    max-width: 600px;
+    margin: 0 auto 32px;
+    line-height: 1.8;
+}
+
+
+/* ARTICLE RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .article-hero {
+        width: calc(100% - 40px);
+        padding: 80px 0 55px;
+    }
+
+    .article-hero h1 {
+        font-size: clamp(3rem, 13vw, 4.5rem);
+    }
+
+    .article-deck {
+        font-size: 1rem;
+    }
+
+    .article-meta {
+        flex-wrap: wrap;
+    }
+
+    .article-quick-answer {
+        width: calc(100% - 40px);
+        margin-bottom: 65px;
+        padding: 30px 0;
+    }
+
+    .article-content {
+        width: calc(100% - 40px);
+        padding-bottom: 80px;
+    }
+
+    .article-content h2 {
+        margin-top: 60px;
+    }
+
+    .article-check,
+    .article-tip {
+        padding: 28px 24px;
+    }
+
+    .article-diagnosis {
+        width: 100vw;
+        margin-top: 75px;
+        margin-bottom: 70px;
+        padding: 55px 20px;
+    }
+
+    .diagnosis-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .article-next {
+        padding: 80px 20px;
+    }
+}
+/* ========================================
+   PLANT PROFILE — MORE HELP
+======================================== */
+
+.plant-help {
+    width: min(1400px, calc(100% - 80px));
+    margin: 0 auto;
+    padding: 120px 0;
+    border-top: 1px solid rgba(58, 44, 36, 0.18);
+}
+
+.plant-help-heading {
+    display: grid;
+    grid-template-columns: minmax(350px, 0.8fr) minmax(400px, 1.2fr);
+    column-gap: clamp(60px, 7vw, 120px);
+    align-items: end;
+    margin-bottom: 55px;
+}
+
+.plant-help-heading .eyebrow {
+    grid-column: 1 / -1;
+    margin-bottom: 18px;
+}
+
+.plant-help-heading h2 {
+    max-width: 560px;
+    margin: 0;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 4.5vw, 5rem);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.plant-help-heading > p:not(.eyebrow) {
+    max-width: 520px;
+    margin: 0;
+    line-height: 1.8;
+}
+
+.plant-help-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.plant-help-card {
+    display: block;
+    padding: 38px;
+    border: 1px solid rgba(58, 44, 36, 0.18);
+    color: var(--brown);
+    text-decoration: none;
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.plant-help-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--ochre);
+}
+
+.plant-help-topic {
+    display: block;
+    margin-bottom: 22px;
+    color: var(--terracotta);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.plant-help-card h3 {
+    max-width: 520px;
+    margin: 0 0 18px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.plant-help-card p {
+    max-width: 560px;
+    margin-bottom: 28px;
+    line-height: 1.75;
+}
+
+.plant-help-link {
+    color: var(--cocoa);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+
+@media (max-width: 800px) {
+
+    .plant-help {
+        width: calc(100% - 40px);
+        padding: 80px 0;
+    }
+
+    .plant-help-heading {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .plant-help-heading h2 {
+        margin-bottom: 24px;
+    }
+
+ /* PLANT HELP — SINGLE FEATURED ARTICLE */
+
+.plant-help-grid {
+    grid-template-columns: 1fr;
+}
+
+.plant-help-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(300px, 0.8fr) minmax(400px, 1.2fr);
+    column-gap: clamp(60px, 6vw, 100px);
+    padding: 45px 50px;
+    align-items: start;
+}
+
+.plant-help-card .plant-help-topic {
+    grid-column: 1;
+}
+
+.plant-help-card h3 {
+    grid-column: 1;
+    max-width: 500px;
+}
+
+.plant-help-card p {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: end;
+    max-width: 520px;
+    margin: 0;
+}
+
+.plant-help-card .plant-help-link {
+    grid-column: 1;
+    margin-top: 12px;
+}
+
+@media (max-width: 800px) {
+
+    .plant-help-card {
+        display: block;
+        width: 100%;
+        padding: 30px 26px;
+    }
+
+    .plant-help-card p {
+        margin-bottom: 28px;
+    }
+}
+.plant-help {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.plant-help-heading {
+    grid-template-columns: minmax(420px, 0.9fr) minmax(420px, 1.1fr);
+    gap: 70px;
+    margin-bottom: 45px;
+}
+
+.plant-help-heading h2 {
+    max-width: 620px;
+}
+
+.plant-help-heading > p:not(.eyebrow) {
+    justify-self: start;
+    align-self: end;
+    max-width: 500px;
+    padding-bottom: 8px;
+}
