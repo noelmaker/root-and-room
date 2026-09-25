@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+    <title>Find a Plant | Root & Room</title>
+<meta name="description" content="Find houseplants that fit your home, light, routine, space, and preferences with the Root & Room plant finder.">
+<link rel="icon" type="image/png" href="images/root-room-favicon.png?v=1">
+    <link rel="stylesheet" href="style-clean.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="logo">
+            <span>Root & Room</span>
+            <small>Better Plants. Happier Spaces.</small>
+        </div>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="find-a-plant.html">Find a Plant</a>
+            <a href="plant-library.html">Plant Library</a>
+            <a href="plant-care.html">Plant Care</a>
+            <a href="guides.html">Guides</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+
+        <a href="find-a-plant.html" class="plant-finder-button">
+            Find My Plant →
+        </a>
+
+    </header>
+
+    <main>
+
+        <section class="finder-hero">
+
+    <div class="finder-hero-content">
+
+        <p class="eyebrow">Find a Plant</p>
+
+        <h1>
+            The right plant starts
+            with your home.
+        </h1>
+
+        <p>
+            Tell us a little about your space, your routine,
+            and what you're looking for. We'll help narrow
+            down the plants worth bringing home.
+        </p>
+
+    </div>
+
+    <div class="finder-hero-images">
+
+        <img src="images/plant-10.jpg" alt="Houseplant in a bright home">
+
+        <img src="images/plant-04.jpg" alt="Houseplant displayed indoors">
+
+        <img src="images/plant-08.jpg" alt="Houseplant in a cozy interior">
+
+    </div>
+
+</section>
+        <section class="finder-question">
+
+    <div class="question-progress">
+        <span>01</span>
+        <span>of 05</span>
+    </div>
+
+    <div class="question-heading">
+
+        <p class="eyebrow">Let's narrow it down</p>
+
+        <h2>Where will your plant live?</h2>
+
+        <p>
+            Think about the spot where you actually plan to keep it.
+            The amount of natural light makes a big difference.
+        </p>
+
+    </div>
+
+    <div class="question-options">
+
+        <button class="finder-option">
+            <strong>Bright light</strong>
+            <small>Several hours of strong natural light.</small>
+        </button>
+
+        <button class="finder-option">
+            <strong>Medium light</strong>
+            <small>A well-lit room without intense direct sun.</small>
+        </button>
+
+        <button class="finder-option">
+            <strong>Low light</strong>
+            <small>A darker room or spot away from windows.</small>
+        </button>
+
+        <button class="finder-option">
+            <strong>I'm not sure</strong>
+            <small>We'll help you figure out what your space can support.</small>
+        </button>
+
+    </div>
+<div class="finder-navigation">
+
+    <button type="button" class="finder-back">
+        ← Go Back
+    </button>
+
+    <button type="button" class="finder-restart">
+        Start Over
+    </button>
+
+</div>
+</section>
+
+<section class="finder-results">
+
+    <div class="results-intro">
+
+        <p class="eyebrow">Your plant matches</p>
+
+        <h2>These plants look right at home with you.</h2>
+
+        <p>
+            Based on your space, routine, and preferences,
+            here are three plants worth getting to know.
+        </p>
+
+    </div>
+
+    <div class="results-grid"></div>
+
+    <button type="button" class="finder-restart results-restart">
+        Start Over
+    </button>
+
+</section>
+    </main>
+<script>
+
+    const questionHeading = document.querySelector(".question-heading h2");
+    const questionDescription = document.querySelector(".question-heading p:not(.eyebrow)");
+    const questionProgress = document.querySelector(".question-progress");
+    const questionOptions = document.querySelector(".question-options");
+    const backButton = document.querySelector(".finder-back");
+    const restartButton = document.querySelector(".finder-restart");
+const plants = [
+
+    {
+        name: "Snake Plant",
+        page: "snake-plant.html",
+        image: "images/snake-plant01.jpg",
+        light: ["bright", "medium", "low"],
+        care: ["very-little", "middle"],
+        type: ["small", "tall", "statement"],
+        pets: "no",
+        personality: ["forgetful", "statement"]
+    },
+
+    {
+        name: "Spider Plant",
+        page: "spider-plant.html",
+        image: "images/spider-plant02.jpg",
+        light: ["bright", "medium", "low"],
+        care: ["very-little", "middle"],
+        type: ["small", "trailing"],
+        pets: "yes",
+        personality: ["forgetful", "tiny"]
+    },
+
+    {
+        name: "Pothos",
+        page: "pothos.html",
+        image: "images/pothos-plant03.jpg",
+        light: ["bright", "medium", "low"],
+        care: ["very-little", "middle"],
+        type: ["trailing"],
+        pets: "no",
+        personality: ["forgetful", "collector"]
+    },
+
+    {
+        name: "ZZ Plant",
+        page: "zz-plant.html",
+        image: "images/zz-plant04.jpg",
+        light: ["bright", "medium", "low"],
+        care: ["very-little"],
+        type: ["small", "tall"],
+        pets: "no",
+        personality: ["forgetful", "statement"]
+    },
+
+    {
+        name: "Peperomia",
+        page: "peperomia.html",
+        image: "images/peperomia-plant.jpg",
+        light: ["bright", "medium"],
+        care: ["middle"],
+        type: ["small"],
+        pets: "yes",
+        personality: ["tiny", "collector"]
+    },
+
+    {
+        name: "Boston Fern",
+        page: "boston-fern.html",
+        image: "images/bostonfern-plant.jpg",
+        light: ["medium"],
+        care: ["middle"],
+        type: ["trailing", "statement"],
+        pets: "yes",
+        personality: ["collector", "statement"]
+    },
+
+    {
+        name: "Parlor Palm",
+        page: "parlor-palm.html",
+        image: "images/parlor-palm.jpg",
+        light: ["medium", "low"],
+        care: ["middle"],
+        type: ["tall", "statement"],
+        pets: "yes",
+        personality: ["statement", "collector"]
+    },
+
+    {
+        name: "Calathea",
+        page: "calathea.html",
+        image: "images/calathea.jpg",
+        light: ["medium", "low"],
+        care: ["middle", "lots"],
+        type: ["small", "statement"],
+        pets: "yes",
+        personality: ["collector", "statement"]
+    },
+
+    {
+        name: "Monstera",
+        page: "monstera.html",
+        image: "images/monstera.jpg",
+        light: ["bright", "medium"],
+        care: ["middle"],
+        type: ["tall", "statement"],
+        pets: "no",
+        personality: ["collector", "statement"]
+    },
+
+    {
+        name: "String of Hearts",
+        page: "string-of-hearts.html",
+        image: "images/string-of-hearts.jpg",
+        light: ["bright", "medium"],
+        care: ["very-little", "middle"],
+        type: ["trailing"],
+        pets: "yes",
+        personality: ["collector", "tiny"]
+    },
+
+    {
+        name: "Chinese Money Plant",
+        page: "chinese-money-plant.html",
+        image: "images/chinese-money.jpg",
+        light: ["bright", "medium"],
+        care: ["middle"],
+        type: ["small"],
+        pets: "yes",
+        personality: ["tiny", "collector"]
+    },
+
+    {
+        name: "Bird's Nest Fern",
+        page: "birds-nest-fern.html",
+        image: "images/birds-nest-fern.jpg",
+        light: ["medium", "low"],
+        care: ["middle"],
+        type: ["small", "statement"],
+        pets: "yes",
+        personality: ["collector", "statement"]
+    }
+
+];
+function formatPlantValue(value) {
+
+    const labels = {
+        bright: "Bright light",
+        medium: "Medium light",
+        low: "Low light",
+        "very-little": "Very little",
+        middle: "Moderate",
+        lots: "More attention",
+        small: "Small",
+        trailing: "Trailing",
+        tall: "Tall",
+        statement: "Statement",
+        yes: "Yes",
+        no: "No"
+    };
+
+    return labels[value] || value;
+}
+function getMatchDescription(plant) {
+
+    const light = userAnswers[1];
+    const care = userAnswers[2];
+    const type = userAnswers[3];
+    const pets = userAnswers[4];
+
+    if (plant.name === "Snake Plant") {
+        return "A tough, architectural plant that handles bright spots and plenty of neglect.";
+    }
+
+    if (plant.name === "Pothos") {
+        return "A versatile trailing plant that adapts well to different indoor spaces.";
+    }
+
+    if (plant.name === "ZZ Plant") {
+        return "A low-maintenance choice with glossy foliage and an easygoing nature.";
+    }
+
+    if (plant.name === "Spider Plant") {
+        return "A cheerful, adaptable plant that works beautifully in everyday spaces.";
+    }
+
+    if (plant.name === "Peperomia") {
+        return "A compact choice with plenty of personality for smaller spaces.";
+    }
+
+    if (plant.name === "Boston Fern") {
+        return "A lush, classic fern for plant lovers who enjoy a little extra care.";
+    }
+
+    if (plant.name === "Parlor Palm") {
+        return "A graceful way to add height and a softer feel to a room.";
+    }
+
+    if (plant.name === "Calathea") {
+        return "A leafy choice for anyone who enjoys giving their plants a little attention.";
+    }
+
+    if (plant.name === "Monstera") {
+        return "A bold foliage plant that brings plenty of presence to a room.";
+    }
+
+    if (plant.name === "String of Hearts") {
+        return "A delicate trailing plant that adds character without taking up much space.";
+    }
+
+    if (plant.name === "Chinese Money Plant") {
+        return "A compact, distinctive plant that's easy to make room for.";
+    }
+
+    if (plant.name === "Bird's Nest Fern") {
+        return "A lush, sculptural fern that brings a softer look to indoor spaces.";
+    }
+
+    return "A plant worth getting to know based on your space and routine.";
+
+}
+    const questionData = {
+
+        1: {
+            heading: "Where will your plant live?",
+            description: "Think about the spot where you actually plan to keep it. The amount of natural light makes a big difference.",
+            options: [
+    {
+        label: "Bright light",
+        description: "Several hours of strong natural light.",
+        value: "bright"
+    },
+    {
+        label: "Medium light",
+        description: "A well-lit room without intense direct sun.",
+        value: "medium"
+    },
+    {
+        label: "Low light",
+        description: "A darker room or spot away from windows.",
+        value: "low"
+    },
+    {
+        label: "I'm not sure",
+        description: "We'll help you figure out what your space can support.",
+        value: "any"
+    }
+]
+        },
+
+        2: {
+            heading: "How much attention do you want to give it?",
+            description: "Some plants are happy to be left alone. Others like a little more attention.",
+            options: [
+    {
+        label: "Very little",
+        description: "I want something that can mostly take care of itself.",
+        value: "very-little"
+    },
+    {
+        label: "Somewhere in the middle",
+        description: "I'll give it regular care, but nothing too demanding.",
+        value: "middle"
+    },
+    {
+        label: "I love plant care",
+        description: "I'm happy to check in and give it extra attention.",
+        value: "lots"
+    },
+    {
+        label: "I'm not sure",
+        description: "Show me options that are easy to live with.",
+        value: "any"
+    }
+]
+        }
+,
+
+        3: {
+            heading: "What kind of plant are you looking for?",
+            description: "Think about the role you want your plant to play in your space.",
+            options: [
+    {
+        label: "Something small",
+        description: "A little plant for a shelf, desk, or windowsill.",
+        value: "small"
+    },
+    {
+        label: "Something that trails",
+        description: "A plant with beautiful cascading or hanging growth.",
+        value: "trailing"
+    },
+    {
+        label: "Something tall",
+        description: "A plant that adds height to an empty corner.",
+        value: "tall"
+    },
+    {
+    label: "A statement plant",
+    description: "Something with a little more presence.",
+    value: "statement"
+},
+{
+    label: "I'm open",
+    description: "Show me plants that fit my space in other ways.",
+    value: "any"
+}
+]
+        }
+        
+        ,
+
+        4: {
+            heading: "Do you have pets to consider?",
+            description: "Some popular houseplants aren't a great match for curious cats and dogs.",
+            options: [
+    {
+        label: "Yes, I have pets",
+        description: "Pet safety should be part of the match.",
+        value: "yes"
+    },
+    {
+        label: "No pets",
+        description: "Pet safety doesn't need to factor into the results.",
+        value: "no"
+    },
+    {
+        label: "I'm planning to get one",
+        description: "Let's keep future pets in mind.",
+        value: "yes"
+    },
+    {
+        label: "I'm not sure",
+        description: "We'll show you plants with more flexible options.",
+        value: "any"
+    }
+]
+        }
+        ,
+
+        5: {
+            heading: "What's your plant personality?",
+            description: "Choose the description that feels most like the way you want to live with plants.",
+            options: [
+    {
+        label: "The Forgetful One",
+        description: "You want a plant that won't hold a grudge when you forget about it.",
+        value: "forgetful"
+    },
+    {
+        label: "The Collector",
+        description: "You love discovering new plants and making room for one more.",
+        value: "collector"
+    },
+    {
+        label: "The Statement Maker",
+        description: "You want a plant that makes an impression the moment you walk in.",
+        value: "statement"
+    },
+    {
+        label: "The Tiny One",
+        description: "You'd rather have a little plant with plenty of personality.",
+        value: "tiny"
+    }
+]
+        }
+    };
+function getPlantMatches() {
+
+    const light = userAnswers[1];
+    const care = userAnswers[2];
+    const type = userAnswers[3];
+    const pets = userAnswers[4];
+    const personality = userAnswers[5];
+
+    const scoredPlants = plants.map(plant => {
+
+        let score = 0;
+
+        if (pets === "yes" && plant.pets !== "yes") {
+    return {
+        ...plant,
+        score: -1
+    };
+}
+
+        if (light === "any" || plant.light.includes(light)) {
+            score += 3;
+        }
+
+        if (care === "any" || plant.care.includes(care)) {
+            score += 3;
+        }
+
+        if (type === "any" || plant.type.includes(type)) {
+            score += 2;
+        }
+
+        if (pets === "any" || plant.pets === pets) {
+            score += 3;
+        }
+
+        if (personality === "any" || plant.personality.includes(personality)) {
+            score += 2;
+        }
+
+        return {
+            ...plant,
+            score: score
+        };
+        
+
+    });
+
+    return scoredPlants
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 3);
+}
+
+function showResults() {
+
+    const matches = getPlantMatches();
+
+    document.querySelector(".finder-question").style.display = "none";
+
+    document.querySelector(".finder-results").style.display = "block";
+
+    backButton.style.visibility = "hidden";
+
+    const resultsGrid = document.querySelector(".results-grid");
+
+    resultsGrid.innerHTML = "";
+
+    matches.forEach(plant => {
+
+        const card = document.createElement("article");
+
+card.className = "result-card";
+card.style.cursor = "pointer";
+
+card.addEventListener("click", () => {
+    window.location.href = plant.page;
+});
+
+        card.innerHTML = `
+    <img class="result-card-image" src="${plant.image}" alt="${plant.name}">
+
+    <div class="result-card-content">
+        <span class="match-label">Your match</span>
+<h3>${plant.name}</h3>
+        <p class="result-match">
+    ${getMatchDescription(plant)}
+</p>
+        <div class="result-details">
+    <span>Light</span>
+    <strong>${plant.light.map(formatPlantValue).join(" · ")}</strong>
+
+    <span>Care</span>
+    <strong>${plant.care.map(formatPlantValue).join(" · ")}</strong>
+
+    <span>Pet-friendly</span>
+    <strong>${plant.pets === "yes" ? "Yes" : "No"}</strong>
+</div>
+    </div>
+`;
+        resultsGrid.appendChild(card);
+
+    });
+
+}
+    let currentQuestion = 1;
+let questionHistory = [];
+let userAnswers = [];
+    function showQuestion(number) {
+
+        const question = questionData[number];
+
+        questionProgress.innerHTML = `
+            <span>0${number}</span>
+            <span>of 05</span>
+        `;
+
+        questionHeading.textContent = question.heading;
+        questionDescription.textContent = question.description;
+
+        questionOptions.innerHTML = "";
+
+        question.options.forEach(option => {
+
+    const button = document.createElement("button");
+
+    button.className = "finder-option";
+
+    const label = option.label || option[0];
+    const description = option.description || option[1];
+
+    button.innerHTML = `
+        <strong>${label}</strong>
+        <small>${description}</small>
+    `;
+
+            button.addEventListener("click", () => {
+
+    questionHistory.push(currentQuestion);
+
+    userAnswers[currentQuestion] = option.value;
+
+    currentQuestion++;
+
+    if (questionData[currentQuestion]) {
+    showQuestion(currentQuestion);
+} else {
+    showResults();
+}
+
+});
+
+            questionOptions.appendChild(button);
+
+        });
+
+        backButton.style.visibility =
+            currentQuestion === 1 ? "hidden" : "visible";
+
+    }
+
+    backButton.addEventListener("click", () => {
+
+        if (questionHistory.length > 0) {
+
+            currentQuestion = questionHistory.pop();
+
+            showQuestion(currentQuestion);
+
+        }
+
+    });
+
+    document.querySelectorAll(".finder-restart").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        currentQuestion = 1;
+        questionHistory = [];
+        userAnswers = [];
+
+        document.querySelector(".finder-question").style.display = "block";
+        document.querySelector(".finder-results").style.display = "none";
+
+        showQuestion(1);
+
+    });
+
+});
+
+    showQuestion(1);
+
+</script>
+
+</script>
+
+<footer class="site-footer">
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+
+            <div class="logo">
+                <span>Root & Room</span>
+                <small>Better Plants. Happier Spaces.</small>
+            </div>
+
+            <p>
+                Practical plant guidance for real homes,
+                real routines, and real plant people.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <div>
+                <span>Explore</span>
+                <a href="find-a-plant.html">Find a Plant</a>
+                <a href="plant-library.html">Plant Library</a>
+                <a href="plant-care.html">Plant Care</a>
+                <a href="guides.html">Guides</a>
+            </div>
+
+            <div>
+                <span>Resources</span>
+                <a href="resources.html">Resources</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+            </div>
+
+       <div>
+            <span>Legal</span>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+            <a href="terms.html">Terms of Use</a>
+
+    </div>
+
+</footer>
+
+<div class="copyright-bar">
+    <p>© 2026 Root & Room. All rights reserved.</p>
+</div>
+
+</div>
+</body>
+
+</html>
+
+</body>
+
+</html>

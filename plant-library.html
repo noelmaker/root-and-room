@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Library | Root & Room</title>
+    <meta name="description" content="Explore the Root & Room houseplant library for practical plant profiles covering light, watering, care level, pet safety, and more.">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="images/root-room-favicon.png?v=1">
+    <link rel="stylesheet" href="style-clean.css">
+</head>
+        <script>
+
+
+    const plantFilters = {
+
+        "Snake Plant": {
+            light: ["bright", "medium", "low"],
+            care: ["very-little", "middle"],
+            pets: "no",
+            type: ["small", "tall", "statement"]
+        },
+
+        "Spider Plant": {
+            light: ["bright", "medium", "low"],
+            care: ["very-little", "middle"],
+            pets: "yes",
+            type: ["small", "trailing"]
+        },
+
+        "Pothos": {
+            light: ["bright", "medium", "low"],
+            care: ["very-little", "middle"],
+            pets: "no",
+            type: ["trailing"]
+        },
+
+        "ZZ Plant": {
+            light: ["bright", "medium", "low"],
+            care: ["very-little"],
+            pets: "no",
+            type: ["small", "tall"]
+        },
+
+        "Peperomia": {
+            light: ["bright", "medium"],
+            care: ["middle"],
+            pets: "yes",
+            type: ["small"]
+        },
+
+        "Boston Fern": {
+            light: ["medium"],
+            care: ["middle"],
+            pets: "yes",
+            type: ["trailing", "statement"]
+        },
+
+        "Parlor Palm": {
+            light: ["medium", "low"],
+            care: ["middle"],
+            pets: "yes",
+            type: ["tall", "statement"]
+        },
+
+        "Calathea": {
+            light: ["medium", "low"],
+            care: ["middle", "lots"],
+            pets: "yes",
+            type: ["small", "statement"]
+        },
+
+        "Monstera": {
+            light: ["bright", "medium"],
+            care: ["middle"],
+            pets: "no",
+            type: ["tall", "statement"]
+        },
+
+        "String of Hearts": {
+            light: ["bright", "medium"],
+            care: ["very-little", "middle"],
+            pets: "yes",
+            type: ["trailing"]
+        },
+
+        "Chinese Money Plant": {
+            light: ["bright", "medium"],
+            care: ["middle"],
+            pets: "yes",
+            type: ["small"]
+        },
+
+        "Bird's Nest Fern": {
+            light: ["medium", "low"],
+            care: ["middle"],
+            pets: "yes",
+            type: ["small", "statement"]
+        }
+
+    };
+
+
+</script>
+<body>
+
+    <header class="site-header">
+
+        <div class="logo">
+            <span>Root & Room</span>
+            <small>Better Plants. Happier Spaces.</small>
+        </div>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="find-a-plant.html">Find a Plant</a>
+            <a href="plant-library.html">Plant Library</a>
+            <a href="plant-care.html">Plant Care</a>
+            <a href="guides.html">Guides</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+
+        <a href="find-a-plant.html" class="plant-finder-button">
+            Find My Plant →
+        </a>
+
+    </header>
+
+    <main>
+
+        <section class="library-hero">
+
+            <div class="library-hero-content">
+
+                <p class="eyebrow">Plant Library</p>
+
+                <h1>
+                    Plants worth
+                    getting to know.
+                </h1>
+
+                <p>
+                    Explore houseplants by their light needs, care level,
+                    growth habits, and the kind of space they like to call home.
+                </p>
+
+            </div>
+
+                        <div class="library-hero-image">
+
+                <img src="images/plant-08.jpg" alt="Houseplant in a bright interior">
+
+            </div>
+
+        </section>
+
+        
+        <section class="plant-collection">
+
+                        <div class="plant-filters">
+
+                <label>
+                    <span>Light</span>
+                    <select id="light-filter">
+                        <option value="all">Any light</option>
+                        <option value="low">Low light</option>
+                        <option value="medium">Medium light</option>
+                        <option value="bright">Bright light</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span>Care</span>
+                    <select id="care-filter">
+                        <option value="all">Any care level</option>
+                        <option value="very-little">Very little</option>
+                        <option value="middle">Moderate</option>
+                        <option value="lots">More attention</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span>Pet friendly</span>
+                    <select id="pet-filter">
+                        <option value="all">Any</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span>Plant shape</span>
+                    <select id="type-filter">
+                        <option value="all">Any shape</option>
+                        <option value="small">Small</option>
+                        <option value="trailing">Trailing</option>
+                        <option value="tall">Tall</option>
+                        <option value="statement">Statement</option>
+                    </select>
+                </label>
+
+                <button type="button" id="clear-filters">
+                    Clear filters
+                </button>
+
+            </div>
+
+            <div class="plant-collection-heading">
+
+                <p class="eyebrow">The Collection</p>
+
+                <h2>Meet the plants.</h2>
+
+                <p>
+                    Start with a plant you're curious about, then get the
+                    practical details that help you decide if it's a good fit.
+                </p>
+
+            </div>
+
+            <div class="plant-collection-grid">
+
+                <a href="snake-plant.html" class="plant-library-card">
+                    <img src="images/snake-plant01.jpg" alt="Snake Plant">
+                    <div>
+                        <span>Easy care</span>
+                        <h3>Snake Plant</h3>
+                        <p>Architectural, forgiving, and comfortable in a range of light.</p>
+                    </div>
+                </a>
+
+                <a href="spider-plant.html" class="plant-library-card">
+                    <img src="images/spider-plant02.jpg" alt="Spider Plant">
+                    <div>
+                        <span>Adaptable</span>
+                        <h3>Spider Plant</h3>
+                        <p>A cheerful classic for shelves, desks, and hanging spots.</p>
+                    </div>
+                </a>
+
+                <a href="pothos.html" class="plant-library-card">
+                    <img src="images/pothos-plant03.jpg" alt="Pothos">
+                    <div>
+                        <span>Trailing</span>
+                        <h3>Pothos</h3>
+                        <p>A versatile trailing plant that works beautifully in many spaces.</p>
+                    </div>
+                </a>
+
+                <a href="zz-plant.html" class="plant-library-card">
+                    <img src="images/zz-plant04.jpg" alt="ZZ Plant">
+                    <div>
+                        <span>Low attention</span>
+                        <h3>ZZ Plant</h3>
+                        <p>Glossy foliage and an easygoing nature for busy plant people.</p>
+                    </div>
+                </a>
+
+                                <a href="peperomia.html" class="plant-library-card">
+                    <img src="images/peperomia-plant.jpg" alt="Peperomia">
+                    <div>
+                        <span>Compact</span>
+                        <h3>Peperomia</h3>
+                        <p>A small, characterful plant that works well in tighter spaces.</p>
+                    </div>
+                </a>
+
+                <a href="boston-fern.html" class="plant-library-card">
+                    <img src="images/bostonfern-plant.jpg" alt="Boston Fern">
+                    <div>
+                        <span>Lush</span>
+                        <h3>Boston Fern</h3>
+                        <p>A classic leafy fern for spaces with a little extra care to give.</p>
+                    </div>
+                </a>
+
+                <a href="parlor-palm.html" class="plant-library-card">
+                    <img src="images/parlor-palm.jpg" alt="Parlor Palm">
+                    <div>
+                        <span>Graceful</span>
+                        <h3>Parlor Palm</h3>
+                        <p>A softer way to bring height and greenery into a room.</p>
+                    </div>
+                </a>
+
+                <a href="calathea.html" class="plant-library-card">
+                    <img src="images/calathea.jpg" alt="Calathea">
+                    <div>
+                        <span>Leafy</span>
+                        <h3>Calathea</h3>
+                        <p>Distinctive foliage for plant people who enjoy a little extra attention.</p>
+                    </div>
+                </a>
+
+                <a href="monstera.html" class="plant-library-card">
+                    <img src="images/monstera.jpg" alt="Monstera">
+                    <div>
+                        <span>Statement</span>
+                        <h3>Monstera</h3>
+                        <p>A bold foliage plant that brings plenty of presence to a room.</p>
+                    </div>
+                </a>
+
+                <a href="string-of-hearts.html" class="plant-library-card">
+                    <img src="images/string-of-hearts.jpg" alt="String of Hearts">
+                    <div>
+                        <span>Trailing</span>
+                        <h3>String of Hearts</h3>
+                        <p>A delicate trailing plant that adds character without taking much space.</p>
+                    </div>
+                </a>
+
+                <a href="chinese-money-plant.html" class="plant-library-card">
+                    <img src="images/chinese-money.jpg" alt="Chinese Money Plant">
+                    <div>
+                        <span>Small space</span>
+                        <h3>Chinese Money Plant</h3>
+                        <p>A compact, distinctive plant that's easy to make room for.</p>
+                    </div>
+                </a>
+
+                <a href="birds-nest-fern.html" class="plant-library-card">
+                    <img src="images/birds-nest-fern.jpg" alt="Bird's Nest Fern">
+                    <div>
+                        <span>Sculptural</span>
+                        <h3>Bird's Nest Fern</h3>
+                        <p>A lush fern with a softer shape and plenty of personality.</p>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+                    <span>Root & Room</span>
+                    <small>Better Plants. Happier Spaces.</small>
+                </div>
+
+                <p>
+                    Practical plant guidance for real homes,
+                    real routines, and real plant people.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <div>
+                    <span>Explore</span>
+                    <a href="find-a-plant.html">Find a Plant</a>
+                    <a href="plant-library.html">Plant Library</a>
+                    <a href="plant-care.html">Plant Care</a>
+                    <a href="guides.html">Guides</a>
+                </div>
+
+                <div>
+                    <span>Resources</span>
+                    <a href="resources.html">Resources</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+<div>
+            <span>Legal</span>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+            <a href="terms.html">Terms of Use</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="copyright-bar">
+        <p>© 2026 Root & Room. All rights reserved.</p>
+    </div>
+
+<script>
+
+    const plantCards = document.querySelectorAll(".plant-library-card");
+
+    const lightFilter = document.querySelector("#light-filter");
+    const careFilter = document.querySelector("#care-filter");
+    const petFilter = document.querySelector("#pet-filter");
+    const typeFilter = document.querySelector("#type-filter");
+    const clearFilters = document.querySelector("#clear-filters");
+
+
+    function applyFilters() {
+
+        const light = lightFilter.value;
+        const care = careFilter.value;
+        const pets = petFilter.value;
+        const type = typeFilter.value;
+
+
+        plantCards.forEach(card => {
+
+            const plantName = card.querySelector("h3").textContent.trim();
+            const plant = plantFilters[plantName];
+
+
+            const matchesLight =
+                light === "all" || plant.light.includes(light);
+
+            const matchesCare =
+                care === "all" || plant.care.includes(care);
+
+            const matchesPets =
+                pets === "all" || plant.pets === pets;
+
+            const matchesType =
+                type === "all" || plant.type.includes(type);
+
+
+            const matches =
+                matchesLight &&
+                matchesCare &&
+                matchesPets &&
+                matchesType;
+
+
+            card.style.display = matches ? "block" : "none";
+
+        });
+
+    }
+
+
+    lightFilter.addEventListener("change", applyFilters);
+    careFilter.addEventListener("change", applyFilters);
+    petFilter.addEventListener("change", applyFilters);
+    typeFilter.addEventListener("change", applyFilters);
+
+
+    clearFilters.addEventListener("click", () => {
+
+        lightFilter.value = "all";
+        careFilter.value = "all";
+        petFilter.value = "all";
+        typeFilter.value = "all";
+
+        applyFilters();
+
+    });
+
+</script>
+
+</body>
+</html>
