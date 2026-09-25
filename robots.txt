@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://noelmaker.github.io/root-and-room/sitemap.xml
