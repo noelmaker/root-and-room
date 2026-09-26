@@ -4979,3 +4979,32 @@ margin-bottom: 0;
     max-width: 500px;
     padding-bottom: 8px;
 }
+
+/* Plant Problems intro */
+
+.plant-problems-section .guide-start-intro h2 {
+    max-width: 430px;
+    margin: 18px 0 26px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3.2rem, 4.6vw, 5rem);
+    font-weight: 400;
+    line-height: 0.98;
+}
+
+.plant-problems-section .guide-start-intro > p:not(.eyebrow) {
+    max-width: 390px;
+    margin: 0;
+    color: var(--brown);
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.plant-problems-section .guide-start-intro::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 1px;
+    margin-top: 36px;
+    background: var(--terracotta);
+}
