@@ -1665,7 +1665,7 @@ body {
     gap: 5vw;
     align-items: center;
     padding: 90px 6vw;
-    background: var(--cream);
+    background: #dfe3d5;
 }
 
 .care-page-hero-content {
@@ -1895,7 +1895,9 @@ body {
 .care-reality {
     padding: 130px 6vw;
     background: #e8d9a8;
+    text-align: center;
 }
+
 
 .care-reality .eyebrow {
     margin-bottom: 22px;
@@ -1904,7 +1906,7 @@ body {
 
 .care-reality h2 {
     max-width: 850px;
-    margin-bottom: 25px;
+    margin: 0 auto 25px;
     color: var(--cocoa);
     font-family: "DM Serif Display", Georgia, serif;
     font-size: clamp(3.5rem, 6vw, 6rem);
@@ -1914,7 +1916,7 @@ body {
 
 .care-reality > p:not(.eyebrow) {
     max-width: 620px;
-    margin-bottom: 28px;
+    margin: 0 auto 28px;
     color: var(--brown);
     font-size: 0.95rem;
     line-height: 1.75;
@@ -2097,6 +2099,35 @@ body {
 
 .sos-answer {
     padding-bottom: 20px;
+}
+.sos-guides {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(58, 44, 36, 0.12);
+}
+
+.sos-guides::before {
+    content: "Related Guides";
+    width: 100%;
+    color: var(--terracotta);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.sos-guides a {
+    color: var(--cocoa);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sos-guides a:hover {
+    color: var(--terracotta);
 }
 .guides-hero {
     display: grid;
