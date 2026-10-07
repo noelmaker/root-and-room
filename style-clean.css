@@ -3719,6 +3719,7 @@ margin-bottom: 0;
     .plant-before-buy,
     .plant-care-basics,
     .plant-problems,
+    .plant-sos,
     .good-match,
     .library-browse,
     .plant-collection,
@@ -3770,7 +3771,9 @@ margin-bottom: 0;
   .care-preview .care-intro h2 {
     font-size: 3.5rem;
     line-height: 1.02;
-}  
+    
+}
+  
 }
 /* =========================================
    PLANT CARE INTRO — FINAL LAYOUT
@@ -4601,7 +4604,7 @@ margin-bottom: 0;
 }
 
 .legal-hero {
-    width: min(1000px, calc(100% - 80px));
+    width: min(1200px, calc(100% - 12vw));
     margin: 0 auto;
     padding: 120px 0 80px;
     border-bottom: 1px solid rgba(58, 44, 36, 0.18);
@@ -4633,9 +4636,13 @@ margin-bottom: 0;
 }
 
 .legal-content {
-    width: min(800px, calc(100% - 80px));
+    width: min(1200px, calc(100% - 12vw));
     margin: 0 auto;
     padding: 80px 0 130px;
+}
+
+.legal-content > * {
+    max-width: 900px;
 }
 
 .legal-content h2 {
@@ -5585,5 +5592,199 @@ margin-bottom: 0;
 
     .footer-links > div {
         min-width: 0;
+    }
+        /* =========================
+       FIND A PLANT PAGE — HERO
+    ========================= */
+
+    .finder-hero {
+        min-height: auto;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 45px;
+        align-items: start;
+        padding: 70px 6vw;
+    }
+
+    .finder-hero-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .finder-hero h1 {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 25px;
+        font-size: clamp(3.2rem, 13vw, 4.4rem);
+        line-height: 0.94;
+    }
+
+    .finder-hero-content > p:not(.eyebrow) {
+        width: 100%;
+        max-width: 100%;
+        line-height: 1.7;
+    }
+
+    .finder-hero-images {
+        width: 100%;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+        align-items: end;
+    }
+
+    .finder-hero-images img {
+        width: 100%;
+        min-width: 0;
+        object-fit: cover;
+    }
+
+    .finder-hero-images img:nth-child(1) {
+        height: 220px;
+    }
+
+    .finder-hero-images img:nth-child(2) {
+        height: 190px;
+    }
+
+    .finder-hero-images img:nth-child(3) {
+        height: 165px;
+    }
+        /* =========================
+       FIND A PLANT — QUESTIONS
+    ========================= */
+
+    .finder-question {
+        padding: 75px 6vw;
+    }
+
+    .question-options {
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+    }
+
+    .finder-option {
+        width: 100%;
+        min-width: 0;
+        min-height: auto;
+        padding: 28px 0;
+    }
+
+    .finder-option + .finder-option {
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    .finder-option strong {
+        font-size: 1.65rem;
+    }
+
+    .finder-option small {
+        max-width: 100%;
+        font-size: 0.82rem;
+    }
+
+    .finder-navigation {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+        /* =========================
+       PLANT LIBRARY — FILTERS
+    ========================= */
+
+    .plant-filters {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px 16px;
+        align-items: end;
+        width: 100%;
+        margin-bottom: 45px;
+        padding-bottom: 25px;
+    }
+
+    .plant-filters label {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .plant-filters select {
+        width: 100%;
+        min-width: 0;
+    }
+
+    #clear-filters {
+        grid-column: 1 / -1;
+        justify-self: start;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+        /* =========================
+       PLANT LIBRARY — COLLECTION
+    ========================= */
+
+    .plant-collection-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 16px;
+        width: 100%;
+    }
+
+    .plant-library-card {
+        min-width: 0;
+    }
+
+    .plant-library-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .plant-library-card > div {
+        padding: 16px 2px 8px;
+    }
+
+    .plant-library-card h3 {
+        font-size: 1.45rem;
+        line-height: 1.05;
+    }
+
+    .plant-library-card p {
+        font-size: 0.76rem;
+        line-height: 1.5;
+    }
+        /* =========================
+       RESOURCES — ARTICLES
+    ========================= */
+
+    .resource-articles {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 55px;
+        align-items: start;
+        padding: 75px 6vw;
+    }
+
+    .resource-articles-content,
+    .resource-articles-preview {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .resource-articles-content h2 {
+        max-width: 100%;
+        font-size: clamp(2.8rem, 12vw, 3.8rem);
+        line-height: 1;
+    }
+
+    .resource-articles-content > p:not(.eyebrow) {
+        max-width: 100%;
+    }
+
+    .resource-articles-preview > a {
+        grid-template-columns: minmax(0, 1fr) 24px;
+        gap: 15px;
+    }
+
+    .resource-articles-preview strong {
+        font-size: 1.4rem;
     }
 }
