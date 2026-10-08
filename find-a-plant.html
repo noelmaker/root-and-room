@@ -289,7 +289,18 @@ const plants = [
         type: ["small", "statement"],
         pets: "yes",
         personality: ["collector", "statement"]
-    }
+     },
+{
+    name: "Peace Lily",
+    page: "peace-lily.html",
+    image: "images/peace-lily.jpg",
+    light: ["medium", "bright", "low"],
+    care: ["middle"],
+    type: ["small", "statement"],
+    pets: "no",
+    personality: ["collector", "statement"]
+},
+
 
 ];
 function formatPlantValue(value) {
@@ -365,6 +376,10 @@ function getMatchDescription(plant) {
     if (plant.name === "Bird's Nest Fern") {
         return "A lush, sculptural fern that brings a softer look to indoor spaces.";
     }
+
+if (plant.name === "Peace Lily") {
+    return "An elegant tropical plant with glossy leaves and graceful white blooms, perfect for spaces with gentle indirect light.";
+}
 
     return "A plant worth getting to know based on your space and routine.";
 

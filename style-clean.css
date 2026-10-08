@@ -1302,7 +1302,7 @@ body {
     border-top: 1px solid rgba(58, 44, 36, 0.2);
 }
 
-.problems-list a {
+.problems-list .problem-item {
     display: grid;
     grid-template-columns: 55px 1fr 30px;
     gap: 20px;
@@ -1313,7 +1313,7 @@ body {
     text-decoration: none;
 }
 
-.problems-list a > span {
+.problems-list .problem-item > span {
     color: var(--terracotta);
     font-size: 0.65rem;
     font-weight: 600;

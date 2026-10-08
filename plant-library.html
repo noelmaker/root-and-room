@@ -249,6 +249,15 @@
                     </div>
                 </a>
 
+<a href="peace-lily.html" class="plant-library-card">
+    <img src="images/peace-lily.jpg" alt="Peace Lily with glossy green leaves and white blooms">
+    <div>
+        <span>Flowering</span>
+        <h3>Peace Lily</h3>
+        <p>An elegant tropical houseplant with lush green foliage and graceful white blooms.</p>
+    </div>
+</a>
+
                 <a href="zz-plant.html" class="plant-library-card">
                     <img src="images/zz-plant04.jpg" alt="ZZ Plant">
                     <div>
@@ -455,6 +464,27 @@
 
     });
 
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const plantGrid = document.querySelector(".plant-collection-grid");
+
+    if (!plantGrid) return;
+
+    const plantCards = Array.from(
+        plantGrid.querySelectorAll(".plant-library-card")
+    );
+
+    plantCards.sort((a, b) => {
+        const nameA = a.querySelector("h3").textContent.trim();
+        const nameB = b.querySelector("h3").textContent.trim();
+
+        return nameA.localeCompare(nameB);
+    });
+
+    plantCards.forEach(card => plantGrid.appendChild(card));
+});
 </script>
 
 </body>
