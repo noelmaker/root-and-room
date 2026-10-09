@@ -1,0 +1,598 @@
+
+/* =========================================
+   ROOT & ROOM — POTS & PLANTERS GUIDE
+========================================= */
+
+/* PAGE */
+
+.planters-page {
+    background: var(--cream);
+    color: var(--cocoa);
+}
+
+/* HERO */
+
+.planters-page .planters-hero {
+    background: var(--cream);
+    padding: 140px 6vw 120px;
+}
+
+.planters-hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.planters-hero .eyebrow {
+    margin: 0 0 28px;
+    color: var(--terracotta);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+}
+
+.planters-hero h1 {
+    max-width: 1000px;
+    margin: 0 0 35px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3.8rem, 7vw, 7rem);
+    font-weight: 400;
+    line-height: 1.04;
+    letter-spacing: -0.035em;
+}
+
+.planters-hero-description {
+    max-width: 620px;
+    margin: 0 0 35px;
+    color: var(--brown);
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+.planters-text-link {
+    display: inline-block;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--terracotta);
+    color: var(--cocoa);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.planters-text-link:visited {
+    color: var(--cocoa);
+}
+
+.planters-text-link:hover {
+    color: var(--terracotta);
+}
+
+/* BEFORE YOU BUY */
+
+.planters-page .planters-basics {
+    background: #EFE6D5;
+    padding: 110px 6vw 140px;
+}
+
+.planters-section-heading {
+    max-width: 1200px;
+    margin: 0 auto 65px;
+}
+
+.planters-section-heading .eyebrow {
+    margin: 0 0 20px;
+    color: var(--terracotta);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+}
+
+.planters-section-heading h2 {
+    margin: 0 0 25px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2.8rem, 5vw, 4.8rem);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.planters-section-heading > p:not(.eyebrow) {
+    max-width: 600px;
+    margin: 0;
+    color: var(--brown);
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+/* THREE INFORMATIONAL CARDS */
+
+.planters-basics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.planters-basic-card {
+    min-width: 0;
+    padding: 48px 38px 55px;
+    background: var(--cream);
+    border: 1px solid rgba(58, 44, 36, 0.08);
+}
+
+.planters-card-number {
+    display: block;
+    margin-bottom: 55px;
+    color: var(--terracotta);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.planters-basic-card h3 {
+    margin: 0 0 20px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.6rem, 2vw, 2rem);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.planters-basic-card p {
+    margin: 0;
+    color: var(--brown);
+    font-size: 0.92rem;
+    line-height: 1.9;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .planters-page .planters-hero {
+        padding: 100px 6vw 90px;
+    }
+
+    .planters-page .planters-basics {
+        padding: 85px 6vw 100px;
+    }
+
+    .planters-basics-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .planters-basic-card {
+        padding: 35px;
+    }
+
+    .planters-card-number {
+        margin-bottom: 30px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .planters-page .planters-hero {
+        padding: 75px 6vw 80px;
+    }
+
+    .planters-hero h1 {
+        font-size: clamp(2.8rem, 12vw, 4rem);
+    }
+
+    .planters-hero-description {
+        font-size: 0.95rem;
+    }
+
+    .planters-page .planters-basics {
+        padding: 75px 6vw 85px;
+    }
+
+    .planters-section-heading {
+        margin-bottom: 40px;
+    }
+
+    .planters-basic-card {
+        padding: 30px 25px 35px;
+    }
+}
+
+/* =========================================
+   PLANTER RECOMMENDATIONS
+========================================= */
+
+.planters-picks {
+    padding: 120px 6vw 140px;
+    background: var(--cream);
+}
+
+.planters-picks .planters-section-heading {
+    margin-bottom: 35px;
+}
+
+/* AFFILIATE DISCLOSURE */
+
+.planters-affiliate-disclosure {
+    max-width: 1200px;
+    margin: 0 auto 55px;
+    padding: 18px 24px;
+    border-left: 3px solid var(--terracotta);
+    background: #EFE6D5;
+    color: var(--brown);
+    font-size: 0.82rem;
+    line-height: 1.8;
+}
+
+/* PRODUCT GRID */
+
+
+.planters-product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* PRODUCT CARD */
+
+.planters-product-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 55px 48px;
+    border: 1px solid rgba(58, 44, 36, 0.14);
+    background: #EFE6D5;
+}
+
+.planters-product-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.planters-product-content .eyebrow {
+    margin: 0 0 25px;
+    color: var(--terracotta);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.planters-product-content h3 {
+    margin: 0 0 25px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 400;
+    line-height: 1.12;
+}
+
+.planters-product-content > p:not(.eyebrow) {
+    color: var(--brown);
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+.planters-product-note {
+    margin-top: 25px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(58, 44, 36, 0.16);
+    font-size: 0.86rem !important;
+}
+
+/* AMAZON LINK */
+
+.planters-product-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    padding: 16px 28px;
+    background: var(--cocoa);
+    color: var(--cream);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.planters-product-button:visited {
+    color: var(--cream);
+}
+
+.planters-product-button:hover {
+    background: var(--terracotta);
+    color: white;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .planters-picks {
+        padding: 90px 6vw 110px;
+    }
+
+    .planters-product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .planters-product-card {
+        padding: 42px 35px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .planters-picks {
+        padding: 75px 6vw 90px;
+    }
+
+    .planters-affiliate-disclosure {
+        padding: 16px 18px;
+        font-size: 0.78rem;
+    }
+
+    .planters-product-card {
+        padding: 35px 25px;
+    }
+
+    .planters-product-content h3 {
+        font-size: 2rem;
+    }
+
+    .planters-product-button {
+        width: 100%;
+    }
+}
+
+/* =========================================
+   CHOOSING THE RIGHT PLANTER
+========================================= */
+
+.planters-choosing {
+    padding: 120px 6vw 140px;
+    background: #EFE6D5;
+}
+
+.planters-choosing .planters-section-heading {
+    margin-bottom: 75px;
+}
+
+/* COMPARISON GRID */
+
+.planters-choosing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 60px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* INDIVIDUAL COMPARISON ITEMS */
+
+.planters-choosing-item {
+    min-width: 0;
+    padding-top: 28px;
+    border-top: 1px solid rgba(58, 44, 36, 0.25);
+}
+
+.planters-choosing-item .planters-card-number {
+    display: block;
+    margin-bottom: 30px;
+    color: var(--terracotta);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+}
+
+.planters-choosing-item h3 {
+    margin: 0 0 22px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.7rem, 2.5vw, 2.5rem);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.planters-choosing-item p {
+    max-width: 370px;
+    margin: 0;
+    color: var(--brown);
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .planters-choosing {
+        padding: 90px 6vw 110px;
+    }
+
+    .planters-choosing-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        max-width: 650px;
+    }
+
+    .planters-choosing .planters-section-heading {
+        margin-bottom: 55px;
+    }
+
+    .planters-choosing-item h3 {
+        font-size: 2rem;
+    }
+
+    .planters-choosing-item p {
+        max-width: 100%;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .planters-choosing {
+        padding: 75px 6vw 90px;
+    }
+
+    .planters-choosing-grid {
+        gap: 35px;
+    }
+
+    .planters-choosing-item {
+        padding-top: 22px;
+    }
+
+    .planters-choosing-item .planters-card-number {
+        margin-bottom: 20px;
+    }
+
+    .planters-choosing-item h3 {
+        font-size: 1.8rem;
+    }
+}
+
+/* =========================================
+   CASCADING PLANTER HERO COLLAGE
+========================================= */
+
+/* HERO TWO-COLUMN LAYOUT */
+
+.planters-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    align-items: center;
+    gap: 5vw;
+    min-height: 680px;
+}
+
+/* LEFT SIDE TEXT */
+
+.planters-hero-inner {
+    min-width: 0;
+    max-width: 600px;
+    margin: 0;
+}
+
+.planters-hero h1 {
+    font-size: clamp(3.2rem, 4.5vw, 5.8rem);
+}
+
+/* RIGHT SIDE COLLAGE */
+
+.planters-hero-collage {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+}
+
+/* SHARED PHOTO STYLING */
+
+.planters-collage-photo {
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.planters-collage-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TALLEST PHOTO */
+
+.planters-collage-tall {
+    height: 420px;
+}
+
+/* MEDIUM PHOTO */
+
+.planters-collage-medium {
+    height: 340px;
+    margin-top: 45px;
+}
+
+/* SHORTEST PHOTO */
+
+.planters-collage-short {
+    height: 260px;
+    margin-top: 90px;
+}
+
+/* =========================================
+   RESPONSIVE COLLAGE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .planters-hero {
+        grid-template-columns: 1fr;
+        gap: 55px;
+        min-height: auto;
+    }
+
+    .planters-hero-inner {
+        max-width: 700px;
+    }
+
+    .planters-hero-collage {
+        max-width: 850px;
+    }
+
+    .planters-collage-tall {
+        height: 380px;
+    }
+
+    .planters-collage-medium {
+        height: 310px;
+    }
+
+    .planters-collage-short {
+        height: 240px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .planters-hero {
+        gap: 35px;
+    }
+
+    .planters-hero h1 {
+        font-size: clamp(2.8rem, 9vw, 4rem);
+    }
+
+    .planters-hero-collage {
+        gap: 7px;
+    }
+
+    .planters-collage-tall {
+        height: 250px;
+    }
+
+    .planters-collage-medium {
+        height: 200px;
+        margin-top: 25px;
+    }
+
+    .planters-collage-short {
+        height: 155px;
+        margin-top: 50px;
+    }
+}

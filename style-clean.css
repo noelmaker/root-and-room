@@ -3414,7 +3414,6 @@ margin-bottom: 0;
 
 @media (max-width: 800px) {
 
-```
 .about-hero {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -3444,13 +3443,11 @@ margin-bottom: 0;
     gap: 40px;
     padding: 80px 6vw;
 }
-```
 
 }
 
 @media (max-width: 500px) {
 
-```
 .about-hero {
     padding-top: 70px;
 }
@@ -3462,7 +3459,6 @@ margin-bottom: 0;
 .about-closing h2 {
     font-size: 3rem;
 }
-```
 
 }
 /* =========================================
