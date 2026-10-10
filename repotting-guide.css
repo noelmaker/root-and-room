@@ -1,0 +1,893 @@
+
+/* =========================================
+   ROOT & ROOM — REPOTTING GUIDE
+========================================= */
+
+/* PAGE FOUNDATION */
+
+.repotting-page {
+    background: var(--cream);
+    color: var(--cocoa);
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.repotting-hero {
+    display: flex;
+    align-items: center;
+    min-height: 620px;
+    padding: 130px 6vw 120px;
+    background: var(--cream);
+}
+
+.repotting-hero-content {
+    width: 100%;
+    max-width: 850px;
+}
+
+/* EYEBROW */
+
+.repotting-hero .eyebrow {
+    margin: 0 0 32px;
+    color: var(--terracotta);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+/* MAIN HEADING */
+
+.repotting-hero h1 {
+    margin: 0 0 35px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(4rem, 7vw, 7.5rem);
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+}
+
+/* DESCRIPTION */
+
+.repotting-hero-description {
+    max-width: 580px;
+    margin: 0 0 35px;
+    color: var(--brown);
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+/* TEXT LINK */
+
+.repotting-text-link {
+    display: inline-block;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--terracotta);
+    color: var(--terracotta);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.repotting-text-link:visited {
+    color: var(--terracotta);
+}
+
+.repotting-text-link:hover {
+    color: var(--cocoa);
+    border-color: var(--cocoa);
+}
+
+/* =========================================
+   RESPONSIVE HERO
+========================================= */
+
+@media (max-width: 900px) {
+
+    .repotting-hero {
+        min-height: 520px;
+        padding: 100px 6vw;
+    }
+
+    .repotting-hero h1 {
+        font-size: clamp(3.5rem, 8vw, 6rem);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .repotting-hero {
+        min-height: auto;
+        padding: 85px 6vw 95px;
+    }
+
+    .repotting-hero .eyebrow {
+        margin-bottom: 25px;
+        font-size: 0.68rem;
+    }
+
+    .repotting-hero h1 {
+        margin-bottom: 28px;
+        font-size: clamp(3rem, 11vw, 4.5rem);
+    }
+
+    .repotting-hero-description {
+        font-size: 0.94rem;
+        line-height: 1.8;
+    }
+}
+
+/* =========================================
+   SIGNS IT'S TIME TO REPOT
+========================================= */
+
+.repotting-signs {
+    padding: 115px 6vw 125px;
+    background: #EFE6D7;
+}
+
+.repotting-signs-intro {
+    max-width: 760px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.repotting-signs-intro .eyebrow {
+    margin-bottom: 25px;
+    color: var(--terracotta);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+}
+
+.repotting-signs-intro h2 {
+    margin-bottom: 28px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+.repotting-signs-intro > p:last-child {
+    max-width: 590px;
+    margin: 0 auto;
+    color: var(--brown);
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+/* FOUR INFORMATION CARDS */
+
+.repotting-signs-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.repotting-sign-card {
+    padding: 40px 30px 45px;
+    background: var(--cream);
+    border: 1px solid rgba(58, 44, 36, 0.09);
+}
+
+.sign-number {
+    display: block;
+    margin-bottom: 45px;
+    color: var(--terracotta);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.repotting-sign-card h3 {
+    margin-bottom: 18px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.repotting-sign-card p {
+    color: var(--brown);
+    font-size: 0.92rem;
+    line-height: 1.85;
+}
+
+/* BOTTOM REMINDER */
+
+.repotting-signs-note {
+    max-width: 850px;
+    margin: 55px auto 0;
+    color: var(--brown);
+    font-size: 0.95rem;
+    line-height: 1.9;
+    text-align: center;
+}
+
+.repotting-signs-note strong {
+    color: var(--cocoa);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+    .repotting-signs-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .repotting-signs {
+        padding: 80px 6vw 90px;
+    }
+
+    .repotting-signs-intro {
+        margin-bottom: 45px;
+    }
+
+    .repotting-signs-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .repotting-sign-card {
+        padding: 32px 28px;
+    }
+
+    .sign-number {
+        margin-bottom: 25px;
+    }
+
+    .repotting-signs-note {
+        margin-top: 40px;
+    }
+}
+
+/* =========================================
+   REPOTTING SUPPLIES
+========================================= */
+
+.repotting-supplies {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.85fr)
+                           minmax(400px, 1.15fr);
+    gap: clamp(50px, 8vw, 150px);
+    padding: 125px 6vw;
+    background: var(--cream);
+}
+
+.repotting-supplies-heading {
+    align-self: start;
+    max-width: 530px;
+}
+
+.repotting-supplies-heading .eyebrow {
+    margin-bottom: 25px;
+    color: var(--terracotta);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+}
+
+.repotting-supplies-heading h2 {
+    margin-bottom: 28px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5vw, 5.5rem);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.repotting-supplies-heading > p:last-child {
+    color: var(--brown);
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+/* SUPPLY LIST */
+
+.repotting-supplies-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.repotting-supply {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 25px;
+    padding: 35px 0;
+    border-top: 1px solid rgba(58, 44, 36, 0.2);
+}
+
+.repotting-supply:last-child {
+    border-bottom: 1px solid rgba(58, 44, 36, 0.2);
+}
+
+.repotting-supply > span {
+    padding-top: 7px;
+    color: var(--terracotta);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.repotting-supply h3 {
+    margin-bottom: 15px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.6rem, 2.3vw, 2.3rem);
+    font-weight: 400;
+}
+
+.repotting-supply p {
+    max-width: 580px;
+    color: var(--brown);
+    font-size: 0.95rem;
+    line-height: 1.85;
+}
+
+.repotting-supply a {
+    display: inline-block;
+    margin-top: 18px;
+    color: var(--terracotta);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.repotting-supply a:visited {
+    color: var(--terracotta);
+}
+
+.repotting-supply a:hover {
+    color: var(--cocoa);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .repotting-supplies {
+        grid-template-columns: 1fr;
+        gap: 55px;
+        padding: 95px 6vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .repotting-supplies {
+        gap: 35px;
+        padding: 80px 6vw;
+    }
+
+    .repotting-supply {
+        grid-template-columns: 40px 1fr;
+        gap: 15px;
+        padding: 28px 0;
+    }
+
+    .repotting-supply h3 {
+        font-size: 1.65rem;
+    }
+}
+
+/* =========================================
+   STEP-BY-STEP REPOTTING GUIDE
+========================================= */
+
+.repotting-steps {
+    padding: 125px 6vw 135px;
+    background: #EFE6D7;
+}
+
+.repotting-steps-intro {
+    max-width: 850px;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+
+.repotting-steps-intro .eyebrow {
+    margin-bottom: 25px;
+    color: var(--terracotta);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+}
+
+.repotting-steps-intro h2 {
+    margin-bottom: 30px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5.5vw, 5.5rem);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.repotting-steps-intro > p:last-child {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--brown);
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+/* TUTORIAL STEPS */
+
+.repotting-steps-list {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.repotting-step {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 35px;
+    padding: 45px 0;
+    border-top: 1px solid rgba(58, 44, 36, 0.2);
+}
+
+.repotting-step:last-child {
+    border-bottom: 1px solid rgba(58, 44, 36, 0.2);
+}
+
+.repotting-step-number {
+    color: var(--terracotta);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 1;
+}
+
+.repotting-step h3 {
+    margin-bottom: 18px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.7rem, 2.5vw, 2.5rem);
+    font-weight: 400;
+}
+
+.repotting-step p {
+    max-width: 750px;
+    color: var(--brown);
+    font-size: 0.98rem;
+    line-height: 1.95;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .repotting-steps {
+        padding: 85px 6vw 95px;
+    }
+
+    .repotting-steps-intro {
+        margin-bottom: 50px;
+    }
+
+    .repotting-step {
+        grid-template-columns: 55px 1fr;
+        gap: 20px;
+        padding: 35px 0;
+    }
+
+    .repotting-step-number {
+        font-size: 2.8rem;
+    }
+
+    .repotting-step h3 {
+        font-size: 1.7rem;
+    }
+
+    .repotting-step p {
+        font-size: 0.93rem;
+        line-height: 1.85;
+    }
+}
+
+/* =========================================
+   REPOTTING AFTERCARE
+========================================= */
+
+.repotting-aftercare {
+    padding: 125px 6vw 135px;
+    background: var(--cream);
+}
+
+.repotting-aftercare-intro {
+    max-width: 780px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.repotting-aftercare-intro .eyebrow {
+    margin-bottom: 25px;
+    color: var(--terracotta);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+}
+
+.repotting-aftercare-intro h2 {
+    margin-bottom: 28px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+.repotting-aftercare-intro > p:last-child {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--brown);
+    line-height: 1.9;
+}
+
+/* AFTERCARE CARDS */
+
+.repotting-aftercare-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.aftercare-card {
+    padding: 45px;
+    background: #EFE6D7;
+}
+
+.aftercare-card > span {
+    display: block;
+    margin-bottom: 35px;
+    color: var(--terracotta);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.aftercare-card h3 {
+    margin-bottom: 18px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.7rem, 2.5vw, 2.4rem);
+    font-weight: 400;
+}
+
+.aftercare-card p {
+    max-width: 470px;
+    color: var(--brown);
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+/* COMMON MISTAKES */
+
+.repotting-mistakes {
+    max-width: 1150px;
+    margin: 80px auto 0;
+    padding: 55px 65px;
+    border: 1px solid rgba(58, 44, 36, 0.2);
+}
+
+.repotting-mistakes h3 {
+    margin-bottom: 30px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 400;
+}
+
+.repotting-mistakes ul {
+    padding-left: 22px;
+    color: var(--brown);
+}
+
+.repotting-mistakes li {
+    margin-bottom: 17px;
+    line-height: 1.9;
+}
+
+.repotting-mistakes li:last-child {
+    margin-bottom: 0;
+}
+
+.repotting-mistakes strong {
+    color: var(--cocoa);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .repotting-aftercare {
+        padding: 85px 6vw 95px;
+    }
+
+    .repotting-aftercare-intro {
+        margin-bottom: 45px;
+    }
+
+    .repotting-aftercare-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .aftercare-card {
+        padding: 35px 30px;
+    }
+
+    .repotting-mistakes {
+        margin-top: 50px;
+        padding: 35px 25px;
+    }
+}
+
+/* =========================================
+   REPOTTING FAQ
+========================================= */
+
+.repotting-faq {
+    padding: 125px 6vw 140px;
+    background: #EFE6D7;
+}
+
+.repotting-faq-intro {
+    max-width: 800px;
+    margin: 0 auto 75px;
+    text-align: center;
+}
+
+.repotting-faq-intro .eyebrow {
+    margin-bottom: 25px;
+    color: var(--terracotta);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+}
+
+.repotting-faq-intro h2 {
+    margin-bottom: 28px;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+.repotting-faq-intro > p:last-child {
+    max-width: 580px;
+    margin: 0 auto;
+    color: var(--brown);
+    line-height: 1.9;
+}
+
+/* ACCORDION */
+
+.repotting-faq-list {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.repotting-faq-item {
+    border-top: 1px solid rgba(58, 44, 36, 0.2);
+}
+
+.repotting-faq-item:last-child {
+    border-bottom: 1px solid rgba(58, 44, 36, 0.2);
+}
+
+.repotting-faq-item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 28px 0;
+    color: var(--cocoa);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+    cursor: pointer;
+    list-style: none;
+}
+
+.repotting-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-symbol {
+    position: relative;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+}
+
+.faq-symbol::before,
+.faq-symbol::after {
+    content: "";
+    position: absolute;
+    background: var(--terracotta);
+    transition: transform 0.2s ease;
+}
+
+.faq-symbol::before {
+    top: 13px;
+    left: 5px;
+    width: 18px;
+    height: 2px;
+}
+
+.faq-symbol::after {
+    top: 5px;
+    left: 13px;
+    width: 2px;
+    height: 18px;
+}
+
+.repotting-faq-item[open] .faq-symbol::after {
+    transform: rotate(90deg);
+}
+
+.repotting-faq-answer {
+    max-width: 760px;
+    padding: 0 45px 30px 0;
+}
+
+.repotting-faq-answer p {
+    color: var(--brown);
+    font-size: 0.96rem;
+    line-height: 1.95;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .repotting-faq {
+        padding: 85px 6vw 100px;
+    }
+
+    .repotting-faq-intro {
+        margin-bottom: 45px;
+    }
+
+    .repotting-faq-item summary {
+        padding: 23px 0;
+        font-size: 1.3rem;
+    }
+
+    .repotting-faq-answer {
+        padding-right: 15px;
+    }
+}
+
+/* =========================================
+   REPOTTING HERO — IMAGE LAYOUT
+========================================= */
+
+.repotting-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    align-items: center;
+    gap: clamp(40px, 6vw, 110px);
+    min-height: 720px;
+    padding: 100px 6vw;
+}
+
+.repotting-hero-content {
+    max-width: 750px;
+    min-width: 0;
+}
+
+.repotting-hero h1 {
+    font-size: clamp(3.5rem, 5.5vw, 6.5rem);
+}
+
+.repotting-hero-image {
+    width: 100%;
+    min-width: 0;
+    height: 570px;
+    overflow: hidden;
+    border-radius: 180px 180px 8px 8px;
+}
+
+.repotting-hero-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .repotting-hero {
+        grid-template-columns: 1fr;
+        gap: 55px;
+        min-height: auto;
+        padding: 90px 6vw;
+    }
+
+    .repotting-hero-content {
+        max-width: 750px;
+    }
+
+    .repotting-hero-image {
+        width: 100%;
+        max-width: 650px;
+        height: 500px;
+        margin: 0 auto;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .repotting-hero {
+        gap: 40px;
+        padding: 75px 6vw 85px;
+    }
+
+    .repotting-hero h1 {
+        font-size: clamp(3rem, 10vw, 4.5rem);
+    }
+
+    .repotting-hero-image {
+        height: 370px;
+        border-radius: 120px 120px 6px 6px;
+    }
+}
+
+/* =========================================
+   FULLSCREEN LAYOUT ALIGNMENT
+========================================= */
+
+/* Keep the hero and supplies backgrounds full width,
+   but center their content on large monitors. */
+
+@media (min-width: 1400px) {
+
+    .repotting-hero,
+    .repotting-supplies {
+        padding-left: max(6vw, calc((100vw - 1400px) / 2));
+        padding-right: max(6vw, calc((100vw - 1400px) / 2));
+    }
+
+}
+
+/* =========================================
+   REPOTTING GUIDE — TEXT CONTRAST
+========================================= */
+
+/* Improve readability across all guide sections */
+
+.repotting-page p:not(.eyebrow) {
+    color: #6B5140;
+}
+
+/* Keep section labels in terracotta */
+
+.repotting-page .eyebrow {
+    color: #B86F52;
+}
+
+/* Keep links in terracotta */
+
+.repotting-page a:not(:hover) {
+    color: #B86F52;
+}
+
+/* Maintain darker headings */
+
+.repotting-page h1,
+.repotting-page h2,
+.repotting-page h3 {
+    color: #3A2C24;
+}
