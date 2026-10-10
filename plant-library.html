@@ -98,7 +98,14 @@
             care: ["middle"],
             pets: "yes",
             type: ["small", "statement"]
-        }
+        },
+
+"Peace Lily": {
+    light: ["medium", "low"],
+    care: ["middle"],
+    pets: "no",
+    type: ["small", "statement"]
+}
 
     };
 
@@ -330,7 +337,12 @@
                     </div>
                 </a>
 
-                <a href="birds-nest-fern.html" class="plant-library-card">
+                <a href="birds-nest-fern.html"
+   class="plant-library-card"
+   data-light="medium"
+   data-care="middle"
+   data-pet="yes"
+   data-type="statement">
                     <img src="images/birds-nest-fern.jpg" alt="Bird's Nest Fern">
                     <div>
                         <span>Sculptural</span>
@@ -397,7 +409,8 @@
 
 <script>
 
-    const plantCards = document.querySelectorAll(".plant-library-card");
+    const plantCards = document.querySelectorAll(".plant-collection-grid .plant-library-card");
+console.log("Plant cards found:", plantCards.length);
 
     const lightFilter = document.querySelector("#light-filter");
     const careFilter = document.querySelector("#care-filter");
@@ -411,6 +424,7 @@
         const light = lightFilter.value;
         const care = careFilter.value;
         const pets = petFilter.value;
+        console.log("Pet filter selected:", pets);
         const type = typeFilter.value;
 
 
@@ -428,7 +442,7 @@
 
             const matchesPets =
                 pets === "all" || plant.pets === pets;
-
+console.log(plantName, "Pet friendly:", plant.pets, "Matches:", matchesPets);
             const matchesType =
                 type === "all" || plant.type.includes(type);
 

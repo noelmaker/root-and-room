@@ -5811,3 +5811,123 @@ margin-bottom: 0;
 .sos-answer p a:hover {
     color: var(--cocoa);
 }
+
+/* HELPFUL WATERING TOOLS */
+
+
+.article-watering-tools {
+    margin: 80px 0;
+    padding: 45px 35px;
+    background: #E8D9C0;
+    border-radius: 16px;
+}
+
+
+.article-watering-tools > .eyebrow {
+    color: var(--terracotta);
+    margin-bottom: 16px;
+}
+
+.article-watering-tools > h2 {
+    margin-bottom: 20px;
+}
+
+.watering-tools-intro {
+    max-width: 680px;
+    margin-bottom: 36px;
+}
+
+.watering-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin: 35px 0 22px;
+}
+
+.watering-tool-card {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 24px;
+    background: #F7F1E3;
+    border: 1px solid #E8D9A8;
+    border-radius: 12px;
+}
+
+.watering-tool-number {
+    display: block;
+    margin-bottom: 28px;
+    color: var(--terracotta);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+}
+
+.watering-tool-card h3 {
+    margin: 0 0 14px;
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--cocoa);
+}
+
+.watering-tool-card p {
+    margin: 0 0 28px;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.watering-tool-card .text-link {
+    align-self: flex-start;
+    margin-top: auto;
+    font-size: 0.85rem;
+}
+
+.watering-affiliate-disclosure {
+    margin-top: 20px;
+    color: var(--brown);
+    font-size: 0.75rem;
+    opacity: 0.85;
+}
+
+@media (max-width: 800px) {
+    .watering-tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .article-watering-tools {
+        margin: 55px 0;
+    }
+}
+
+/* JUMP TO WATERING TOOLS */
+
+.watering-shop-jump {
+    display: flex;
+    width: fit-content;
+    margin: 20px auto 35px;
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 22px;
+    background: var(--cocoa);
+    color: var(--cream);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.watering-shop-jump:hover {
+    background: var(--terracotta);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+#watering-tools {
+    scroll-margin-top: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
