@@ -1333,7 +1333,7 @@ body {
     font-size: 0.82rem;
 }
 
-.problems-list a > strong {
+.problems-list .problem-item > strong {
     color: var(--terracotta);
     font-size: 1.2rem;
     font-weight: 400;
