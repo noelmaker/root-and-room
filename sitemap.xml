@@ -1,9 +1,18 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <!-- Main Pages -->
+    <!-- SHARED ENTRANCE -->
+
     <url>
         <loc>https://rootandroomplants.com/</loc>
+    </url>
+
+
+    <!-- ROOT & ROOM: MAIN PAGES -->
+
+    <url>
+        <loc>https://rootandroomplants.com/plants.html</loc>
     </url>
 
     <url>
@@ -26,12 +35,14 @@
         <loc>https://rootandroomplants.com/resources.html</loc>
     </url>
 
-<url>
-    <loc>https://rootandroomplants.com/pots-and-planters.html</loc>
-</url>
-<url>
-    <loc>https://rootandroomplants.com/repotting-guide.html</loc>
-</url>
+    <url>
+        <loc>https://rootandroomplants.com/pots-and-planters.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/repotting-guide.html</loc>
+    </url>
+
     <url>
         <loc>https://rootandroomplants.com/about.html</loc>
     </url>
@@ -40,8 +51,17 @@
         <loc>https://rootandroomplants.com/contact.html</loc>
     </url>
 
+    <url>
+        <loc>https://rootandroomplants.com/articles.html</loc>
+    </url>
 
-    <!-- Plant Profiles -->
+
+    <!-- ROOT & ROOM: PLANT LIBRARY -->
+
+    <url>
+        <loc>https://rootandroomplants.com/alocasia.html</loc>
+    </url>
+
     <url>
         <loc>https://rootandroomplants.com/birds-nest-fern.html</loc>
     </url>
@@ -61,14 +81,13 @@
     <url>
         <loc>https://rootandroomplants.com/monstera.html</loc>
     </url>
-<url>
-    <loc>https://rootandroomplants.com/monstera-leaves-not-splitting.html</loc>
-</url>
-<url>
-    <loc>https://rootandroomplants.com/fungus-gnats-houseplants.html</loc>
-</url>
+
     <url>
         <loc>https://rootandroomplants.com/parlor-palm.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/peace-lily.html</loc>
     </url>
 
     <url>
@@ -80,26 +99,11 @@
     </url>
 
     <url>
-    <loc>https://rootandroomplants.com/pothos-leaves-turning-yellow.html</loc>
-    </url>
-    <url>
-    <loc>https://rootandroomplants.com/peace-lily-drooping.html</loc>
-</url>
-    <url>
-    <loc>https://rootandroomplants.com/pothos-leaves-curling.html</loc>
-</url>
-
-    <url>
         <loc>https://rootandroomplants.com/snake-plant.html</loc>
     </url>
-    <url>
-    <loc>https://rootandroomplants.com/snake-plant-drooping.html</loc>
-    </url>
+
     <url>
         <loc>https://rootandroomplants.com/spider-plant.html</loc>
-    </url>
-    <url>
-    <loc>https://rootandroomplants.com/spider-plant-brown-tips.html</loc>
     </url>
 
     <url>
@@ -111,7 +115,81 @@
     </url>
 
 
-    <!-- Legal Pages -->
+    <!-- ROOT & ROOM: ARTICLES -->
+
+    <url>
+        <loc>https://rootandroomplants.com/alocasia-leaves-turning-yellow.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/monstera-leaves-not-splitting.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/fungus-gnats-houseplants.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/pothos-leaves-turning-yellow.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/pothos-leaves-curling.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/peace-lily-drooping.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/snake-plant-drooping.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/spider-plant-brown-tips.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/how-often-water-houseplants.html</loc>
+    </url>
+<url>
+    <loc>https://rootandroomplants.com/birds-nest-fern-leaves-turning-brown.html</loc>
+</url>
+
+<url>
+    <loc>https://rootandroomplants.com/boston-fern-turning-brown.html</loc>
+</url>
+
+<url>
+    <loc>https://rootandroomplants.com/calathea-leaves-curling.html</loc>
+</url>
+
+<url>
+    <loc>https://rootandroomplants.com/chinese-money-plant-leaves-curling.html</loc>
+</url>
+
+<url>
+    <loc>https://rootandroomplants.com/monstera-leaves-turning-yellow.html</loc>
+</url>
+
+<url>
+    <loc>https://rootandroomplants.com/parlor-palm-turning-brown.html</loc>
+</url>
+
+<url>
+    <loc>https://rootandroomplants.com/peperomia-leaves-drooping.html</loc>
+</url>
+
+<url>
+    <loc>https://rootandroomplants.com/string-of-hearts-wrinkled-leaves.html</loc>
+</url>
+
+<url>
+    <loc>https://rootandroomplants.com/zz-plant-yellow-leaves.html</loc>
+</url>
+
+    <!-- ROOT & ROOM: LEGAL -->
+
     <url>
         <loc>https://rootandroomplants.com/privacy-policy.html</loc>
     </url>
@@ -123,17 +201,93 @@
     <url>
         <loc>https://rootandroomplants.com/terms.html</loc>
     </url>
-    <!-- Articles -->
+
+
+    <!-- ROOT & ROT: MAIN PAGES -->
+
     <url>
-        <loc>https://rootandroomplants.com/articles.html</loc>
+        <loc>https://rootandroomplants.com/bioactive.html</loc>
     </url>
 
     <url>
-        <loc>https://rootandroomplants.com/how-often-water-houseplants.html</loc>
+        <loc>https://rootandroomplants.com/bioactive-isopods.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/terrariums.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/vivariums.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/bioactive-about.html</loc>
+    </url>
+
+
+    <!-- ROOT & ROT: ISOPOD LIBRARY -->
+
+    <url>
+        <loc>https://rootandroomplants.com/isopods.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/isopods-armadillidium.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/isopods-cubaris.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/isopods-porcellio.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/isopods-porcellionides.html</loc>
+    </url>
+
+
+    <!-- ROOT & ROT: SPECIES PROFILES -->
+
+    <url>
+        <loc>https://rootandroomplants.com/cubaris-murina.html</loc>
     </url>
 
 <url>
-    <loc>https://rootandroomplants.com/peace-lily.html</loc>
+    <loc>https://rootandroomplants.com/dairy-cow-isopod-care.html</loc>
 </url>
+    <!-- ROOT & ROT: CARE GUIDES -->
+
+    <url>
+        <loc>https://rootandroomplants.com/springtails.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/isopod-enclosure-setup.html</loc>
+    </url>
+
+
+    <!-- ROOT & ROT: HABITAT SHOP -->
+
+    <url>
+        <loc>https://rootandroomplants.com/isopod-shop-enclosures.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/isopod-shop-substrate.html</loc>
+    </url>
+
+    <url>
+        <loc>https://rootandroomplants.com/isopod-shop-essentials.html</loc>
+    </url>
+
+
+    <!-- ROOT & ROT: LEGAL -->
+
+    <url>
+        <loc>https://rootandroomplants.com/bioactive-legal.html</loc>
+    </url>
 
 </urlset>

@@ -1,0 +1,7427 @@
+
+/* ========================================
+   ROOT & ROOM — BIOACTIVE LIVING
+   Dark Woodland Theme
+======================================== */
+
+.bioactive-page {
+    background: #17251f;
+    color: #e8dfcc;
+}
+
+/* Bioactive color palette */
+
+.bioactive-page {
+    --bio-forest: #17251f;
+    --bio-moss: #304b3b;
+    --bio-sage: #788568;
+    --bio-earth: #b69b77;
+    --bio-cream: #e8dfcc;
+}
+
+/* ========================================
+   BIOACTIVE HEADER
+======================================== */
+
+.bioactive-page .bio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 28px 6vw;
+    background: var(--bio-forest);
+    border-bottom: 1px solid rgba(232, 223, 204, 0.12);
+}
+
+.bioactive-page .bio-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-decoration: none;
+    color: var(--bio-cream);
+}
+
+.bioactive-page .bio-logo span {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.8rem;
+}
+
+.bioactive-page .bio-logo small {
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--bio-sage);
+}
+
+.bioactive-page .bio-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.bioactive-page .bio-nav a {
+    color: var(--bio-cream);
+    text-decoration: none;
+    font-size: 0.82rem;
+    transition: color 0.2s ease;
+}
+
+.bioactive-page .bio-nav a:hover,
+.bioactive-page .bio-nav a.active {
+    color: var(--bio-earth);
+}
+
+
+/* ========================================
+   BIOACTIVE HERO
+======================================== */
+
+.bioactive-page .bio-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 78vh;
+    padding: 100px 8vw 130px;
+    background:
+        radial-gradient(
+            circle at 85% 25%,
+            rgba(120, 133, 104, 0.18),
+            transparent 45%
+        ),
+        linear-gradient(
+            145deg,
+            #17251f 0%,
+            #23392c 55%,
+            #101b16 100%
+        );
+    overflow: hidden;
+}
+
+.bioactive-page .bio-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+}
+
+.bioactive-page .bio-eyebrow {
+    margin-bottom: 28px;
+    color: var(--bio-earth);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+}
+
+.bioactive-page .bio-hero h1 {
+    margin: 0 0 32px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3.5rem, 7vw, 7.5rem);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+}
+
+.bioactive-page .bio-hero h1 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-hero-description {
+    max-width: 560px;
+    margin-bottom: 40px;
+    color: #c8d0c4;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+.bioactive-page .bio-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+    padding: 18px 28px;
+    background: var(--bio-earth);
+    color: var(--bio-forest);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.bioactive-page .bio-button:hover {
+    background: var(--bio-cream);
+}
+
+.bioactive-page .bio-hero-decoration {
+    position: absolute;
+    right: 8vw;
+    bottom: 45px;
+    left: 8vw;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #a5b59a;
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+}
+
+.bioactive-page .bio-decoration-line {
+    flex: 1;
+    height: 1px;
+    background: rgba(232, 223, 204, 0.25);
+}
+
+
+/* ========================================
+   SMALL SCREENS
+======================================== */
+
+@media (max-width: 768px) {
+
+    .bioactive-page .bio-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 6vw;
+    }
+
+    .bioactive-page .bio-nav {
+        gap: 16px;
+    }
+
+    .bioactive-page .bio-hero {
+        min-height: 70vh;
+        padding: 90px 6vw 120px;
+    }
+
+    .bioactive-page .bio-hero h1 {
+        font-size: clamp(3rem, 12vw, 5rem);
+    }
+
+    .bioactive-page .bio-hero-decoration {
+        right: 6vw;
+        left: 6vw;
+        font-size: 0.5rem;
+    }
+
+}
+
+/* ========================================
+   EXPLORE BIOACTIVE LIVING
+======================================== */
+
+.bioactive-page .bio-explore {
+    padding: 120px 6vw 140px;
+    background: #1c2c23;
+    scroll-margin-top: 30px;
+}
+
+.bioactive-page .bio-section-heading {
+    max-width: 760px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.bioactive-page .bio-section-heading h2 {
+    margin: 0 0 25px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    font-weight: 400;
+    line-height: 1.12;
+}
+
+.bioactive-page .bio-section-heading h2 em {
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-section-heading > p:last-child {
+    max-width: 560px;
+    margin: 0 auto;
+    color: #c8d0c4;
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+
+/* CATEGORY GRID */
+
+.bioactive-page .bio-category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.bioactive-page .bio-category-card {
+    min-width: 0;
+    background: #25392d;
+    border: 1px solid rgba(232, 223, 204, 0.12);
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.bioactive-page .bio-category-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(182, 155, 119, 0.6);
+}
+
+
+.bioactive-page .bio-category-image {
+    height: 310px;
+    overflow: hidden;
+    background: #304b3b;
+}
+
+.bioactive-page .bio-category-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.bioactive-page .bio-category-card:hover img {
+    transform: scale(1.06);
+}
+
+
+
+/* CARD CONTENT */
+
+.bioactive-page .bio-category-content {
+    padding: 34px 30px 38px;
+}
+
+.bioactive-page .bio-category-number {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--bio-earth);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+}
+
+.bioactive-page .bio-category-content h3 {
+    margin: 0 0 18px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    font-weight: 400;
+}
+
+.bioactive-page .bio-category-content p {
+    min-height: 110px;
+    margin-bottom: 28px;
+    color: #c8d0c4;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.bioactive-page .bio-category-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--bio-earth);
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+
+/* RESPONSIVE LAYOUT */
+
+@media (max-width: 1050px) {
+    .bioactive-page .bio-category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .bioactive-page .bio-explore {
+        padding: 85px 6vw 100px;
+    }
+
+    .bioactive-page .bio-category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bioactive-page .bio-category-image {
+        height: 280px;
+    }
+
+    .bioactive-page .bio-category-content p {
+        min-height: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bioactive-page .bio-category-card,
+    .bioactive-page .bio-category-image img {
+        transition: none;
+    }
+}
+
+/* ========================================
+   THE LIVING ECOSYSTEM
+======================================== */
+
+.bioactive-page .bio-ecosystem {
+    padding: 130px 8vw 120px;
+    background: #14221b;
+}
+
+.bioactive-page .bio-ecosystem-intro {
+    max-width: 800px;
+    margin-bottom: 90px;
+}
+
+.bioactive-page .bio-ecosystem-intro h2 {
+    margin: 0 0 30px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5.5vw, 6rem);
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+.bioactive-page .bio-ecosystem-intro h2 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-ecosystem-description {
+    max-width: 570px;
+    color: #c8d0c4;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+
+/* ECOSYSTEM ELEMENTS */
+
+.bioactive-page .bio-ecosystem-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 50px;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.bioactive-page .bio-ecosystem-item {
+    min-width: 0;
+}
+
+.bioactive-page .bio-ecosystem-number {
+    display: block;
+    margin-bottom: 24px;
+    color: var(--bio-earth);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.5rem;
+}
+
+.bioactive-page .bio-ecosystem-line {
+    height: 1px;
+    margin-bottom: 35px;
+    background: rgba(232, 223, 204, 0.3);
+}
+
+.bioactive-page .bio-ecosystem-item h3 {
+    margin: 0 0 20px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.8rem, 2.5vw, 2.6rem);
+    font-weight: 400;
+}
+
+.bioactive-page .bio-ecosystem-item p {
+    max-width: 350px;
+    color: #c8d0c4;
+    font-size: 0.92rem;
+    line-height: 1.9;
+}
+
+
+/* CLOSING STATEMENT */
+
+.bioactive-page .bio-ecosystem-footer {
+    margin: 110px 0 0;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.6rem, 3vw, 3rem);
+    font-weight: 400;
+    text-align: center;
+}
+
+.bioactive-page .bio-ecosystem-footer em {
+    color: #a5b59a;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .bioactive-page .bio-ecosystem {
+        padding: 90px 6vw;
+    }
+
+    .bioactive-page .bio-ecosystem-intro {
+        margin-bottom: 60px;
+    }
+
+    .bioactive-page .bio-ecosystem-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .bioactive-page .bio-ecosystem-footer {
+        margin-top: 75px;
+    }
+}
+
+/* ========================================
+   START YOUR BIOACTIVE JOURNEY
+======================================== */
+
+.bioactive-page .bio-journey {
+    padding: 130px 8vw 120px;
+    background: #203329;
+}
+
+.bioactive-page .bio-journey-heading {
+    max-width: 850px;
+    margin-bottom: 90px;
+}
+
+.bioactive-page .bio-journey-heading h2 {
+    margin: 0 0 30px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5.5vw, 6rem);
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+.bioactive-page .bio-journey-heading h2 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-journey-heading > p:last-child {
+    max-width: 580px;
+    color: #c8d0c4;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+
+/* EDITORIAL ROWS */
+
+.bioactive-page .bio-journey-list {
+    max-width: 1450px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(232, 223, 204, 0.25);
+}
+
+.bioactive-page .bio-journey-row {
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr) 70px;
+    align-items: center;
+    gap: 35px;
+    padding: 52px 10px;
+    border-bottom: 1px solid rgba(232, 223, 204, 0.25);
+    transition: background 0.3s ease;
+}
+
+.bioactive-page .bio-journey-row:hover {
+    background: rgba(232, 223, 204, 0.035);
+}
+
+.bioactive-page .bio-journey-number {
+    align-self: start;
+    color: var(--bio-earth);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 2rem;
+}
+
+.bioactive-page .bio-journey-level {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--bio-earth);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+}
+
+.bioactive-page .bio-journey-details h3 {
+    margin: 0 0 18px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2rem, 3.5vw, 3.6rem);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.bioactive-page .bio-journey-details p {
+    max-width: 680px;
+    margin: 0;
+    color: #c8d0c4;
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+.bioactive-page .bio-journey-arrow {
+    justify-self: end;
+    color: var(--bio-earth);
+    font-size: 2rem;
+}
+
+
+/* CLOSING NOTE */
+
+.bioactive-page .bio-journey-note {
+    margin: 85px 0 0;
+    color: #a5b59a;
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.4rem, 2.5vw, 2.4rem);
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .bioactive-page .bio-journey {
+        padding: 90px 6vw;
+    }
+
+    .bioactive-page .bio-journey-heading {
+        margin-bottom: 60px;
+    }
+
+    .bioactive-page .bio-journey-row {
+        grid-template-columns: 45px minmax(0, 1fr);
+        gap: 18px;
+        padding: 38px 0;
+    }
+
+    .bioactive-page .bio-journey-number {
+        font-size: 1.5rem;
+    }
+
+    .bioactive-page .bio-journey-arrow {
+        display: none;
+    }
+
+    .bioactive-page .bio-journey-note {
+        margin-top: 60px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bioactive-page .bio-journey-row {
+        transition: none;
+    }
+}
+
+/* ========================================
+   BIOACTIVE CLOSING SECTION
+======================================== */
+
+.bioactive-page .bio-closing {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 650px;
+    padding: 130px 8vw 150px;
+    overflow: hidden;
+
+    
+background:
+    radial-gradient(
+        circle at 85% 30%,
+        rgba(182, 155, 119, 0.16),
+        transparent 50%
+    ),
+    linear-gradient(
+        135deg,
+        #405542 0%,
+        #354638 55%,
+        #293b30 100%
+    );
+
+}
+
+.bioactive-page .bio-closing-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+}
+
+.bioactive-page .bio-closing h2 {
+    margin: 0 0 30px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3.5rem, 7vw, 7.5rem);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.bioactive-page .bio-closing h2 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-closing-content > p:not(.bio-eyebrow) {
+    max-width: 560px;
+    margin-bottom: 40px;
+    color: #c8d0c4;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+.bioactive-page .bio-closing-decoration {
+    position: absolute;
+    right: 8vw;
+    bottom: 45px;
+    left: 8vw;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    color: #a5b59a;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+}
+
+
+/* ========================================
+   BIOACTIVE FOOTER
+======================================== */
+
+.bioactive-page .bio-footer {
+    padding: 85px 8vw 30px;
+    background: #101b16;
+    border-top: 1px solid rgba(232, 223, 204, 0.12);
+}
+
+.bioactive-page .bio-footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding-bottom: 80px;
+}
+
+.bioactive-page .bio-footer-brand {
+    max-width: 350px;
+}
+
+.bioactive-page .bio-footer-brand > a {
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.bioactive-page .bio-footer-brand p {
+    margin-top: 20px;
+    color: #a5b59a;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.bioactive-page .bio-footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.bioactive-page .bio-footer-links > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.bioactive-page .bio-footer-links h3 {
+    margin: 0 0 12px;
+    color: var(--bio-earth);
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+}
+
+.bioactive-page .bio-footer-links a {
+    color: #c8d0c4;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.bioactive-page .bio-footer-links a:hover {
+    color: var(--bio-earth);
+}
+
+.bioactive-page .bio-footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 30px;
+
+    border-top: 1px solid rgba(232, 223, 204, 0.15);
+
+    color: #a5b59a;
+    font-size: 0.75rem;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .bioactive-page .bio-closing {
+        min-height: 550px;
+        padding: 100px 6vw 130px;
+    }
+
+    .bioactive-page .bio-footer {
+        padding: 70px 6vw 30px;
+    }
+
+    .bioactive-page .bio-footer-top {
+        flex-direction: column;
+        gap: 55px;
+    }
+
+    .bioactive-page .bio-footer-links {
+        gap: 60px;
+    }
+
+    .bioactive-page .bio-footer-bottom {
+        flex-direction: column;
+    }
+
+    .bioactive-page .bio-closing-decoration {
+        right: 6vw;
+        left: 6vw;
+    }
+}
+
+/* ========================================
+   ISOPODS & SPRINGTAILS — HERO
+======================================== */
+
+.bioactive-page .bio-isopods-hero {
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 120px 8vw;
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(120, 133, 104, 0.2),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            #17251f 0%,
+            #25392d 60%,
+            #101b16 100%
+        );
+}
+
+.bioactive-page .bio-isopods-hero-content {
+    max-width: 950px;
+}
+
+.bioactive-page .bio-isopods-hero h1 {
+    margin: 0 0 35px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3.5rem, 7vw, 7rem);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.bioactive-page .bio-isopods-hero h1 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-isopods-hero-content > p:last-child {
+    max-width: 600px;
+    color: #c8d0c4;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+@media (max-width: 768px) {
+    .bioactive-page .bio-isopods-hero {
+        min-height: 60vh;
+        padding: 90px 6vw;
+    }
+}
+
+/* ========================================
+   MEET THE CLEANUP CREW
+======================================== */
+
+.bioactive-page .bio-cleanup-intro {
+    padding: 120px 6vw 140px;
+    background: #1c2c23;
+}
+
+.bioactive-page .bio-cleanup-heading {
+    max-width: 800px;
+    margin: 0 auto 75px;
+    text-align: center;
+}
+
+.bioactive-page .bio-cleanup-heading h2 {
+    margin: 0 0 28px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5.5vw, 5.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.bioactive-page .bio-cleanup-heading h2 em {
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-cleanup-heading > p:last-child {
+    max-width: 580px;
+    margin: 0 auto;
+    color: #c8d0c4;
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+
+/* TWO-COLUMN LAYOUT */
+
+.bioactive-page .bio-cleanup-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.bioactive-page .bio-cleanup-card {
+    min-width: 0;
+    background: #25392d;
+    border: 1px solid rgba(232, 223, 204, 0.12);
+    overflow: hidden;
+}
+
+/* Clickable Cleanup Crew Cards */
+.bioactive-page a.bio-cleanup-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bioactive-page a.bio-cleanup-card:hover,
+.bioactive-page a.bio-cleanup-card:focus-visible {
+    text-decoration: none;
+}
+
+.bioactive-page a.bio-cleanup-card h3,
+.bioactive-page a.bio-cleanup-card p,
+.bioactive-page a.bio-cleanup-card span {
+    text-decoration: none;
+}
+
+.bioactive-page .bio-cleanup-image {
+    height: 390px;
+    overflow: hidden;
+    background: #304b3b;
+}
+
+.bioactive-page .bio-cleanup-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bioactive-page .bio-cleanup-content {
+    padding: 45px 40px 50px;
+}
+
+.bioactive-page .bio-cleanup-content h3 {
+    margin: 0 0 25px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-weight: 400;
+}
+
+.bioactive-page .bio-cleanup-content p {
+    margin: 0 0 18px;
+    color: #c8d0c4;
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+.bioactive-page .bio-cleanup-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .bioactive-page .bio-cleanup-intro {
+        padding: 90px 6vw 100px;
+    }
+
+    .bioactive-page .bio-cleanup-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .bioactive-page .bio-cleanup-image {
+        height: 300px;
+    }
+
+    .bioactive-page .bio-cleanup-content {
+        padding: 35px 28px 40px;
+    }
+}
+
+/* ========================================
+   ISOPOD SPECIES LIBRARY
+======================================== */
+
+.bioactive-page .bio-species {
+    padding: 130px 6vw 150px;
+    background: #14221b;
+}
+
+.bioactive-page .bio-species-heading {
+    max-width: 800px;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+
+.bioactive-page .bio-species-heading h2 {
+    margin: 0 0 28px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5.5vw, 5.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.bioactive-page .bio-species-heading h2 em {
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-species-heading > p:last-child {
+    max-width: 580px;
+    margin: 0 auto;
+    color: #c8d0c4;
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+
+/* SPECIES GRID */
+
+.bioactive-page .bio-species-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.bioactive-page .bio-species-card {
+    min-width: 0;
+    background: #203329;
+    border: 1px solid rgba(232, 223, 204, 0.12);
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.bioactive-page .bio-species-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(182, 155, 119, 0.55);
+}
+
+.bioactive-page .bio-species-image {
+    height: 270px;
+    overflow: hidden;
+    background: #304b3b;
+}
+
+.bioactive-page .bio-species-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.bioactive-page .bio-species-card:hover img {
+    transform: scale(1.05);
+}
+
+
+/* SPECIES DETAILS */
+
+.bioactive-page .bio-species-content {
+    padding: 30px 28px 35px;
+}
+
+.bioactive-page .bio-species-label {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--bio-earth);
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+}
+
+.bioactive-page .bio-species-content h3 {
+    margin: 0 0 6px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.8rem, 2.5vw, 2.6rem);
+    font-weight: 400;
+}
+
+.bioactive-page .bio-species-scientific {
+    margin: 0 0 22px;
+    color: #a5b59a;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.bioactive-page .bio-species-description {
+    min-height: 100px;
+    margin: 0 0 25px;
+    color: #c8d0c4;
+    font-size: 0.88rem;
+    line-height: 1.8;
+}
+
+.bioactive-page .bio-species-link {
+    display: inline-block;
+    color: var(--bio-earth);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+    .bioactive-page .bio-species-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .bioactive-page .bio-species {
+        padding: 90px 6vw 100px;
+    }
+
+    .bioactive-page .bio-species-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bioactive-page .bio-species-image {
+        height: 300px;
+    }
+
+    .bioactive-page .bio-species-description {
+        min-height: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bioactive-page .bio-species-card,
+    .bioactive-page .bio-species-image img {
+        transition: none;
+    }
+}
+
+/* ========================================
+   ISOPOD CARE & HUSBANDRY
+======================================== */
+
+.bioactive-page .bio-care {
+    padding: 130px 8vw 120px;
+    background: #203329;
+}
+
+.bioactive-page .bio-care-heading {
+    max-width: 850px;
+    margin-bottom: 90px;
+}
+
+.bioactive-page .bio-care-heading h2 {
+    margin: 0 0 30px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5.5vw, 6rem);
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+.bioactive-page .bio-care-heading h2 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-care-heading > p:last-child {
+    max-width: 620px;
+    color: #c8d0c4;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+
+/* EDITORIAL CARE ROWS */
+
+.bioactive-page .bio-care-list {
+    max-width: 1450px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(232, 223, 204, 0.25);
+}
+
+.bioactive-page .bio-care-row {
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr) 70px;
+    align-items: center;
+    gap: 35px;
+    padding: 52px 10px;
+    border-bottom: 1px solid rgba(232, 223, 204, 0.25);
+    transition: background 0.3s ease;
+}
+
+.bioactive-page .bio-care-row:hover {
+    background: rgba(232, 223, 204, 0.035);
+}
+
+.bioactive-page .bio-care-number {
+    align-self: start;
+    color: var(--bio-earth);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 2rem;
+}
+
+.bioactive-page .bio-care-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--bio-earth);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+}
+
+.bioactive-page .bio-care-details h3 {
+    margin: 0 0 18px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2rem, 3.5vw, 3.6rem);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.bioactive-page .bio-care-details p {
+    max-width: 680px;
+    margin: 0;
+    color: #c8d0c4;
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+.bioactive-page .bio-care-arrow {
+    justify-self: end;
+    color: var(--bio-earth);
+    font-size: 2rem;
+}
+
+
+/* CLOSING NOTE */
+
+.bioactive-page .bio-care-note {
+    margin: 85px 0 0;
+    color: #a5b59a;
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.4rem, 2.5vw, 2.4rem);
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .bioactive-page .bio-care {
+        padding: 90px 6vw;
+    }
+
+    .bioactive-page .bio-care-heading {
+        margin-bottom: 60px;
+    }
+
+    .bioactive-page .bio-care-row {
+        grid-template-columns: 45px minmax(0, 1fr);
+        gap: 18px;
+        padding: 38px 0;
+    }
+
+    .bioactive-page .bio-care-number {
+        font-size: 1.5rem;
+    }
+
+    .bioactive-page .bio-care-arrow {
+        display: none;
+    }
+
+    .bioactive-page .bio-care-note {
+        margin-top: 60px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bioactive-page .bio-care-row {
+        transition: none;
+    }
+}
+
+/* ========================================
+   TROUBLESHOOTING & COLONY HEALTH
+======================================== */
+
+.bioactive-page .bio-troubleshooting {
+    padding: 130px 7vw 120px;
+    background: #17251f;
+}
+
+.bioactive-page .bio-troubleshooting-heading {
+    max-width: 900px;
+    margin: 0 auto 75px;
+    text-align: center;
+}
+
+.bioactive-page .bio-troubleshooting-heading h2 {
+    margin: 0 0 30px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5.5vw, 5.8rem);
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+.bioactive-page .bio-troubleshooting-heading h2 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-troubleshooting-heading > p:last-child {
+    max-width: 630px;
+    margin: 0 auto;
+    color: #c8d0c4;
+    font-size: 0.98rem;
+    line-height: 1.9;
+}
+
+
+/* TROUBLESHOOTING GRID */
+
+.bioactive-page .bio-troubleshooting-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.bioactive-page .bio-trouble-card {
+    position: relative;
+    min-width: 0;
+    padding: 50px 45px 45px;
+    background: #203329;
+    border: 1px solid rgba(232, 223, 204, 0.14);
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.bioactive-page .bio-trouble-card:hover {
+    transform: translateY(-5px);
+    background: #263b2e;
+    border-color: rgba(182, 155, 119, 0.45);
+}
+
+.bioactive-page .bio-trouble-number {
+    display: block;
+    margin-bottom: 50px;
+    color: var(--bio-earth);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+}
+
+.bioactive-page .bio-trouble-symbol {
+    margin-bottom: 20px;
+    color: #a5b59a;
+    font-size: 2.4rem;
+    line-height: 1;
+}
+
+.bioactive-page .bio-trouble-card h3 {
+    margin: 0 0 20px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.9rem, 2.7vw, 2.9rem);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.bioactive-page .bio-trouble-card > p {
+    max-width: 480px;
+    min-height: 115px;
+    margin: 0 0 35px;
+    color: #c8d0c4;
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+
+.bioactive-page .bio-trouble-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--bio-earth);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.bioactive-page .bio-trouble-link span {
+    font-size: 1.1rem;
+}
+
+
+/* CLOSING NOTE */
+
+.bioactive-page .bio-troubleshooting-footer {
+    max-width: 800px;
+    margin: 85px auto 0;
+    text-align: center;
+}
+
+.bioactive-page .bio-troubleshooting-footer p {
+    color: #a5b59a;
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.4rem, 2.5vw, 2.3rem);
+    font-style: italic;
+    line-height: 1.5;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .bioactive-page .bio-troubleshooting {
+        padding: 90px 6vw;
+    }
+
+    .bioactive-page .bio-troubleshooting-heading {
+        margin-bottom: 55px;
+    }
+
+    .bioactive-page .bio-troubleshooting-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bioactive-page .bio-trouble-card {
+        padding: 38px 30px;
+    }
+
+    .bioactive-page .bio-trouble-number {
+        margin-bottom: 35px;
+    }
+
+    .bioactive-page .bio-trouble-card > p {
+        min-height: 0;
+    }
+
+    .bioactive-page .bio-troubleshooting-footer {
+        margin-top: 60px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bioactive-page .bio-trouble-card {
+        transition: none;
+    }
+}
+
+
+
+/* ========================================
+   ISOPODS & SPRINGTAILS CLOSING
+======================================== */
+
+.bioactive-page .bio-isopods-closing {
+    position: relative;
+    padding: 150px 6vw 160px;
+    background: linear-gradient(
+        145deg,
+        #405542 0%,
+        #354638 45%,
+        #293b30 100%
+    );
+    text-align: center;
+}
+
+.bioactive-page .bio-isopods-closing-content {
+    position: relative;
+    z-index: 1;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.bioactive-page .bio-isopods-closing h2 {
+    margin: 25px 0 30px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3.2rem, 6vw, 6.5rem);
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+.bioactive-page .bio-isopods-closing h2 em {
+    display: block;
+    color: #c5d0b4;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-isopods-closing-description {
+    max-width: 600px;
+    margin: 0 auto 45px;
+    color: #d7dfd3;
+    font-size: 0.98rem;
+    line-height: 1.9;
+}
+
+.bioactive-page .bio-isopods-closing-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 17px 30px;
+    background: #e8dfcc;
+    color: #17251f;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.bioactive-page .bio-isopods-closing-button:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+}
+
+.bioactive-page .bio-isopods-closing-button span {
+    font-size: 1.1rem;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    .bioactive-page .bio-isopods-closing {
+        padding: 100px 6vw 110px;
+    }
+
+    .bioactive-page .bio-isopods-closing h2 {
+        font-size: clamp(2.8rem, 10vw, 4rem);
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bioactive-page .bio-isopods-closing-button {
+        transition: none;
+    }
+}
+
+/* ========================================
+   SPECIES CARE GUIDE — HERO
+======================================== */
+
+.bioactive-page .bio-guide-hero {
+    padding: 110px 7vw 125px;
+    background: #17251f;
+}
+
+.bioactive-page .bio-guide-hero-inner {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 0.9fr);
+    gap: clamp(50px, 7vw, 130px);
+    align-items: center;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.bioactive-page .bio-guide-hero-content {
+    min-width: 0;
+}
+
+.bioactive-page .bio-guide-breadcrumb {
+    margin: 22px 0 30px;
+    color: #a5b59a;
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+}
+
+.bioactive-page .bio-guide-hero h1 {
+    margin: 0 0 22px;
+    color: #e8dfcc;
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3.5rem, 6vw, 7rem);
+    font-weight: 400;
+    line-height: 1.02;
+}
+
+.bioactive-page .bio-guide-hero h1 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-guide-scientific {
+    margin: 0 0 32px;
+    color: #b69b77;
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 0.02em;
+}
+
+.bioactive-page .bio-guide-intro {
+    max-width: 540px;
+    margin: 0 0 45px;
+    color: #c8d0c4;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.bioactive-page .bio-guide-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: #b69b77;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: gap 0.3s ease;
+}
+
+.bioactive-page .bio-guide-back:hover {
+    gap: 18px;
+}
+
+
+/* HERO IMAGE */
+
+
+.bioactive-page .bio-guide-hero-image {
+    position: relative;
+    background: linear-gradient(
+        145deg,
+        #304b3b,
+        #203329
+    );
+}
+
+.bioactive-page .bio-guide-hero-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 6 / 7;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid rgba(232, 223, 204, 0.12);
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .bioactive-page .bio-guide-hero {
+        padding: 80px 6vw 90px;
+    }
+
+    .bioactive-page .bio-guide-hero-inner {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .bioactive-page .bio-guide-hero-image {
+        max-width: 650px;
+        width: 100%;
+        aspect-ratio: 5 / 4;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .bioactive-page .bio-guide-hero h1 {
+        font-size: clamp(3rem, 12vw, 4.5rem);
+    }
+
+    .bioactive-page .bio-guide-breadcrumb {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bioactive-page .bio-guide-back {
+        transition: none;
+    }
+}
+
+/* ========================================
+   SPECIES GUIDE — QUICK CARE
+======================================== */
+
+.bioactive-page .bio-guide-quickcare {
+    padding: 125px 7vw 115px;
+    background: #203329;
+}
+
+.bioactive-page .bio-guide-quickcare-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.bioactive-page .bio-guide-quickcare-heading {
+    max-width: 800px;
+    margin-bottom: 75px;
+}
+
+.bioactive-page .bio-guide-quickcare-heading h2 {
+    margin: 0 0 28px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5vw, 5.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.bioactive-page .bio-guide-quickcare-heading h2 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-guide-quickcare-heading > p:last-child {
+    max-width: 620px;
+    color: #c8d0c4;
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+
+/* CARE FACTS GRID */
+
+.bioactive-page .bio-guide-facts {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    background: rgba(232, 223, 204, 0.2);
+    border: 1px solid rgba(232, 223, 204, 0.2);
+}
+
+.bioactive-page .bio-guide-fact {
+    min-width: 0;
+    padding: 42px 35px 45px;
+    background: #203329;
+}
+
+.bioactive-page .bio-guide-fact-label {
+    display: block;
+    margin-bottom: 28px;
+    color: var(--bio-earth);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.bioactive-page .bio-guide-fact strong {
+    display: block;
+    margin-bottom: 16px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.6rem, 2.2vw, 2.4rem);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.bioactive-page .bio-guide-fact p {
+    max-width: 330px;
+    margin: 0;
+    color: #c8d0c4;
+    font-size: 0.88rem;
+    line-height: 1.85;
+}
+
+
+/* CARE NOTE */
+
+.bioactive-page .bio-guide-quickcare-note {
+    margin: 45px 0 0;
+    color: #a5b59a;
+    font-size: 0.82rem;
+    font-style: italic;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+    .bioactive-page .bio-guide-facts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .bioactive-page .bio-guide-quickcare {
+        padding: 85px 6vw;
+    }
+
+    .bioactive-page .bio-guide-quickcare-heading {
+        margin-bottom: 50px;
+    }
+
+    .bioactive-page .bio-guide-facts {
+        grid-template-columns: 1fr;
+    }
+
+    .bioactive-page .bio-guide-fact {
+        padding: 35px 30px;
+    }
+
+}
+
+/* ========================================
+   DAIRY COW GUIDE — ENCLOSURE SETUP
+======================================== */
+
+.bioactive-page .bio-guide-enclosure {
+    padding: 140px 7vw;
+    background: #17251f;
+}
+
+.bioactive-page .bio-guide-enclosure-inner {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.15fr)
+        minmax(0, 0.85fr);
+    gap: clamp(60px, 8vw, 150px);
+    align-items: start;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+
+/* LEFT CONTENT */
+
+.bioactive-page .bio-guide-enclosure-content h2 {
+    margin: 0 0 30px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5.5vw, 6rem);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.bioactive-page .bio-guide-enclosure-content h2 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-guide-enclosure-lead {
+    max-width: 620px;
+    margin: 0 0 65px;
+    color: #e8dfcc;
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.25rem, 1.8vw, 1.7rem);
+    line-height: 1.6;
+}
+
+
+/* ENCLOSURE TOPICS */
+
+.bioactive-page .bio-guide-enclosure-topic {
+    padding: 40px 0;
+    border-top: 1px solid rgba(232, 223, 204, 0.2);
+}
+
+.bioactive-page .bio-guide-enclosure-topic > span {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--bio-earth);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.bioactive-page .bio-guide-enclosure-topic h3 {
+    margin: 0 0 22px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.8rem, 2.5vw, 2.7rem);
+    font-weight: 400;
+}
+
+.bioactive-page .bio-guide-enclosure-topic p {
+    max-width: 680px;
+    margin: 0 0 18px;
+    color: #c8d0c4;
+    font-size: 0.95rem;
+    line-height: 1.95;
+}
+
+.bioactive-page .bio-guide-enclosure-topic p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* RIGHT HABITAT CHECKLIST */
+
+.bioactive-page .bio-guide-habitat-card {
+    padding: 50px 42px;
+    background: #263b2e;
+    border: 1px solid rgba(232, 223, 204, 0.15);
+}
+
+.bioactive-page .bio-guide-habitat-label {
+    margin: 0 0 28px;
+    color: var(--bio-earth);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+}
+
+.bioactive-page .bio-guide-habitat-card h3 {
+    margin: 0 0 45px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2rem, 3vw, 3.3rem);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.bioactive-page .bio-guide-habitat-card h3 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-guide-habitat-card ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bioactive-page .bio-guide-habitat-card li {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 19px 0;
+    border-bottom: 1px solid rgba(232, 223, 204, 0.14);
+    color: #e0e4d9;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.bioactive-page .bio-guide-habitat-card li span {
+    flex-shrink: 0;
+    color: var(--bio-earth);
+    font-size: 0.75rem;
+}
+
+
+/* FIELD NOTE */
+
+.bioactive-page .bio-guide-habitat-note {
+    margin-top: 55px;
+    padding: 28px;
+    background: rgba(23, 37, 31, 0.55);
+    border-left: 2px solid var(--bio-earth);
+}
+
+.bioactive-page .bio-guide-habitat-note span {
+    display: block;
+    margin-bottom: 15px;
+    color: var(--bio-earth);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.bioactive-page .bio-guide-habitat-note p {
+    margin: 0;
+    color: #c8d0c4;
+    font-size: 0.88rem;
+    line-height: 1.85;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+    .bioactive-page .bio-guide-enclosure-inner {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .bioactive-page .bio-guide-habitat-card {
+        max-width: 650px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .bioactive-page .bio-guide-enclosure {
+        padding: 90px 6vw;
+    }
+
+    .bioactive-page .bio-guide-habitat-card {
+        padding: 35px 25px;
+    }
+
+}
+
+/* ========================================
+   DAIRY COW GUIDE — MOISTURE & CLIMATE
+======================================== */
+
+.bioactive-page .bio-guide-climate {
+    padding: 135px 7vw;
+    background: #304b3b;
+}
+
+.bioactive-page .bio-guide-climate-inner {
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+
+/* SECTION HEADING */
+
+.bioactive-page .bio-guide-climate-heading {
+    max-width: 850px;
+    margin-bottom: 90px;
+}
+
+.bioactive-page .bio-guide-climate-heading h2 {
+    margin: 0 0 30px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5.5vw, 6rem);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.bioactive-page .bio-guide-climate-heading h2 em {
+    display: block;
+    color: #c5d0b4;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-guide-climate-lead {
+    max-width: 660px;
+    color: #e0e4d9;
+    font-size: 1rem;
+    line-height: 1.95;
+}
+
+
+/* EDUCATIONAL INTRO */
+
+.bioactive-page .bio-guide-climate-intro {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 80px;
+    padding: 55px 0;
+    border-top: 1px solid rgba(232, 223, 204, 0.25);
+}
+
+.bioactive-page .bio-guide-climate-label {
+    display: block;
+    margin-bottom: 25px;
+    color: #d8b991;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.bioactive-page .bio-guide-climate-intro h3 {
+    max-width: 480px;
+    margin: 0;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2rem, 3.5vw, 3.8rem);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.bioactive-page .bio-guide-climate-intro p {
+    margin: 0 0 22px;
+    color: #d1d8ca;
+    font-size: 0.95rem;
+    line-height: 1.95;
+}
+
+
+/* CLIMATE CARDS */
+
+.bioactive-page .bio-guide-climate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 45px;
+}
+
+.bioactive-page .bio-guide-climate-card {
+    min-width: 0;
+    padding: 45px 35px;
+    background: #263b2e;
+    border: 1px solid rgba(232, 223, 204, 0.15);
+}
+
+.bioactive-page .bio-guide-climate-card > span {
+    display: block;
+    margin-bottom: 45px;
+    color: #d8b991;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+}
+
+.bioactive-page .bio-guide-climate-card h3 {
+    margin: 0 0 25px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.8rem, 2.5vw, 2.7rem);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.bioactive-page .bio-guide-climate-card p {
+    margin: 0 0 20px;
+    color: #d1d8ca;
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+
+.bioactive-page .bio-guide-climate-card p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* WARNING SIGNS */
+
+.bioactive-page .bio-guide-climate-warning {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 80px;
+    margin-top: 110px;
+    padding-top: 65px;
+    border-top: 1px solid rgba(232, 223, 204, 0.25);
+}
+
+.bioactive-page .bio-guide-climate-warning h3 {
+    max-width: 400px;
+    margin: 0;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2.3rem, 4vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.bioactive-page .bio-guide-climate-signs {
+    display: grid;
+    gap: 35px;
+}
+
+.bioactive-page .bio-guide-climate-signs h4 {
+    margin: 0 0 12px;
+    color: #e8dfcc;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.bioactive-page .bio-guide-climate-signs p {
+    margin: 0;
+    color: #d1d8ca;
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+
+.bioactive-page .bio-guide-climate-note {
+    margin: 85px 0 0;
+    color: #d8b991;
+    font-size: 0.85rem;
+    font-style: italic;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+    .bioactive-page .bio-guide-climate-intro,
+    .bioactive-page .bio-guide-climate-warning {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .bioactive-page .bio-guide-climate-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .bioactive-page .bio-guide-climate {
+        padding: 90px 6vw;
+    }
+
+    .bioactive-page .bio-guide-climate-heading {
+        margin-bottom: 55px;
+    }
+
+    .bioactive-page .bio-guide-climate-card {
+        padding: 35px 28px;
+    }
+
+    .bioactive-page .bio-guide-climate-warning {
+        margin-top: 75px;
+    }
+
+    .bioactive-page .bio-guide-climate-note {
+        margin-top: 60px;
+    }
+
+}
+
+/* ========================================
+   DAIRY COW GUIDE — FEEDING & NUTRITION
+======================================== */
+
+.bioactive-page .bio-guide-feeding {
+    padding: 135px 7vw;
+    background: #17251f;
+}
+
+.bioactive-page .bio-guide-feeding-inner {
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+/* HEADING */
+
+.bioactive-page .bio-guide-feeding-heading {
+    max-width: 850px;
+    margin-bottom: 85px;
+}
+
+.bioactive-page .bio-guide-feeding-heading h2 {
+    margin: 0 0 30px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5.5vw, 6rem);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.bioactive-page .bio-guide-feeding-heading h2 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-guide-feeding-heading > p:last-child {
+    max-width: 650px;
+    color: #c8d0c4;
+    font-size: 1rem;
+    line-height: 1.95;
+}
+
+/* TWO-COLUMN LAYOUT */
+
+.bioactive-page .bio-guide-feeding-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    gap: clamp(50px, 7vw, 120px);
+    align-items: start;
+}
+
+/* FOOD TOPICS */
+
+.bioactive-page .bio-guide-feeding-topic {
+    padding: 38px 0;
+    border-top: 1px solid rgba(232, 223, 204, 0.2);
+}
+
+.bioactive-page .bio-guide-feeding-topic > span {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--bio-earth);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.bioactive-page .bio-guide-feeding-topic h3 {
+    margin: 0 0 22px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.bioactive-page .bio-guide-feeding-topic p {
+    margin: 0 0 18px;
+    color: #c8d0c4;
+    font-size: 0.95rem;
+    line-height: 1.95;
+}
+
+.bioactive-page .bio-guide-feeding-topic p:last-child {
+    margin-bottom: 0;
+}
+
+/* FEEDING ROUTINE PANEL */
+
+.bioactive-page .bio-guide-feeding-card {
+    padding: 48px 40px;
+    background: #263b2e;
+    border: 1px solid rgba(232, 223, 204, 0.15);
+}
+
+.bioactive-page .bio-guide-feeding-card-label {
+    margin: 0 0 25px;
+    color: var(--bio-earth);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.bioactive-page .bio-guide-feeding-card h3 {
+    margin: 0 0 45px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2rem, 3vw, 3.3rem);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.bioactive-page .bio-guide-feeding-card h3 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-guide-feeding-step {
+    padding: 25px 0;
+    border-top: 1px solid rgba(232, 223, 204, 0.18);
+}
+
+.bioactive-page .bio-guide-feeding-step > span {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--bio-earth);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+}
+
+.bioactive-page .bio-guide-feeding-step h4 {
+    margin: 0 0 12px;
+    color: var(--bio-cream);
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.bioactive-page .bio-guide-feeding-step p {
+    margin: 0;
+    color: #c8d0c4;
+    font-size: 0.88rem;
+    line-height: 1.85;
+}
+
+/* FIELD NOTE */
+
+.bioactive-page .bio-guide-feeding-fieldnote {
+    margin-top: 35px;
+    padding: 27px;
+    background: rgba(23, 37, 31, 0.55);
+    border-left: 2px solid var(--bio-earth);
+}
+
+.bioactive-page .bio-guide-feeding-fieldnote span {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--bio-earth);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+}
+
+.bioactive-page .bio-guide-feeding-fieldnote p {
+    margin: 0;
+    color: #c8d0c4;
+    font-size: 0.88rem;
+    line-height: 1.85;
+}
+
+/* FOODS TO AVOID */
+
+.bioactive-page .bio-guide-feeding-caution {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 75px;
+    margin-top: 110px;
+    padding-top: 60px;
+    border-top: 1px solid rgba(232, 223, 204, 0.25);
+}
+
+.bioactive-page .bio-guide-feeding-caution h3 {
+    margin: 0;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2.3rem, 4vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.bioactive-page .bio-guide-feeding-caution p {
+    margin: 0 0 20px;
+    color: #c8d0c4;
+    font-size: 0.95rem;
+    line-height: 1.95;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+    .bioactive-page .bio-guide-feeding-layout,
+    .bioactive-page .bio-guide-feeding-caution {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .bioactive-page .bio-guide-feeding-card {
+        max-width: 680px;
+    }
+}
+
+@media (max-width: 600px) {
+    .bioactive-page .bio-guide-feeding {
+        padding: 90px 6vw;
+    }
+
+    .bioactive-page .bio-guide-feeding-heading {
+        margin-bottom: 55px;
+    }
+
+    .bioactive-page .bio-guide-feeding-card {
+        padding: 35px 25px;
+    }
+
+    .bioactive-page .bio-guide-feeding-caution {
+        margin-top: 75px;
+    }
+}
+
+/* ========================================
+   DAIRY COW GUIDE — BREEDING & GROWTH
+======================================== */
+
+.bioactive-page .bio-guide-breeding {
+    padding: 135px 7vw;
+    background: #203329;
+}
+
+.bioactive-page .bio-guide-breeding-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* HEADING */
+
+.bioactive-page .bio-guide-breeding-heading {
+    max-width: 850px;
+    margin-bottom: 95px;
+}
+
+.bioactive-page .bio-guide-breeding-heading h2 {
+    margin: 0 0 30px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5.5vw, 6rem);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.bioactive-page .bio-guide-breeding-heading h2 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-guide-breeding-heading > p:last-child {
+    max-width: 650px;
+    color: #c8d0c4;
+    font-size: 1rem;
+    line-height: 1.95;
+}
+
+/* COLONY TIMELINE */
+
+.bioactive-page .bio-guide-breeding-timeline {
+    border-top: 1px solid rgba(232, 223, 204, 0.22);
+}
+
+.bioactive-page .bio-guide-breeding-stage {
+    display: grid;
+    grid-template-columns: 130px minmax(0, 1fr);
+    gap: 60px;
+    padding: 55px 10px;
+    border-bottom: 1px solid rgba(232, 223, 204, 0.22);
+}
+
+.bioactive-page .bio-guide-breeding-number {
+    color: var(--bio-earth);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5vw, 5.5rem);
+    line-height: 1;
+}
+
+.bioactive-page .bio-guide-breeding-label {
+    display: block;
+    margin-bottom: 18px;
+    color: var(--bio-earth);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.bioactive-page .bio-guide-breeding-stage h3 {
+    margin: 0 0 25px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2rem, 3.5vw, 3.6rem);
+    font-weight: 400;
+}
+
+.bioactive-page .bio-guide-breeding-stage p {
+    max-width: 800px;
+    margin: 0 0 18px;
+    color: #c8d0c4;
+    font-size: 0.95rem;
+    line-height: 1.95;
+}
+
+.bioactive-page .bio-guide-breeding-stage p:last-child {
+    margin-bottom: 0;
+}
+
+/* POPULATION MANAGEMENT */
+
+.bioactive-page .bio-guide-breeding-management {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 90px;
+    margin-top: 115px;
+    padding-top: 65px;
+    border-top: 1px solid rgba(232, 223, 204, 0.22);
+}
+
+.bioactive-page .bio-guide-breeding-management h3 {
+    margin: 0;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2.5rem, 4vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.12;
+}
+
+.bioactive-page .bio-guide-breeding-management h3 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-guide-breeding-management-content > p {
+    margin: 0 0 22px;
+    color: #c8d0c4;
+    font-size: 0.95rem;
+    line-height: 1.95;
+}
+
+/* IMPORTANT FIELD NOTE */
+
+.bioactive-page .bio-guide-breeding-reminder {
+    margin-top: 45px;
+    padding: 35px;
+    background: #17251f;
+    border-left: 3px solid var(--bio-earth);
+}
+
+.bioactive-page .bio-guide-breeding-reminder span {
+    display: block;
+    margin-bottom: 18px;
+    color: var(--bio-earth);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.bioactive-page .bio-guide-breeding-reminder p {
+    margin: 0;
+    color: #e0e4d9;
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+    .bioactive-page .bio-guide-breeding-management {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    .bioactive-page .bio-guide-breeding {
+        padding: 90px 6vw;
+    }
+
+    .bioactive-page .bio-guide-breeding-heading {
+        margin-bottom: 60px;
+    }
+
+    .bioactive-page .bio-guide-breeding-stage {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 40px 0;
+    }
+
+    .bioactive-page .bio-guide-breeding-number {
+        font-size: 3rem;
+    }
+
+    .bioactive-page .bio-guide-breeding-management {
+        margin-top: 75px;
+    }
+
+    .bioactive-page .bio-guide-breeding-reminder {
+        padding: 25px;
+    }
+}
+
+/* ========================================
+   DAIRY COW GUIDE — TROUBLESHOOTING
+======================================== */
+
+.bioactive-page .bio-guide-troubleshooting {
+    padding: 135px 7vw;
+    background: #17251f;
+}
+
+.bioactive-page .bio-guide-troubleshooting-inner {
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+/* HEADING */
+
+.bioactive-page .bio-guide-troubleshooting-heading {
+    max-width: 850px;
+    margin-bottom: 85px;
+}
+
+.bioactive-page .bio-guide-troubleshooting-heading h2 {
+    margin: 0 0 30px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5.5vw, 6rem);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.bioactive-page .bio-guide-troubleshooting-heading h2 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-guide-troubleshooting-heading > p:last-child {
+    max-width: 650px;
+    color: #c8d0c4;
+    font-size: 1rem;
+    line-height: 1.95;
+}
+
+/* PROBLEM CARDS */
+
+.bioactive-page .bio-guide-troubleshooting-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    align-items: stretch;
+}
+
+.bioactive-page .bio-guide-problem-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 45px 40px;
+    background: #263b2e;
+    border: 1px solid rgba(232, 223, 204, 0.15);
+}
+
+.bioactive-page .bio-guide-problem-number {
+    display: block;
+    margin-bottom: 35px;
+    color: var(--bio-earth);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+}
+
+.bioactive-page .bio-guide-problem-card h3 {
+    margin: 0 0 25px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2rem, 3vw, 3.3rem);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.bioactive-page .bio-guide-problem-card > p {
+    margin: 0 0 28px;
+    color: #c8d0c4;
+    font-size: 0.92rem;
+    line-height: 1.9;
+}
+
+.bioactive-page .bio-guide-problem-card h4 {
+    margin: 0 0 18px;
+    color: var(--bio-cream);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.bioactive-page .bio-guide-problem-card ul {
+    margin: 0 0 35px;
+    padding-left: 20px;
+    color: #c8d0c4;
+    font-size: 0.88rem;
+    line-height: 2;
+}
+
+.bioactive-page .bio-guide-problem-card li {
+    padding-left: 5px;
+}
+
+.bioactive-page .bio-guide-problem-card li::marker {
+    color: var(--bio-earth);
+}
+
+/* WHAT TO CHECK FIRST */
+
+.bioactive-page .bio-guide-problem-action {
+    margin-top: auto;
+    padding: 28px;
+    background: #17251f;
+    border-left: 2px solid var(--bio-earth);
+}
+
+.bioactive-page .bio-guide-problem-action span {
+    display: block;
+    margin-bottom: 15px;
+    color: var(--bio-earth);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+}
+
+.bioactive-page .bio-guide-problem-action p {
+    margin: 0;
+    color: #d1d8ca;
+    font-size: 0.88rem;
+    line-height: 1.85;
+}
+
+/* CLOSING FIELD NOTE */
+
+.bioactive-page .bio-guide-troubleshooting-note {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 90px;
+    margin-top: 110px;
+    padding-top: 65px;
+    border-top: 1px solid rgba(232, 223, 204, 0.22);
+}
+
+.bioactive-page .bio-guide-troubleshooting-note h3 {
+    margin: 0;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2.5rem, 4vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.12;
+}
+
+.bioactive-page .bio-guide-troubleshooting-note h3 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-guide-troubleshooting-note > div:last-child p {
+    margin: 0 0 22px;
+    color: #c8d0c4;
+    font-size: 0.95rem;
+    line-height: 1.95;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+    .bioactive-page .bio-guide-troubleshooting-note {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    .bioactive-page .bio-guide-troubleshooting-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .bioactive-page .bio-guide-troubleshooting {
+        padding: 90px 6vw;
+    }
+
+    .bioactive-page .bio-guide-troubleshooting-heading {
+        margin-bottom: 55px;
+    }
+
+    .bioactive-page .bio-guide-problem-card {
+        padding: 35px 25px;
+    }
+
+    .bioactive-page .bio-guide-troubleshooting-note {
+        margin-top: 75px;
+    }
+}
+
+/* ========================================
+   DAIRY COW GUIDE — FAQ
+======================================== */
+
+.bioactive-page .bio-guide-faq {
+    padding: 135px 7vw;
+    background: #304b3b;
+}
+
+.bioactive-page .bio-guide-faq-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* HEADING */
+
+.bioactive-page .bio-guide-faq-heading {
+    max-width: 750px;
+    margin-bottom: 75px;
+}
+
+.bioactive-page .bio-guide-faq-heading h2 {
+    margin: 0 0 30px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5.5vw, 6rem);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.bioactive-page .bio-guide-faq-heading h2 em {
+    display: block;
+    color: #c5d0b4;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-guide-faq-heading > p:last-child {
+    max-width: 620px;
+    color: #e0e4d9;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+/* FAQ ACCORDION */
+
+.bioactive-page .bio-guide-faq-list {
+    border-top: 1px solid rgba(232, 223, 204, 0.3);
+}
+
+.bioactive-page .bio-guide-faq-item {
+    border-bottom: 1px solid rgba(232, 223, 204, 0.3);
+}
+
+.bioactive-page .bio-guide-faq-item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 30px 5px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    line-height: 1.4;
+    cursor: pointer;
+    list-style: none;
+}
+
+.bioactive-page .bio-guide-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.bioactive-page .bio-guide-faq-item summary::marker {
+    content: "";
+}
+
+.bioactive-page .bio-guide-faq-item summary:hover {
+    color: #c5d0b4;
+}
+
+.bioactive-page .bio-guide-faq-item summary:focus-visible {
+    outline: 2px solid var(--bio-earth);
+    outline-offset: 4px;
+}
+
+/* PLUS / MINUS ICON */
+
+.bioactive-page .bio-guide-faq-icon {
+    position: relative;
+    display: block;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+}
+
+.bioactive-page .bio-guide-faq-icon::before,
+.bioactive-page .bio-guide-faq-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: var(--bio-earth);
+    transform: translate(-50%, -50%);
+}
+
+.bioactive-page .bio-guide-faq-icon::before {
+    width: 18px;
+    height: 2px;
+}
+
+.bioactive-page .bio-guide-faq-icon::after {
+    width: 2px;
+    height: 18px;
+    transition: transform 0.2s ease;
+}
+
+.bioactive-page .bio-guide-faq-item[open]
+.bio-guide-faq-icon::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* ANSWERS */
+
+.bioactive-page .bio-guide-faq-answer {
+    max-width: 820px;
+    padding: 0 55px 35px 5px;
+}
+
+.bioactive-page .bio-guide-faq-answer p {
+    margin: 0 0 18px;
+    color: #d1d8ca;
+    font-size: 0.95rem;
+    line-height: 1.95;
+}
+
+.bioactive-page .bio-guide-faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+/* FOOTER LINK */
+
+.bioactive-page .bio-guide-faq-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    margin-top: 65px;
+}
+
+.bioactive-page .bio-guide-faq-footer p {
+    max-width: 540px;
+    margin: 0;
+    color: #e0e4d9;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.bioactive-page .bio-guide-faq-footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+    color: var(--bio-cream);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--bio-earth);
+    padding-bottom: 8px;
+}
+
+.bioactive-page .bio-guide-faq-footer a:hover {
+    color: #c5d0b4;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+    .bioactive-page .bio-guide-faq {
+        padding: 90px 6vw;
+    }
+
+    .bioactive-page .bio-guide-faq-heading {
+        margin-bottom: 50px;
+    }
+
+    .bioactive-page .bio-guide-faq-item summary {
+        padding: 25px 0;
+    }
+
+    .bioactive-page .bio-guide-faq-answer {
+        padding-right: 10px;
+    }
+
+    .bioactive-page .bio-guide-faq-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* ========================================
+   SPECIES GUIDE — CLOSING SECTION
+======================================== */
+
+.bioactive-page .bio-guide-closing {
+    position: relative;
+    overflow: hidden;
+    padding: 145px 7vw 85px;
+    background: #17251f;
+    text-align: center;
+}
+
+.bioactive-page .bio-guide-closing-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.bioactive-page .bio-guide-closing h2 {
+    margin: 25px auto 35px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3.3rem, 6vw, 7rem);
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+.bioactive-page .bio-guide-closing h2 em {
+    display: block;
+    color: #a5b59a;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-guide-closing-description {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    color: #c8d0c4;
+    font-size: 1rem;
+    line-height: 1.95;
+}
+
+/* LINKS */
+
+.bioactive-page .bio-guide-closing-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.bioactive-page .bio-guide-closing-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    min-height: 55px;
+    padding: 15px 25px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.bioactive-page .bio-guide-closing-primary {
+    background: #b69b77;
+    color: #17251f;
+}
+
+.bioactive-page .bio-guide-closing-primary:hover {
+    background: #d1b995;
+    transform: translateY(-2px);
+}
+
+.bioactive-page .bio-guide-closing-secondary {
+    color: #e8dfcc;
+    border: 1px solid rgba(232, 223, 204, 0.35);
+}
+
+.bioactive-page .bio-guide-closing-secondary:hover {
+    background: rgba(232, 223, 204, 0.08);
+    transform: translateY(-2px);
+}
+
+/* SIGNATURE */
+
+.bioactive-page .bio-guide-closing-signature {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 125px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(232, 223, 204, 0.2);
+    color: #a5b59a;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    .bioactive-page .bio-guide-closing {
+        padding: 100px 6vw 55px;
+    }
+
+    .bioactive-page .bio-guide-closing-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .bioactive-page .bio-guide-closing-links a {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .bioactive-page .bio-guide-closing-signature {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 85px;
+    }
+
+}
+
+/* ========================================
+   SPECIES CARD — CARE GUIDE LINK
+======================================== */
+
+.bioactive-page .bio-species-guide-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+    margin-top: 20px;
+    padding-bottom: 7px;
+    color: #b69b77;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    transition:
+        color 0.2s ease,
+        gap 0.2s ease;
+}
+
+.bioactive-page .bio-species-guide-link:hover {
+    color: #e8dfcc;
+    gap: 18px;
+}
+
+.bioactive-page .bio-species-guide-link:focus-visible {
+    outline: 2px solid #b69b77;
+    outline-offset: 5px;
+}
+
+.bioactive-page a.bio-species-link {
+    display: inline-block;
+    color: #b69b77;
+    text-decoration: none;
+}
+
+.bioactive-page a.bio-species-link:hover {
+    color: #e8dfcc;
+}
+
+/* SPECIES GUIDE — PHOTO CREDIT */
+
+.bioactive-page .bio-guide-photo-credit {
+    margin: 12px 0 0;
+    color: #a5b59a;
+    font-size: 0.72rem;
+    line-height: 1.6;
+    text-align: right;
+}
+
+.bioactive-page .bio-guide-photo-credit a {
+    color: #c8d0c4;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.bioactive-page .bio-guide-photo-credit a:hover {
+    color: #e8dfcc;
+}
+
+/* ENCLOSURE GUIDE - MAINTENANCE NOTE */
+
+.bio-guide-troubleshooting-note {
+    width: min(100% - 12vw, 1200px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.bio-guide-troubleshooting-note h3 {
+    max-width: 480px;
+}
+
+@media (max-width: 800px) {
+    .bio-guide-troubleshooting-note {
+        width: 88%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* ENCLOSURE GUIDE - SECTION BACKGROUNDS */
+
+/* Feeding safety */
+.bio-guide-feeding-caution {
+    background: #182820;
+    padding: 70px 6vw;
+}
+
+/* Ongoing enclosure care */
+.bio-guide-troubleshooting-note {
+    background: #385747;
+    padding: 70px 6vw;
+}
+
+/* ISOPOD ENCLOSURE GUIDE LINK */
+
+.bioactive-page .bio-care-details h3 a,
+.bioactive-page .bio-care-details h3 a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.bioactive-page .bio-care-details h3 a:hover {
+    color: #d4b27c;
+}
+
+/* ISOPOD GUIDE - CLICKABLE ARROW */
+
+.bioactive-page a.bio-care-arrow,
+.bioactive-page a.bio-care-arrow:visited {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* DAIRY COW GUIDE - ENCLOSURE LINK */
+
+.bio-guide-enclosure-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+    color: #c9a66b;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.bio-guide-enclosure-link:hover {
+    color: #f0dfbf;
+}
+
+.bio-guide-enclosure-link span {
+    transition: transform 0.3s ease;
+}
+
+.bio-guide-enclosure-link:hover span {
+    transform: translate(3px, -3px);
+}
+
+/* =========================================
+   HABITAT SHOP
+========================================= */
+
+.bioactive-page .bio-habitat-shop {
+    background: #f3eee4;
+    padding: 110px 6vw;
+}
+
+.bioactive-page .bio-habitat-shop-inner {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.bioactive-page .bio-habitat-shop .bio-eyebrow {
+    color: #7b866c;
+    margin-bottom: 20px;
+}
+
+.bioactive-page .bio-habitat-shop h2 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2.8rem, 5vw, 4.8rem);
+    font-weight: 400;
+    line-height: 1.08;
+    color: #304b3b;
+    margin-bottom: 24px;
+}
+
+.bioactive-page .bio-habitat-shop h2 em {
+    font-weight: 400;
+    color: #8b9b78;
+}
+
+.bioactive-page .bio-habitat-shop-intro {
+    max-width: 620px;
+    color: #665f52;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 55px;
+}
+
+/* THREE-COLUMN CARD GRID */
+
+.bioactive-page .bio-habitat-shop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.bioactive-page .bio-habitat-shop-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #304b3b;
+    padding: 38px 32px;
+    min-height: 290px;
+    border-radius: 4px;
+    transition: transform 0.3s ease,
+                background 0.3s ease;
+}
+
+.bioactive-page .bio-habitat-shop-card:hover {
+    transform: translateY(-5px);
+    background: #385a46;
+}
+
+.bioactive-page .bio-habitat-shop-card > span:first-child {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: #c6bda5;
+    margin-bottom: 28px;
+}
+
+.bioactive-page .bio-habitat-shop-card h3 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #f5eee0;
+    margin-bottom: 18px;
+}
+
+.bioactive-page .bio-habitat-shop-card p {
+    color: #e0dfd2;
+    font-size: 0.92rem;
+    line-height: 1.75;
+    margin-bottom: 28px;
+}
+
+.bioactive-page .bio-habitat-shop-status {
+    display: inline-block;
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid rgba(245, 238, 224, 0.25);
+    color: #d9c49c;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+}
+
+/* RESPONSIVE LAYOUT */
+
+@media (max-width: 900px) {
+    .bioactive-page .bio-habitat-shop-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .bioactive-page .bio-habitat-shop {
+        padding: 75px 6vw;
+    }
+
+    .bioactive-page .bio-habitat-shop-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bioactive-page .bio-habitat-shop-card {
+        min-height: auto;
+        padding: 32px 26px;
+    }
+}
+
+/* HABITAT SHOP - CLICKABLE CATEGORY CARDS */
+
+.bioactive-page a.bio-habitat-shop-card,
+.bioactive-page a.bio-habitat-shop-card:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.bioactive-page a.bio-habitat-shop-card:hover h3 {
+    color: #e2c99c;
+}
+
+/* =========================================
+   ISOPOD SHOP - ENCLOSURES HERO
+========================================= */
+
+.bioactive-page .bio-shop-hero {
+    background: #20372c;
+    padding: 110px 6vw;
+    overflow: hidden;
+}
+
+.bioactive-page .bio-shop-hero-inner {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 75px;
+    align-items: center;
+}
+
+.bioactive-page .bio-shop-hero-content {
+    min-width: 0;
+}
+
+.bioactive-page .bio-shop-hero .bio-eyebrow {
+    color: #c5b995;
+    margin-bottom: 26px;
+}
+
+.bioactive-page .bio-shop-hero h1 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3.5rem, 5.5vw, 6rem);
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    color: #f5eee0;
+    margin-bottom: 32px;
+}
+
+.bioactive-page .bio-shop-hero h1 em {
+    display: block;
+    font-weight: 400;
+    color: #c9b18c;
+}
+
+.bioactive-page .bio-shop-hero-lead {
+    max-width: 500px;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #dedfd2;
+    margin-bottom: 38px;
+}
+
+.bioactive-page .bio-shop-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: #d9c49c;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(217, 196, 156, 0.5);
+    padding-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.bioactive-page .bio-shop-back-link:hover {
+    color: #ffffff;
+}
+
+.bioactive-page .bio-shop-hero-visual {
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    border-radius: 3px;
+    background: #385747;
+}
+
+.bioactive-page .bio-shop-hero-visual img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .bioactive-page .bio-shop-hero-inner {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .bioactive-page .bio-shop-hero-visual {
+        height: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .bioactive-page .bio-shop-hero {
+        padding: 75px 6vw;
+    }
+
+    .bioactive-page .bio-shop-hero h1 {
+        font-size: clamp(3rem, 10vw, 4rem);
+    }
+
+    .bioactive-page .bio-shop-hero-visual {
+        height: 300px;
+    }
+}
+
+/* =========================================
+   ISOPOD SHOP - ENCLOSURE COLLECTION
+========================================= */
+
+.bioactive-page .bio-shop-collection {
+    background: #f3eee4;
+    padding: 110px 6vw 120px;
+}
+
+.bioactive-page .bio-shop-collection-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* SECTION HEADING */
+
+.bioactive-page .bio-shop-collection-heading {
+    max-width: 850px;
+    margin-bottom: 65px;
+}
+
+.bioactive-page .bio-shop-collection-heading .bio-eyebrow {
+    color: #8c7858;
+    margin-bottom: 20px;
+}
+
+.bioactive-page .bio-shop-collection-heading h2 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2.8rem, 5vw, 4.8rem);
+    font-weight: 400;
+    line-height: 1.08;
+    color: #304b3b;
+    margin-bottom: 25px;
+}
+
+.bioactive-page .bio-shop-collection-heading h2 em {
+    color: #829477;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-shop-collection-heading > p:last-child {
+    max-width: 680px;
+    color: #665f52;
+    font-size: 1rem;
+    line-height: 1.85;
+}
+
+/* THREE-COLUMN GRID */
+
+.bioactive-page .bio-shop-collection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+/* CATEGORY CARDS */
+
+.bioactive-page .bio-shop-collection-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 42px 32px;
+    background: #e4e9dd;
+    border: 1px solid #d2dacb;
+    border-radius: 4px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.bioactive-page .bio-shop-collection-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(32, 55, 44, 0.10);
+}
+
+.bioactive-page .bio-shop-card-number {
+    display: block;
+    color: #8b7655;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    margin-bottom: 28px;
+}
+
+.bioactive-page .bio-shop-collection-card h3 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.7rem, 2.3vw, 2.2rem);
+    font-weight: 400;
+    line-height: 1.2;
+    color: #304b3b;
+    margin-bottom: 22px;
+}
+
+.bioactive-page .bio-shop-collection-card > p {
+    color: #5d665a;
+    font-size: 0.93rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* BEST FOR / KEEP IN MIND */
+
+.bioactive-page .bio-shop-card-details {
+    border-top: 1px solid rgba(48, 75, 59, 0.18);
+    padding-top: 18px;
+    margin-bottom: 18px;
+}
+
+.bioactive-page .bio-shop-card-details span {
+    display: block;
+    color: #8b7655;
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    margin-bottom: 10px;
+}
+
+.bioactive-page .bio-shop-card-details p {
+    color: #46574a;
+    font-size: 0.88rem;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* FUTURE PRODUCT LINKS */
+
+.bioactive-page .bio-shop-card-coming {
+    display: block;
+    margin-top: auto;
+    padding-top: 28px;
+    color: #7d8c77;
+    font-size: 0.78rem;
+    font-style: italic;
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+    .bioactive-page .bio-shop-collection-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+    .bioactive-page .bio-shop-collection {
+        padding: 75px 6vw 85px;
+    }
+
+    .bioactive-page .bio-shop-collection-heading {
+        margin-bottom: 40px;
+    }
+
+    .bioactive-page .bio-shop-collection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bioactive-page .bio-shop-collection-card {
+        padding: 34px 26px;
+    }
+}
+
+/* =========================================
+   ISOPOD SHOP - BEFORE YOU BUY
+========================================= */
+
+.bioactive-page .bio-shop-buying-guide {
+    background: #20372c;
+    padding: 115px 6vw;
+}
+
+.bioactive-page .bio-shop-buying-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 100px;
+    align-items: start;
+}
+
+/* LEFT COLUMN */
+
+.bioactive-page .bio-shop-buying-intro {
+    position: sticky;
+    top: 120px;
+}
+
+.bioactive-page .bio-shop-buying-intro .bio-eyebrow {
+    color: #c9b18c;
+    margin-bottom: 24px;
+}
+
+.bioactive-page .bio-shop-buying-intro h2 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 400;
+    line-height: 1.05;
+    color: #f5eee0;
+    margin-bottom: 30px;
+}
+
+.bioactive-page .bio-shop-buying-intro h2 em {
+    display: block;
+    color: #c9b18c;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-shop-buying-intro > p:last-child {
+    max-width: 440px;
+    color: #d7ded2;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+/* RIGHT COLUMN - NUMBERED TIPS */
+
+.bioactive-page .bio-shop-buying-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.bioactive-page .bio-shop-buying-item {
+    display: grid;
+    grid-template-columns: 45px minmax(0, 1fr);
+    gap: 25px;
+    padding: 32px 0;
+    border-bottom: 1px solid rgba(245, 238, 224, 0.2);
+}
+
+.bioactive-page .bio-shop-buying-item:first-child {
+    padding-top: 0;
+}
+
+.bioactive-page .bio-shop-buying-item > span {
+    color: #c9b18c;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding-top: 7px;
+}
+
+.bioactive-page .bio-shop-buying-item h3 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #f5eee0;
+    margin-bottom: 12px;
+}
+
+.bioactive-page .bio-shop-buying-item p {
+    color: #d7ded2;
+    font-size: 0.94rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+    .bioactive-page .bio-shop-buying-inner {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .bioactive-page .bio-shop-buying-intro {
+        position: static;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .bioactive-page .bio-shop-buying-guide {
+        padding: 80px 6vw;
+    }
+
+    .bioactive-page .bio-shop-buying-intro h2 {
+        font-size: clamp(2.8rem, 10vw, 4rem);
+    }
+
+    .bioactive-page .bio-shop-buying-item {
+        grid-template-columns: 32px minmax(0, 1fr);
+        gap: 18px;
+        padding: 26px 0;
+    }
+
+    .bioactive-page .bio-shop-buying-item h3 {
+        font-size: 1.45rem;
+    }
+}
+
+/* =========================================
+   ISOPOD SHOP - PRODUCT RECOMMENDATIONS
+========================================= */
+
+.bioactive-page .bio-shop-products {
+    background: #f7f3eb;
+    padding: 115px 6vw 100px;
+}
+
+.bioactive-page .bio-shop-products-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* SECTION INTRO */
+
+.bioactive-page .bio-shop-products-heading {
+    max-width: 780px;
+    margin-bottom: 60px;
+}
+
+.bioactive-page .bio-shop-products-heading .bio-eyebrow {
+    color: #8b7655;
+    margin-bottom: 20px;
+}
+
+.bioactive-page .bio-shop-products-heading h2 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2.8rem, 5vw, 4.8rem);
+    font-weight: 400;
+    line-height: 1.08;
+    color: #304b3b;
+    margin-bottom: 24px;
+}
+
+.bioactive-page .bio-shop-products-heading h2 em {
+    color: #829477;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-shop-products-heading > p:last-child {
+    max-width: 650px;
+    color: #665f52;
+    font-size: 1rem;
+    line-height: 1.85;
+}
+
+/* PRODUCT GRID */
+
+.bioactive-page .bio-shop-products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px;
+}
+
+/* PRODUCT CARD */
+
+.bioactive-page .bio-shop-product-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid #e5e1d8;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.bioactive-page .bio-shop-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 35px rgba(32, 55, 44, 0.09);
+}
+
+/* IMAGE PLACEHOLDER */
+
+.bioactive-page .bio-shop-product-image {
+    height: 270px;
+    background: #e4e9dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.bioactive-page .bio-shop-product-image span {
+    color: #7d8c77;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-align: center;
+}
+
+/* CARD CONTENT */
+
+.bioactive-page .bio-shop-product-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 32px 28px 36px;
+}
+
+.bioactive-page .bio-shop-product-label {
+    color: #9b815c;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    margin-bottom: 18px;
+}
+
+.bioactive-page .bio-shop-product-content h3 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #304b3b;
+    margin-bottom: 18px;
+}
+
+.bioactive-page .bio-shop-product-content > p {
+    color: #665f52;
+    font-size: 0.92rem;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+/* FUTURE SHOPPING LINK */
+
+.bioactive-page .bio-shop-product-status {
+    display: block;
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid #e5e1d8;
+    color: #829477;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+/* AFFILIATE DISCLOSURE */
+
+.bioactive-page .bio-shop-affiliate-note {
+    max-width: 750px;
+    margin: 38px auto 0;
+    color: #817b70;
+    font-size: 0.78rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+    .bioactive-page .bio-shop-products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+    .bioactive-page .bio-shop-products {
+        padding: 80px 6vw;
+    }
+
+    .bioactive-page .bio-shop-products-heading {
+        margin-bottom: 40px;
+    }
+
+    .bioactive-page .bio-shop-products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bioactive-page .bio-shop-product-image {
+        height: 230px;
+    }
+
+    .bioactive-page .bio-shop-product-content {
+        padding: 28px 24px 32px;
+    }
+}
+
+/* =========================================
+   ISOPOD SHOP - CLOSING CTA
+========================================= */
+
+.bioactive-page .bio-shop-closing {
+    background: #e4e9dd;
+    padding: 115px 6vw;
+    text-align: center;
+}
+
+.bioactive-page .bio-shop-closing-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bioactive-page .bio-shop-closing .bio-eyebrow {
+    color: #8b7655;
+    margin-bottom: 25px;
+}
+
+.bioactive-page .bio-shop-closing h2 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5.5vw, 5.3rem);
+    font-weight: 400;
+    line-height: 1.08;
+    color: #304b3b;
+    margin-bottom: 28px;
+}
+
+.bioactive-page .bio-shop-closing h2 em {
+    display: block;
+    color: #829477;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-shop-closing-inner > p:not(.bio-eyebrow) {
+    max-width: 590px;
+    margin: 0 auto 35px;
+    color: #5d665a;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+.bioactive-page .bio-shop-closing-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #304b3b;
+    color: #304b3b;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease, gap 0.3s ease;
+}
+
+.bioactive-page .bio-shop-closing-link:hover {
+    color: #8b7655;
+    gap: 22px;
+}
+
+@media (max-width: 600px) {
+    .bioactive-page .bio-shop-closing {
+        padding: 80px 6vw;
+    }
+
+    .bioactive-page .bio-shop-closing h2 {
+        font-size: clamp(2.7rem, 10vw, 4rem);
+    }
+}
+
+/* =========================================
+   ISOPOD SHOP - AMAZON PRODUCT BUTTON
+========================================= */
+
+.bioactive-page .bio-shop-product-link,
+.bioactive-page .bio-shop-product-link:visited {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    width: 100%;
+    margin-top: auto;
+    padding: 15px 20px;
+
+    background: #304b3b;
+    color: #f7f3eb;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    border: 1px solid #304b3b;
+    border-radius: 3px;
+
+    transition: background 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.bioactive-page .bio-shop-product-link:hover {
+    background: #c9b18c;
+    border-color: #c9b18c;
+    color: #20372c;
+}
+
+.bioactive-page .bio-shop-product-link span {
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.bioactive-page .bio-shop-product-link:hover span {
+    transform: translateX(4px);
+}
+
+/* PERSONAL PRODUCT RECOMMENDATION */
+
+.bioactive-page .bio-shop-product-personal {
+    background: #f0f3ec;
+    border-left: 3px solid #829477;
+    padding: 16px 18px;
+    margin-bottom: 24px;
+}
+
+.bioactive-page .bio-shop-product-personal span {
+    display: block;
+    color: #64785e;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    margin-bottom: 8px;
+}
+
+.bioactive-page .bio-shop-product-personal p {
+    color: #52604f;
+    font-size: 0.85rem;
+    line-height: 1.65;
+    margin: 0;
+}
+
+
+/* ISOPOD VARIETY TAGS */
+
+.bio-varieties {
+    margin-top: 24px;
+    margin-bottom: 22px;
+}
+
+.bio-varieties-label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    color: #d2a36b;
+}
+
+.bio-varieties-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.bio-variety-tag {
+    display: inline-block;
+    padding: 7px 13px;
+    border: 1px solid rgba(210, 163, 107, 0.35);
+    border-radius: 30px;
+    color: #f4ebdd;
+    font-size: 12px;
+    line-height: 1.4;
+    background: rgba(210, 163, 107, 0.06);
+}
+
+/* ========================================
+   ARMADILLIDIUM GENUS HERO
+======================================== */
+
+.bioactive-page.armadillidium-page .bio-hero {
+    background:
+        radial-gradient(
+            circle at 85% 25%,
+            rgba(151, 163, 183, 0.16),
+            transparent 45%
+        ),
+        linear-gradient(
+            145deg,
+            #242B35 0%,
+            #343B46 55%,
+            #1B222C 100%
+        );
+}
+
+.bioactive-page.armadillidium-page .bio-hero h1 em {
+    color: #B6C2D0;
+}
+
+.bioactive-page.armadillidium-page .bio-hero-decoration {
+    color: #B6C2D0;
+}
+
+/* ========================================
+   ARMADILLIDIUM COLLECTION
+   WEATHERED SLATE BACKGROUND
+======================================== */
+
+.bioactive-page.armadillidium-page .bio-cleanup-intro {
+    background-color: #303944;
+
+    background-image:
+        
+repeating-linear-gradient(
+    135deg,
+    rgba(190, 203, 218, 0.035) 0px,
+    rgba(190, 203, 218, 0.035) 1px,
+    transparent 1px,
+    transparent 24px
+),
+repeating-linear-gradient(
+    35deg,
+    rgba(12, 19, 28, 0.045) 0px,
+    rgba(12, 19, 28, 0.045) 1px,
+    transparent 1px,
+    transparent 38px
+),
+
+        radial-gradient(
+            ellipse at 15% 25%,
+            rgba(145, 166, 187, 0.22),
+            transparent 55%
+        ),
+        radial-gradient(
+            ellipse at 85% 80%,
+            rgba(10, 16, 25, 0.40),
+            transparent 60%
+        );
+}
+
+/* COLLECTION HEADING */
+
+.bioactive-page.armadillidium-page
+.bio-cleanup-heading h2 em {
+    color: #B6C2D0;
+}
+
+/* ========================================
+   ARMADILLIDIUM SPECIES CARDS
+======================================== */
+
+.bioactive-page.armadillidium-page
+.bio-cleanup-card {
+    background: #303B46;
+}
+
+/* CARD IMAGE BACKGROUND */
+
+.bioactive-page.armadillidium-page
+.bio-cleanup-image {
+    background: #3C4652;
+}
+
+/* CARD CONTENT */
+
+.bioactive-page.armadillidium-page
+.bio-cleanup-content {
+    background: #28343E;
+}
+
+/* CARD TITLES */
+
+.bioactive-page.armadillidium-page
+.bio-cleanup-content h3 {
+    color: #E8DFCC;
+}
+
+/* CARD DESCRIPTIONS */
+
+.bioactive-page.armadillidium-page
+.bio-cleanup-content p {
+    color: #D6DDE2;
+}
+
+/* ========================================
+   ARMADILLIDIUM CLOSING SECTION
+======================================== */
+
+.bioactive-page.armadillidium-page .bio-isopods-closing {
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(151, 163, 183, 0.16),
+            transparent 45%
+        ),
+        linear-gradient(
+            145deg,
+            #242B35 0%,
+            #343B46 50%,
+            #1B222C 100%
+        );
+}
+
+/* ========================================
+   ARMADILLIDIUM HEADER
+======================================== */
+
+.bioactive-page.armadillidium-page .bio-header {
+    background: #242D38;
+    border-bottom: 1px solid rgba(232, 223, 204, 0.12);
+}
+
+/* ========================================
+   ARMADILLIDIUM FOOTER
+======================================== */
+
+/* Footer background */
+
+.bioactive-page.armadillidium-page .bio-footer {
+    background: #171E27;
+    border-top: 1px solid rgba(232, 223, 204, 0.12);
+}
+
+/* Footer brand description */
+
+.bioactive-page.armadillidium-page .bio-footer-brand p {
+    color: #B6C2D0;
+}
+
+/* Footer navigation links */
+
+.bioactive-page.armadillidium-page .bio-footer-links a {
+    color: #D6DDE2;
+}
+
+/* Footer copyright and bottom text */
+
+.bioactive-page.armadillidium-page .bio-footer-bottom {
+    color: #B6C2D0;
+}
+
+/* ========================================
+   CUBARIS GENUS HERO
+   DARK TERRACOTTA THEME
+======================================== */
+
+.bioactive-page.cubaris-page .bio-hero {
+    background:
+        radial-gradient(
+            circle at 85% 25%,
+            rgba(190, 132, 109, 0.20),
+            transparent 45%
+        ),
+        linear-gradient(
+            145deg,
+            #2A2221 0%,
+            #403331 55%,
+            #211B1A 100%
+        );
+}
+
+/* Hero heading accent */
+
+.bioactive-page.cubaris-page .bio-hero h1 em {
+    color: #D2A99A;
+}
+
+/* Hero decorative text */
+
+.bioactive-page.cubaris-page .bio-hero-decoration {
+    color: #D2A99A;
+}
+
+/* ========================================
+   CUBARIS SPECIES COLLECTION
+   WEATHERED TERRACOTTA TEXTURE
+======================================== */
+
+.bioactive-page.cubaris-page .bio-cleanup-intro {
+    background-color: #382C2A;
+
+    background-image:
+        repeating-linear-gradient(
+            135deg,
+            rgba(210, 169, 154, 0.035) 0px,
+            rgba(210, 169, 154, 0.035) 1px,
+            transparent 1px,
+            transparent 24px
+        ),
+        repeating-linear-gradient(
+            35deg,
+            rgba(20, 12, 11, 0.045) 0px,
+            rgba(20, 12, 11, 0.045) 1px,
+            transparent 1px,
+            transparent 38px
+        ),
+        radial-gradient(
+            ellipse at 15% 25%,
+            rgba(185, 124, 105, 0.22),
+            transparent 55%
+        ),
+        radial-gradient(
+            ellipse at 85% 80%,
+            rgba(24, 14, 13, 0.40),
+            transparent 60%
+        );
+}
+
+/* Collection heading accent */
+
+.bioactive-page.cubaris-page .bio-cleanup-heading h2 em {
+    color: #D2A99A;
+}
+
+/* ========================================
+   CUBARIS SPECIES CARDS
+======================================== */
+
+.bioactive-page.cubaris-page .bio-cleanup-card {
+    background: #403331;
+}
+
+/* Card image area */
+
+.bioactive-page.cubaris-page .bio-cleanup-image {
+    background: #4C3B38;
+}
+
+/* Card content area */
+
+.bioactive-page.cubaris-page .bio-cleanup-content {
+    background: #332826;
+}
+
+/* Card titles */
+
+.bioactive-page.cubaris-page .bio-cleanup-content h3 {
+    color: #E8DFCC;
+}
+
+/* Card descriptions */
+
+.bioactive-page.cubaris-page .bio-cleanup-content p {
+    color: #DED0C9;
+}
+
+/* ========================================
+   CUBARIS CLOSING SECTION
+   DARK TERRACOTTA THEME
+======================================== */
+
+.bioactive-page.cubaris-page .bio-isopods-closing {
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(190, 132, 109, 0.16),
+            transparent 45%
+        ),
+        linear-gradient(
+            145deg,
+            #2A2221 0%,
+            #403331 50%,
+            #211B1A 100%
+        );
+}
+
+/* Closing heading accent */
+
+.bioactive-page.cubaris-page
+.bio-isopods-closing h2 em {
+    color: #D2A99A;
+}
+
+/* Closing description */
+
+.bioactive-page.cubaris-page
+.bio-isopods-closing-description {
+    color: #DED0C9;
+}
+
+/* ========================================
+   CUBARIS HEADER
+   DARK TERRACOTTA
+======================================== */
+
+.bioactive-page.cubaris-page .bio-header {
+    background: #2A2221;
+    border-bottom: 1px solid rgba(232, 223, 204, 0.12);
+}
+
+/* ========================================
+   CUBARIS FOOTER
+   DARK TERRACOTTA
+======================================== */
+
+.bioactive-page.cubaris-page .bio-footer {
+    background: #211B1A;
+    border-top: 1px solid rgba(232, 223, 204, 0.12);
+}
+
+/* Footer brand description */
+
+.bioactive-page.cubaris-page .bio-footer-brand p {
+    color: #D2A99A;
+}
+
+/* Footer navigation links */
+
+.bioactive-page.cubaris-page .bio-footer-links a {
+    color: #DED0C9;
+}
+
+/* Footer copyright and bottom text */
+
+.bioactive-page.cubaris-page .bio-footer-bottom {
+    color: #D2A99A;
+}
+
+/* ========================================
+   PORCELLIONIDES HERO
+   SMOKY AUBERGINE THEME
+======================================== */
+
+.bioactive-page.porcellionides-page .bio-hero {
+    background:
+        radial-gradient(
+            circle at 85% 25%,
+            rgba(197, 180, 200, 0.13),
+            transparent 45%
+        ),
+        linear-gradient(
+            145deg,
+            #292530 0%,
+            #393342 55%,
+            #201D27 100%
+        );
+}
+
+/* Hero heading accent */
+
+.bioactive-page.porcellionides-page .bio-hero h1 em {
+    color: #C5B4C8;
+}
+
+/* Hero description */
+
+.bioactive-page.porcellionides-page .bio-hero-description {
+    color: #DDD2DF;
+}
+
+/* Hero decoration */
+
+.bioactive-page.porcellionides-page .bio-hero-decoration {
+    color: #C5B4C8;
+}
+
+/* ========================================
+   PORCELLIONIDES COLLECTION
+   SMOKY AUBERGINE THEME
+======================================== */
+
+.bioactive-page.porcellionides-page .bio-cleanup-intro {
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(197, 180, 200, 0.07),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(182, 155, 119, 0.05),
+            transparent 45%
+        ),
+        repeating-linear-gradient(
+            135deg,
+            transparent 0px,
+            transparent 42px,
+            rgba(232, 223, 204, 0.012) 43px,
+            transparent 44px
+        ),
+        #332D3B;
+}
+
+/* Collection heading accent */
+
+.bioactive-page.porcellionides-page
+.bio-cleanup-heading h2 em {
+    color: #C5B4C8;
+}
+
+/* Collection introduction */
+
+.bioactive-page.porcellionides-page
+.bio-cleanup-heading > p:not(.bio-eyebrow) {
+    color: #DDD2DF;
+}
+
+/* ========================================
+   PORCELLIONIDES SPECIES CARDS
+   SMOKY AUBERGINE THEME
+======================================== */
+
+/* Main card */
+
+.bioactive-page.porcellionides-page .bio-cleanup-card {
+    background: #393342;
+    border: 1px solid rgba(197, 180, 200, 0.12);
+}
+
+/* Image container */
+
+.bioactive-page.porcellionides-page .bio-cleanup-image {
+    background: #494151;
+}
+
+/* Card content area */
+
+.bioactive-page.porcellionides-page .bio-cleanup-content {
+    background: #302B38;
+}
+
+/* Species / variety number */
+
+.bioactive-page.porcellionides-page .bio-category-number {
+    color: #B69B77;
+}
+
+/* Card heading */
+
+.bioactive-page.porcellionides-page .bio-cleanup-content h3 {
+    color: #E8DFCC;
+}
+
+/* Card description */
+
+.bioactive-page.porcellionides-page .bio-cleanup-content > p {
+    color: #DDD2DF;
+}
+
+/* Characteristics section */
+
+.bioactive-page.porcellionides-page .bio-varieties {
+    border-top: 1px solid rgba(197, 180, 200, 0.15);
+}
+
+/* Characteristics label */
+
+.bioactive-page.porcellionides-page .bio-varieties-label {
+    color: #C5B4C8;
+}
+
+/* Individual characteristic tags */
+
+.bioactive-page.porcellionides-page .bio-variety-tag {
+    background: rgba(197, 180, 200, 0.09);
+    border: 1px solid rgba(197, 180, 200, 0.18);
+    color: #DDD2DF;
+}
+
+/* ========================================
+   PORCELLIONIDES CLOSING SECTION
+   SMOKY AUBERGINE THEME
+======================================== */
+
+.bioactive-page.porcellionides-page .bio-isopods-closing {
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(197, 180, 200, 0.12),
+            transparent 45%
+        ),
+        linear-gradient(
+            145deg,
+            #292530 0%,
+            #393342 50%,
+            #201D27 100%
+        );
+}
+
+/* Closing heading */
+
+.bioactive-page.porcellionides-page
+.bio-isopods-closing h2 {
+    color: #E8DFCC;
+}
+
+/* Heading accent */
+
+.bioactive-page.porcellionides-page
+.bio-isopods-closing h2 em {
+    color: #C5B4C8;
+}
+
+/* Closing description */
+
+.bioactive-page.porcellionides-page
+.bio-isopods-closing-description {
+    color: #DDD2DF;
+}
+
+/* ========================================
+   PORCELLIONIDES HEADER
+   SMOKY AUBERGINE THEME
+======================================== */
+
+.bioactive-page.porcellionides-page .bio-header {
+    background: #292530;
+    border-bottom: 1px solid rgba(197, 180, 200, 0.15);
+}
+
+/* ========================================
+   PORCELLIONIDES FOOTER
+   SMOKY AUBERGINE THEME
+======================================== */
+
+.bioactive-page.porcellionides-page .bio-footer {
+    background: #201D27;
+    border-top: 1px solid rgba(197, 180, 200, 0.15);
+}
+
+/* Footer brand description */
+
+.bioactive-page.porcellionides-page .bio-footer-brand p {
+    color: #C5B4C8;
+}
+
+/* Footer navigation links */
+
+.bioactive-page.porcellionides-page .bio-footer-links a {
+    color: #DDD2DF;
+}
+
+/* Footer link hover */
+
+.bioactive-page.porcellionides-page .bio-footer-links a:hover {
+    color: #B69B77;
+}
+
+/* Footer bottom section */
+
+.bioactive-page.porcellionides-page .bio-footer-bottom {
+    color: #C5B4C8;
+    border-top: 1px solid rgba(197, 180, 200, 0.15);
+}
+
+/* ========================================
+   ISOPODS HOMEPAGE HERO
+   DARK WALNUT THEME
+======================================== */
+
+.bioactive-page.isopods-home-page .bio-hero {
+    background:
+        radial-gradient(
+            circle at 85% 25%,
+            rgba(182, 155, 119, 0.12),
+            transparent 45%
+        ),
+        linear-gradient(
+            145deg,
+            #211D1A 0%,
+            #302923 55%,
+            #261F1B 100%
+        );
+}
+
+/* Hero heading accent */
+
+.bioactive-page.isopods-home-page .bio-hero h1 em {
+    color: #C9AD8A;
+}
+
+/* Hero description */
+
+.bioactive-page.isopods-home-page .bio-hero-description {
+    color: #DED3C4;
+}
+
+/* Hero bottom decoration */
+
+.bioactive-page.isopods-home-page .bio-hero-decoration {
+    color: #B69B77;
+}
+
+/* ========================================
+   ISOPODS HOMEPAGE
+   CLEANUP CREW SECTION
+   DARK WALNUT THEME
+======================================== */
+
+/* Section background */
+
+.bioactive-page.isopods-home-page .bio-cleanup-intro {
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(182, 155, 119, 0.06),
+            transparent 40%
+        ),
+        linear-gradient(
+            145deg,
+            #29241F 0%,
+            #302923 55%,
+            #29241F 100%
+        );
+}
+
+/* Section heading */
+
+.bioactive-page.isopods-home-page
+.bio-cleanup-heading h2 {
+    color: #E8DFCC;
+}
+
+/* Italic heading accent */
+
+.bioactive-page.isopods-home-page
+.bio-cleanup-heading h2 em {
+    color: #C9AD8A;
+}
+
+/* Section introduction */
+
+.bioactive-page.isopods-home-page
+.bio-cleanup-heading > p:not(.bio-eyebrow) {
+    color: #DED3C4;
+}
+
+/* Isopod and Springtail cards */
+
+.bioactive-page.isopods-home-page .bio-cleanup-card {
+    background: #3B332C;
+    border: 1px solid #55483B;
+}
+
+/* Card content backgrounds */
+
+.bioactive-page.isopods-home-page .bio-cleanup-content {
+    background: #3B332C;
+}
+
+/* Card category numbers */
+
+.bioactive-page.isopods-home-page .bio-category-number {
+    color: #B69B77;
+}
+
+/* Card headings */
+
+.bioactive-page.isopods-home-page
+.bio-cleanup-content h3 {
+    color: #E8DFCC;
+}
+
+/* Card descriptions */
+
+.bioactive-page.isopods-home-page
+.bio-cleanup-content > p {
+    color: #DED3C4;
+}
+
+/* ========================================
+   ISOPODS HOMEPAGE - CARE & HUSBANDRY
+   DARK WALNUT THEME
+======================================== */
+
+/* Main section background */
+
+.bioactive-page.isopods-home-page .bio-care {
+    background:
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(182, 155, 119, 0.06),
+            transparent 45%
+        ),
+        #332C26;
+}
+
+/* Main heading */
+
+.bioactive-page.isopods-home-page
+.bio-care-heading h2 {
+    color: #E8DFCC;
+}
+
+/* Italic heading accent */
+
+.bioactive-page.isopods-home-page
+.bio-care-heading h2 em {
+    color: #C9AD8A;
+}
+
+/* Heading description */
+
+.bioactive-page.isopods-home-page
+.bio-care-heading > p:last-child {
+    color: #DED3C4;
+}
+
+/* Care row dividers */
+
+.bioactive-page.isopods-home-page
+.bio-care-list {
+    border-top: 1px solid rgba(182, 155, 119, 0.25);
+}
+
+.bioactive-page.isopods-home-page
+.bio-care-row {
+    border-bottom: 1px solid rgba(182, 155, 119, 0.25);
+}
+
+/* Row hover effect */
+
+.bioactive-page.isopods-home-page
+.bio-care-row:hover {
+    background: rgba(182, 155, 119, 0.06);
+}
+
+/* Care row headings */
+
+.bioactive-page.isopods-home-page
+.bio-care-details h3 {
+    color: #E8DFCC;
+}
+
+/* Care row descriptions */
+
+.bioactive-page.isopods-home-page
+.bio-care-details p {
+    color: #DED3C4;
+}
+
+/* Closing note */
+
+.bioactive-page.isopods-home-page
+.bio-care-note {
+    color: #C9AD8A;
+}
+
+/* ========================================
+   ISOPODS HOMEPAGE
+   TROUBLESHOOTING & COLONY HEALTH
+   DARK WALNUT THEME
+======================================== */
+
+/* Section background */
+
+.bioactive-page.isopods-home-page .bio-troubleshooting {
+    background:
+        radial-gradient(
+            circle at 80% 15%,
+            rgba(182, 155, 119, 0.06),
+            transparent 45%
+        ),
+        #29241F;
+}
+
+/* Heading accent */
+
+.bioactive-page.isopods-home-page
+.bio-troubleshooting-heading h2 em {
+    color: #C9AD8A;
+}
+
+/* Introductory description */
+
+.bioactive-page.isopods-home-page
+.bio-troubleshooting-heading > p:last-child {
+    color: #DED3C4;
+}
+
+/* Troubleshooting cards */
+
+.bioactive-page.isopods-home-page .bio-trouble-card {
+    background: #40372F;
+    border-color: rgba(182, 155, 119, 0.22);
+}
+
+/* Card hover effect */
+
+.bioactive-page.isopods-home-page .bio-trouble-card:hover {
+    background: #4B4036;
+    border-color: rgba(182, 155, 119, 0.5);
+}
+
+/* Card symbols */
+
+.bioactive-page.isopods-home-page .bio-trouble-symbol {
+    color: #C9AD8A;
+}
+
+/* Card descriptions */
+
+.bioactive-page.isopods-home-page .bio-trouble-card > p {
+    color: #DED3C4;
+}
+
+/* Card links */
+
+.bioactive-page.isopods-home-page .bio-trouble-link {
+    color: #B69B77;
+}
+
+/* ========================================
+   ISOPODS HOMEPAGE CLOSING CTA
+   DARK WALNUT THEME
+======================================== */
+
+body.bioactive-page.isopods-home-page
+.bio-isopods-closing {
+    background:
+        radial-gradient(
+            circle at 80% 25%,
+            rgba(182, 155, 119, 0.13),
+            transparent 45%
+        ),
+        linear-gradient(
+            145deg,
+            #302923 0%,
+            #3B3027 50%,
+            #211D1A 100%
+        );
+}
+
+/* CTA heading */
+
+body.bioactive-page.isopods-home-page
+.bio-isopods-closing h2 {
+    color: #E8DFCC;
+}
+
+/* Italic heading */
+
+body.bioactive-page.isopods-home-page
+.bio-isopods-closing h2 em {
+    color: #C9AD8A;
+}
+
+/* Description */
+
+body.bioactive-page.isopods-home-page
+.bio-isopods-closing-description {
+    color: #DED3C4;
+}
+
+/* CTA button */
+
+body.bioactive-page.isopods-home-page
+.bio-isopods-closing-button {
+    background: #B69B77;
+    color: #211D1A;
+}
+
+/* Button hover */
+
+body.bioactive-page.isopods-home-page
+.bio-isopods-closing-button:hover {
+    background: #C9AD8A;
+    color: #211D1A;
+}
+
+/* ========================================
+   ISOPODS HOMEPAGE HEADER
+   DARK WALNUT THEME
+======================================== */
+
+body.bioactive-page.isopods-home-page .bio-header {
+    background: #211D1A;
+    border-bottom: 1px solid rgba(182, 155, 119, 0.18);
+}
+
+/* Header navigation links */
+
+body.bioactive-page.isopods-home-page
+.bio-header nav a {
+    color: #E8DFCC;
+}
+
+/* Navigation hover */
+
+body.bioactive-page.isopods-home-page
+.bio-header nav a:hover {
+    color: #B69B77;
+}
+
+/* ========================================
+   ISOPODS HOMEPAGE FOOTER
+   DARK WALNUT THEME
+======================================== */
+
+body.bioactive-page.isopods-home-page .bio-footer {
+    background: #1D1916;
+    border-top: 1px solid rgba(182, 155, 119, 0.18);
+}
+
+/* Footer brand description */
+
+body.bioactive-page.isopods-home-page
+.bio-footer-brand p {
+    color: #C9AD8A;
+}
+
+/* Footer navigation links */
+
+body.bioactive-page.isopods-home-page
+.bio-footer-links a {
+    color: #DED3C4;
+}
+
+/* Footer link hover */
+
+body.bioactive-page.isopods-home-page
+.bio-footer-links a:hover {
+    color: #B69B77;
+}
+
+/* Footer copyright */
+
+body.bioactive-page.isopods-home-page
+.bio-footer-bottom {
+    color: #C9AD8A;
+    border-top: 1px solid rgba(182, 155, 119, 0.18);
+}
+
+/* ========================================
+   ROOT & ROT — LEGAL PAGE
+======================================== */
+
+.bio-legal-page {
+    background: #17251f;
+    color: #e8dfcc;
+    min-height: 100vh;
+}
+
+/* HEADER */
+
+.bio-legal-header {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 85px 24px 55px;
+    text-align: center;
+}
+
+.bio-legal-back {
+    display: inline-block;
+    margin-bottom: 65px;
+    color: #b69b77;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+}
+
+.bio-legal-back:hover {
+    color: #e8dfcc;
+}
+
+.bio-legal-eyebrow {
+    color: #b69b77;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    margin-bottom: 20px;
+}
+
+.bio-legal-header h1 {
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    color: #e8dfcc;
+    margin-bottom: 24px;
+}
+
+.bio-legal-header h1 em {
+    color: #b69b77;
+    font-weight: 400;
+}
+
+.bio-legal-intro {
+    max-width: 570px;
+    margin: 0 auto;
+    color: #c0c7ba;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+/* LEGAL CONTENT */
+
+.bio-legal-main {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 24px 100px;
+}
+
+/* POLICY NAVIGATION */
+
+.bio-legal-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 55px;
+}
+
+.bio-legal-nav a {
+    color: #e8dfcc;
+    border: 1px solid rgba(182, 155, 119, 0.4);
+    padding: 13px 22px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: background 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.bio-legal-nav a:hover {
+    background: #304b3b;
+    border-color: #b69b77;
+}
+
+/* POLICY SECTIONS */
+
+.bio-legal-section {
+    padding: 45px 0;
+    border-top: 1px solid rgba(182, 155, 119, 0.25);
+    scroll-margin-top: 30px;
+}
+
+.bio-legal-section-label {
+    color: #b69b77;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    margin-bottom: 15px;
+}
+
+.bio-legal-section h2 {
+    color: #e8dfcc;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .bio-legal-header {
+        padding-top: 55px;
+    }
+
+    .bio-legal-back {
+        margin-bottom: 45px;
+    }
+
+    .bio-legal-nav {
+        flex-direction: column;
+    }
+
+    .bio-legal-nav a {
+        text-align: center;
+    }
+}
+
+/* ========================================
+   LEGAL PAGE — POLICY TYPOGRAPHY
+======================================== */
+
+.bio-legal-section h3 {
+    color: #b69b77;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin: 36px 0 14px;
+}
+
+.bio-legal-section p {
+    color: #c0c7ba;
+    font-size: 0.95rem;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.bio-legal-section p strong {
+    color: #e8dfcc;
+}
+
+.bio-legal-section a {
+    color: #b69b77;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.bio-legal-section a:hover {
+    color: #e8dfcc;
+}
+
+/* ========================================
+   LEGAL PAGE — LARGER TYPOGRAPHY
+======================================== */
+
+/* Main policy paragraphs */
+.bio-legal-section p {
+    font-size: 1.1rem;
+    line-height: 2;
+    margin-bottom: 24px;
+}
+
+/* Policy subheadings */
+.bio-legal-section h3 {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin: 45px 0 18px;
+}
+
+/* Main section headings */
+.bio-legal-section h2 {
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    margin-bottom: 30px;
+}
+
+/* Last updated and section labels */
+.bio-legal-section-label {
+    font-size: 0.85rem !important;
+}
+
+/* Navigation links */
+.bio-legal-nav a {
+    font-size: 1rem;
+    padding: 15px 26px;
+}
+
+/* Introductory description */
+.bio-legal-intro {
+    font-size: 1.15rem;
+    line-height: 1.9;
+}
+
+/* ========================================
+   LEGAL PAGE — SECTION DIVIDERS
+======================================== */
+
+.bio-legal-section {
+    position: relative;
+    border-top: none;
+}
+
+.bio-legal-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    max-width: 1400px;
+    height: 1px;
+    background: rgba(182, 155, 119, 0.25);
+}
+
+/* ========================================
+   ROOT & ROT — ABOUT THE CREATOR
+======================================== */
+
+.bio-about-page {
+    background: #17251f;
+    color: #e8dfcc;
+    min-height: 100vh;
+}
+
+/* HERO */
+
+.bio-about-hero {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 85px 24px 65px;
+    text-align: center;
+}
+
+.bio-about-back {
+    display: inline-block;
+    margin-bottom: 65px;
+    color: #b69b77;
+    text-decoration: none;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    transition: color 0.3s ease;
+}
+
+.bio-about-back:hover {
+    color: #e8dfcc;
+}
+
+.bio-about-eyebrow {
+    color: #b69b77;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    margin-bottom: 20px;
+}
+
+.bio-about-hero h1 {
+    color: #e8dfcc;
+    font-size: clamp(3rem, 6vw, 5.2rem);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 28px;
+}
+
+.bio-about-hero h1 em {
+    color: #b69b77;
+    font-weight: 400;
+}
+
+.bio-about-intro {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #c0c7ba;
+    font-size: 1.2rem;
+    line-height: 1.9;
+}
+
+/* MAIN CONTENT */
+
+.bio-about-main {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 24px 110px;
+}
+
+/* INDIVIDUAL SECTIONS */
+
+.bio-about-section {
+    position: relative;
+    padding: 60px 0 70px;
+}
+
+.bio-about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    max-width: 1400px;
+    height: 1px;
+    background: rgba(182, 155, 119, 0.25);
+}
+
+.bio-about-label {
+    color: #b69b77;
+    font-size: 0.85rem;
+    letter-spacing: 0.18em;
+    margin-bottom: 18px;
+}
+
+.bio-about-section h2 {
+    color: #e8dfcc;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.bio-about-section p:not(.bio-about-label) {
+    color: #c0c7ba;
+    font-size: 1.1rem;
+    line-height: 2;
+    margin-bottom: 24px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .bio-about-hero {
+        padding: 55px 24px 50px;
+    }
+
+    .bio-about-back {
+        margin-bottom: 45px;
+    }
+
+    .bio-about-section {
+        padding: 45px 0 55px;
+    }
+
+    .bio-about-intro {
+        font-size: 1.05rem;
+    }
+}
+
+/* ========================================
+   ABOUT PAGE — PERSONAL STORY
+======================================== */
+
+/* INTRODUCTION */
+
+.bio-about-greeting {
+    color: #e8dfcc !important;
+    font-size: clamp(1.5rem, 3vw, 2rem) !important;
+    font-weight: 400;
+    line-height: 1.5 !important;
+    margin-bottom: 18px !important;
+}
+
+.bio-about-story-intro {
+    margin-bottom: 55px;
+}
+
+/* STORY BLOCKS */
+
+.bio-about-story-block {
+    margin: 55px 0;
+}
+
+.bio-about-story-block h3 {
+    color: #b69b77;
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+/* HIGHLIGHTED PERSONAL MOMENTS */
+
+.bio-about-story .bio-about-highlight {
+    color: #e8dfcc;
+    font-size: 1.35rem;
+    font-style: italic;
+    line-height: 1.7;
+    margin: 32px 0;
+    padding-left: 22px;
+    border-left: 2px solid #b69b77;
+}
+
+/* DAIRY COW MILESTONE */
+
+.bio-about-milestone {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    background: #24372c;
+    border: 1px solid rgba(182, 155, 119, 0.25);
+    border-radius: 18px;
+    padding: 38px 42px;
+    margin: 65px 0;
+}
+
+.bio-about-milestone-number {
+    color: #b69b77;
+    font-size: clamp(3.5rem, 6vw, 5rem);
+    font-weight: 400;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.bio-about-milestone-content h3 {
+    color: #e8dfcc;
+    font-size: 1.35rem;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.bio-about-milestone-content p {
+    margin-bottom: 0 !important;
+}
+
+/* CLOSING MESSAGE */
+
+.bio-about-story-closing {
+    background: linear-gradient(
+        135deg,
+        #304b3b,
+        #24372c
+    );
+
+    border-radius: 20px;
+    padding: 45px 48px;
+    margin-top: 65px;
+}
+
+.bio-about-story-closing h3 {
+    color: #b69b77;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.bio-about-story-closing p:last-child {
+    margin-bottom: 0;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .bio-about-story-block {
+        margin: 40px 0;
+    }
+
+    .bio-about-milestone {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 30px 26px;
+    }
+
+    .bio-about-story-closing {
+        padding: 32px 26px;
+    }
+
+    .bio-about-story .bio-about-highlight {
+        font-size: 1.2rem;
+    }
+}
+
+/* ========================================
+   CUBARIS MURINA — CARE SHEET
+======================================== */
+
+.murina-page {
+    background: #392b27;
+    color: #e8dfcc;
+}
+
+/* HERO */
+
+.murina-hero {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 90px 35px 100px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+}
+
+.murina-hero-content {
+    max-width: 620px;
+}
+
+.murina-back-link {
+    display: inline-block;
+    margin-bottom: 55px;
+    color: #b69b77;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.murina-back-link:hover {
+    color: #e8dfcc;
+}
+
+.murina-eyebrow {
+    color: #b69b77;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+}
+
+.murina-hero h1 {
+    color: #e8dfcc;
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(3.5rem, 6vw, 6rem);
+    font-weight: 400;
+    line-height: 1.05;
+    margin-bottom: 22px;
+}
+
+.murina-hero h1 em {
+    color: #b69b77;
+    font-weight: 400;
+}
+
+.murina-subtitle {
+    color: #d4b98f;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+}
+
+.murina-intro {
+    color: #e0d7ca;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+/* IMAGE */
+
+.murina-hero-image {
+    overflow: hidden;
+    border-radius: 22px;
+    border: 1px solid rgba(182, 155, 119, 0.3);
+    background: #4a3832;
+    aspect-ratio: 4 / 3;
+}
+
+.murina-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .murina-hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 55px 24px 70px;
+    }
+
+    .murina-back-link {
+        margin-bottom: 35px;
+    }
+
+    .murina-hero h1 {
+        font-size: clamp(3rem, 10vw, 4.5rem);
+    }
+}
+
+.murina-photo-caption {
+    color: #b69b77;
+    font-size: 0.85rem;
+    font-style: italic;
+    text-align: right;
+    margin-top: 12px;
+}
+
+/* CUBARIS MURINA — HERO PHOTO & CAPTION */
+
+.murina-hero-figure {
+    margin: 0;
+    width: 100%;
+    min-width: 0;
+}
+
+.murina-hero-figure .murina-photo-caption {
+    display: block;
+    color: #b69b77;
+    font-size: 0.85rem;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.6;
+    margin: 12px 0 0;
+}
+
+/* ========================================
+   CUBARIS MURINA — QUICK CARE FACTS
+======================================== */
+
+.murina-quick-care {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 20px 35px 100px;
+}
+
+.murina-section-heading {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.murina-section-heading h2 {
+    color: #e8dfcc;
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(2.3rem, 4vw, 3.5rem);
+    font-weight: 400;
+    margin: 12px 0 16px;
+}
+
+.murina-section-heading > p:last-child {
+    color: #e0d7ca;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.murina-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.murina-fact {
+    background: #463530;
+    border: 1px solid rgba(182, 155, 119, 0.25);
+    border-radius: 16px;
+    padding: 30px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.murina-fact span {
+    color: #b69b77;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+}
+
+.murina-fact strong {
+    color: #e8dfcc;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+    .murina-facts-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .murina-quick-care {
+        padding: 20px 24px 75px;
+    }
+}
+
+@media (max-width: 480px) {
+    .murina-facts-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
+   CUBARIS MURINA — THE BASICS
+======================================== */
+
+.murina-basics {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 20px 35px 110px;
+}
+
+.murina-basics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.murina-basic-card {
+    background: #463530;
+    border: 1px solid rgba(182, 155, 119, 0.25);
+    border-radius: 18px;
+    padding: 38px 36px;
+}
+
+.murina-basic-number {
+    display: block;
+    color: #b69b77;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    margin-bottom: 22px;
+}
+
+.murina-basic-card h3 {
+    color: #e8dfcc;
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.murina-basic-card p {
+    color: #e0d7ca;
+    font-size: 1.05rem;
+    line-height: 1.85;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .murina-basics {
+        padding: 20px 24px 80px;
+    }
+
+    .murina-basics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .murina-basic-card {
+        padding: 30px 26px;
+    }
+}
+
+/* PERSONAL CARE TIPS */
+
+.murina-basic-card .murina-personal-tip {
+    margin-top: 24px;
+    padding: 18px 20px;
+    background: rgba(182, 155, 119, 0.09);
+    border-left: 2px solid #b69b77;
+    border-radius: 0 10px 10px 0;
+    font-size: 0.98rem;
+    line-height: 1.8;
+}
+
+.murina-personal-tip strong {
+    color: #d4b98f;
+    font-weight: 600;
+}
+
+/* ========================================
+   CUBARIS MURINA — MY COLONY
+======================================== */
+
+.murina-colony {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 35px 110px;
+}
+
+.murina-colony-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 65px;
+    background: #463530;
+    border: 1px solid rgba(182, 155, 119, 0.3);
+    border-radius: 22px;
+    text-align: center;
+}
+
+.murina-colony h2 {
+    color: #e8dfcc;
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(2.3rem, 4vw, 3.5rem);
+    font-weight: 400;
+    margin: 15px 0 30px;
+}
+
+.murina-colony h2 em {
+    color: #b69b77;
+    font-weight: 400;
+}
+
+.murina-colony-content > p:not(.murina-eyebrow) {
+    color: #e0d7ca;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 22px;
+}
+
+.murina-colony-signature {
+    margin-top: 35px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(182, 155, 119, 0.25);
+}
+
+.murina-colony-signature span {
+    display: block;
+    color: #b69b77;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    margin-bottom: 12px;
+}
+
+.murina-colony-signature p {
+    color: #d4b98f;
+    font-family: "DM Serif Display", serif;
+    font-size: 1.7rem;
+    font-style: italic;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .murina-colony {
+        padding: 0 24px 80px;
+    }
+
+    .murina-colony-content {
+        padding: 40px 25px;
+    }
+}
+
+
+/* ========================================
+   CUBARIS — SHOPPING SECTION
+======================================== */
+
+.cubaris-shop {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 35px 110px;
+}
+
+.cubaris-shop-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 55px 60px;
+    background: #463530;
+    border: 1px solid rgba(182, 155, 119, 0.3);
+    border-radius: 22px;
+    text-align: center;
+}
+
+.cubaris-shop h2 {
+    color: #e8dfcc;
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    font-weight: 400;
+    margin: 15px 0 24px;
+}
+
+.cubaris-shop h2 em {
+    color: #b69b77;
+    font-weight: 400;
+}
+
+.cubaris-shop-description {
+    color: #e0d7ca;
+    font-size: 1.05rem;
+    line-height: 1.85;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.cubaris-shop-button {
+    display: inline-block;
+    background: #b69b77;
+    color: #392b27;
+    padding: 15px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background 0.3s ease,
+                transform 0.3s ease;
+}
+
+.cubaris-shop-button:hover {
+    background: #d4b98f;
+    transform: translateY(-2px);
+}
+
+.cubaris-shop-content .cubaris-shop-disclosure {
+    color: #bfb2a3;
+    font-size: 0.82rem;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 25px auto 0;
+}
+
+@media (max-width: 800px) {
+    .cubaris-shop {
+        padding: 0 24px 80px;
+    }
+
+    .cubaris-shop-content {
+        padding: 40px 25px;
+    }
+}
+
+/* ========================================
+   UNIVERSAL ISOPOD SUPPLIES GUIDE
+======================================== */
+
+.bio-supplies-guide {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 35px 110px;
+}
+
+.bio-supplies-guide-content {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: center;
+    padding: 55px 60px;
+    background: #463530;
+    border: 1px solid rgba(182, 155, 119, 0.3);
+    border-radius: 22px;
+}
+
+.bio-supplies-guide-eyebrow {
+    color: #b69b77;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    margin-bottom: 18px;
+}
+
+.bio-supplies-guide h2 {
+    color: #e8dfcc;
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.bio-supplies-guide h2 em {
+    display: block;
+    color: #b69b77;
+    font-weight: 400;
+}
+
+.bio-supplies-guide-text > p:not(
+    .bio-supplies-guide-eyebrow
+) {
+    color: #e0d7ca;
+    font-size: 1.05rem;
+    line-height: 1.85;
+    margin-bottom: 18px;
+}
+
+.bio-supplies-guide-button {
+    display: inline-block;
+    background: #b69b77;
+    color: #392b27;
+    padding: 15px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background 0.3s ease,
+                transform 0.3s ease;
+}
+
+.bio-supplies-guide-button:hover {
+    background: #d4b98f;
+    transform: translateY(-2px);
+}
+
+.bio-supplies-guide-visual {
+    border-left: 1px solid rgba(182, 155, 119, 0.3);
+    padding-left: 50px;
+}
+
+.bio-supplies-guide-label {
+    display: block;
+    color: #b69b77;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    margin-bottom: 25px;
+}
+
+.bio-supplies-guide-visual ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bio-supplies-guide-visual li {
+    color: #e8dfcc;
+    font-size: 1.05rem;
+    padding: 13px 0;
+    border-bottom: 1px solid rgba(182, 155, 119, 0.15);
+}
+
+.bio-supplies-guide-visual li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 800px) {
+    .bio-supplies-guide {
+        padding: 0 24px 80px;
+    }
+
+    .bio-supplies-guide-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 40px 25px;
+    }
+
+    .bio-supplies-guide-visual {
+        border-left: none;
+        border-top: 1px solid rgba(182, 155, 119, 0.3);
+        padding-left: 0;
+        padding-top: 30px;
+    }
+}
+
+/* ========================================
+   ISOPODS & SPRINGTAILS — EDUCATIONAL INTRO
+======================================== */
+
+.bio-cleanup-story {
+    padding: 100px 35px 120px;
+    background: #51473f;
+}
+
+.bio-cleanup-story-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bio-cleanup-story h2 {
+    color: #f5f0e6;
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(2.8rem, 5vw, 4.8rem);
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 20px 0 40px;
+}
+
+.bio-cleanup-story h2 em {
+    display: block;
+    color: #e8d9a8;
+    font-weight: 400;
+}
+
+.bio-cleanup-story-content > p:not(.bio-eyebrow) {
+    color: #e8dfd3;
+    font-size: 1.08rem;
+    line-height: 1.95;
+    max-width: 780px;
+    margin: 0 auto 25px;
+}
+
+.bio-cleanup-story-closing {
+    max-width: 680px;
+    margin: 55px auto 0;
+    padding-top: 35px;
+    border-top: 1px solid rgba(232, 217, 168, 0.3);
+}
+
+.bio-cleanup-story-closing span {
+    display: block;
+    color: #e8d9a8;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.17em;
+    margin-bottom: 18px;
+}
+
+.bio-cleanup-story-closing p {
+    color: #f5f0e6;
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .bio-cleanup-story {
+        padding: 75px 24px 90px;
+    }
+
+    .bio-cleanup-story h2 {
+        margin-bottom: 30px;
+    }
+
+    .bio-cleanup-story-content > p:not(.bio-eyebrow) {
+        font-size: 1rem;
+        line-height: 1.85;
+    }
+}
+
+
+/* ========================================
+   SPRINGTAIL CARE SECTION
+======================================== */
+
+.bioactive-page .bio-springtails {
+    padding: 100px 7vw;
+    background: #304b3b;
+    font-family: "Inter", sans-serif;
+}
+
+.bioactive-page .bio-springtails-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(40px, 6vw, 100px);
+    max-width: 1320px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+/* LEFT INTRODUCTION */
+
+.bioactive-page .bio-springtails-intro .bio-eyebrow {
+    color: #d8b991;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    margin: 0 0 24px;
+}
+
+.bioactive-page .bio-springtails-intro h1 {
+    margin: 0 0 28px;
+    color: var(--bio-cream);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.bioactive-page .bio-springtails-intro h1 em {
+    display: block;
+    color: #c5d0b4;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-springtails-lead {
+    max-width: 540px;
+    margin: 0 0 24px;
+    color: #e8dfcc;
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.25rem, 1.8vw, 1.65rem);
+    line-height: 1.5;
+}
+
+.bioactive-page .bio-springtails-description {
+    max-width: 540px;
+    margin: 0;
+    color: #d1d8ca;
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+
+/* FIELD NOTE */
+
+.bioactive-page .bio-springtails-fact {
+    max-width: 540px;
+    margin-top: 35px;
+    padding: 24px 28px;
+    border-left: 2px solid var(--bio-earth);
+    border-radius: 0 12px 12px 0;
+    background: rgba(23, 37, 31, 0.3);
+}
+
+.bioactive-page .bio-springtails-fact span {
+    display: block;
+    margin-bottom: 12px;
+    color: #d8b991;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.bioactive-page .bio-springtails-fact p {
+    margin: 0;
+    color: #e0e4d9;
+    font-size: 0.88rem;
+    line-height: 1.85;
+}
+
+
+/* RIGHT TOPIC CARDS */
+
+.bioactive-page .bio-springtails-topics {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.bioactive-page .bio-springtail-topic {
+    display: block;
+    box-sizing: border-box;
+    padding: 28px 32px;
+    background: #f5f1e8;
+    border: 1px solid #dedfd4;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #17251f;
+    transition: background 0.25s ease,
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.bioactive-page .bio-springtail-topic:hover {
+    background: #fffdf7;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.bioactive-page .bio-springtail-topic:focus-visible {
+    outline: 2px solid #d8b991;
+    outline-offset: 4px;
+}
+
+.bioactive-page .bio-springtail-topic-number {
+    display: block;
+    margin-bottom: 12px;
+    color: #657354;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.bioactive-page .bio-springtail-topic h3 {
+    margin: 0 0 12px;
+    color: #17251f;
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.bioactive-page .bio-springtail-topic p {
+    margin: 0 0 18px;
+    color: #536057;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.bioactive-page .bio-springtail-topic-link {
+    display: inline-block;
+    color: #304b3b;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: transform 0.25s ease;
+}
+
+.bioactive-page .bio-springtail-topic:hover
+.bio-springtail-topic-link {
+    transform: translateX(5px);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+    .bioactive-page .bio-springtails-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .bioactive-page .bio-springtails {
+        padding: 75px 6vw;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .bioactive-page .bio-springtails {
+        padding: 60px 6vw;
+    }
+
+    .bioactive-page .bio-springtails-fact {
+        margin-top: 28px;
+        padding: 22px;
+    }
+
+    .bioactive-page .bio-springtail-topic {
+        padding: 24px;
+    }
+
+}
+
+/* ========================================
+   SPRINGTAILS — THE BASICS
+======================================== */
+
+.bioactive-page .bio-springtail-basics {
+    background: #f5f1e8;
+    padding: 100px 7vw;
+    color: var(--bio-forest);
+    scroll-margin-top: 100px;
+}
+
+.bioactive-page .bio-springtail-basics-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+
+/* SECTION HEADING */
+
+.bioactive-page .bio-springtail-basics-heading {
+    max-width: 800px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.bioactive-page .bio-springtail-basics-heading .bio-eyebrow {
+    color: #657354;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    margin: 0 0 20px;
+}
+
+.bioactive-page .bio-springtail-basics-heading h2 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2.8rem, 4.5vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--bio-forest);
+    margin: 0 0 25px;
+}
+
+.bioactive-page .bio-springtail-basics-heading h2 em {
+    display: block;
+    color: #657354;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-springtail-basics-heading > p:last-child {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #536057;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+
+/* EDUCATIONAL CARDS */
+
+.bioactive-page .bio-springtail-basics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.bioactive-page .bio-springtail-basics-card {
+    background: #fcfaf5;
+    border: 1px solid #dedfd4;
+    border-radius: 16px;
+    padding: 35px;
+}
+
+.bioactive-page .bio-springtail-basics-card > span {
+    display: block;
+    color: #657354;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    margin-bottom: 18px;
+}
+
+.bioactive-page .bio-springtail-basics-card h3 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.6rem, 2vw, 2rem);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--bio-forest);
+    margin: 0 0 20px;
+}
+
+.bioactive-page .bio-springtail-basics-card p {
+    color: #536057;
+    font-size: 0.95rem;
+    line-height: 1.85;
+    margin: 0 0 18px;
+}
+
+.bioactive-page .bio-springtail-basics-card p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* FIELD NOTE */
+
+.bioactive-page .bio-springtail-basics-note {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 25px;
+    align-items: center;
+    background: #e5e8dc;
+    border-left: 3px solid var(--bio-sage);
+    border-radius: 0 12px 12px 0;
+    padding: 28px 35px;
+    margin-top: 35px;
+}
+
+.bioactive-page .bio-springtail-basics-note span {
+    color: var(--bio-moss);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.bioactive-page .bio-springtail-basics-note p {
+    color: #405044;
+    font-size: 0.9rem;
+    line-height: 1.85;
+    margin: 0;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+    .bioactive-page .bio-springtail-basics {
+        padding: 75px 6vw;
+    }
+
+    .bioactive-page .bio-springtail-basics-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .bioactive-page .bio-springtail-basics {
+        padding: 60px 6vw;
+    }
+
+    .bioactive-page .bio-springtail-basics-card {
+        padding: 25px;
+    }
+
+    .bioactive-page .bio-springtail-basics-note {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 25px;
+    }
+
+}
+
+/* ========================================
+   SPRINGTAILS — CULTURE & CARE
+======================================== */
+
+.bioactive-page .bio-springtail-culture {
+    background: #e1e6d9;
+    padding: 100px 7vw;
+    color: var(--bio-forest);
+    scroll-margin-top: 100px;
+}
+
+.bioactive-page .bio-springtail-culture-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+
+/* SECTION HEADING */
+
+.bioactive-page .bio-springtail-culture-heading {
+    max-width: 780px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.bioactive-page .bio-springtail-culture-heading .bio-eyebrow {
+    color: #657354;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    margin: 0 0 20px;
+}
+
+.bioactive-page .bio-springtail-culture-heading h2 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2.8rem, 4.5vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--bio-forest);
+    margin: 0 0 25px;
+}
+
+.bioactive-page .bio-springtail-culture-heading h2 em {
+    display: block;
+    color: #657354;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-springtail-culture-heading > p:last-child {
+    color: #536057;
+    font-size: 1rem;
+    line-height: 1.9;
+    margin: 0;
+}
+
+
+/* CULTURE METHODS */
+
+.bioactive-page .bio-springtail-methods {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.bioactive-page .bio-springtail-method {
+    background: #f5f1e8;
+    border: 1px solid #cdd4c3;
+    border-radius: 16px;
+    padding: 38px;
+}
+
+.bioactive-page .bio-springtail-method > span {
+    display: block;
+    color: #657354;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    margin-bottom: 16px;
+}
+
+.bioactive-page .bio-springtail-method h3 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    font-weight: 400;
+    color: var(--bio-forest);
+    margin: 0 0 20px;
+}
+
+.bioactive-page .bio-springtail-method p {
+    color: #536057;
+    font-size: 0.95rem;
+    line-height: 1.85;
+    margin: 0 0 20px;
+}
+
+.bioactive-page .bio-springtail-method p:last-child {
+    margin-bottom: 0;
+}
+
+.bioactive-page .bio-springtail-method ul {
+    list-style: none;
+    padding: 20px 0;
+    margin: 20px 0;
+    border-top: 1px solid #d8dcd0;
+    border-bottom: 1px solid #d8dcd0;
+}
+
+.bioactive-page .bio-springtail-method li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 12px;
+    color: #405044;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.bioactive-page .bio-springtail-method li:last-child {
+    margin-bottom: 0;
+}
+
+.bioactive-page .bio-springtail-method li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    background: var(--bio-sage);
+    border-radius: 50%;
+}
+
+
+/* CULTURE MAINTENANCE */
+
+.bioactive-page .bio-springtail-culture-care {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.bioactive-page .bio-springtail-care-item {
+    border-top: 2px solid #a8b29b;
+    padding: 24px 5px 10px;
+}
+
+.bioactive-page .bio-springtail-care-item > span {
+    display: block;
+    color: #657354;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    margin-bottom: 15px;
+}
+
+.bioactive-page .bio-springtail-care-item h3 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.65rem;
+    font-weight: 400;
+    color: var(--bio-forest);
+    margin: 0 0 15px;
+}
+
+.bioactive-page .bio-springtail-care-item p {
+    color: #536057;
+    font-size: 0.9rem;
+    line-height: 1.85;
+    margin: 0;
+}
+
+
+/* FIELD NOTE */
+
+.bioactive-page .bio-springtail-culture-note {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 25px;
+    align-items: center;
+    background: #304b3b;
+    border-radius: 12px;
+    padding: 28px 35px;
+    margin-top: 40px;
+}
+
+.bioactive-page .bio-springtail-culture-note span {
+    color: #d8b991;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.bioactive-page .bio-springtail-culture-note p {
+    color: #e8dfcc;
+    font-size: 0.9rem;
+    line-height: 1.85;
+    margin: 0;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+    .bioactive-page .bio-springtail-culture {
+        padding: 75px 6vw;
+    }
+
+    .bioactive-page .bio-springtail-culture-care {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .bioactive-page .bio-springtail-culture {
+        padding: 60px 6vw;
+    }
+
+    .bioactive-page .bio-springtail-methods,
+    .bioactive-page .bio-springtail-culture-care {
+        grid-template-columns: 1fr;
+    }
+
+    .bioactive-page .bio-springtail-method {
+        padding: 25px;
+    }
+
+    .bioactive-page .bio-springtail-culture-note {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 25px;
+    }
+
+}
+
+/* ========================================
+   SPRINGTAILS — BIOACTIVE LIVING
+======================================== */
+
+.bioactive-page .bio-springtail-bioactive {
+    background: #f5f1e8;
+    padding: 100px 7vw;
+    color: var(--bio-forest);
+    scroll-margin-top: 100px;
+}
+
+.bioactive-page .bio-springtail-bioactive-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.bioactive-page .bio-springtail-bioactive-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: clamp(40px, 7vw, 110px);
+    align-items: start;
+}
+
+
+/* LEFT INTRODUCTION */
+
+.bioactive-page .bio-springtail-bioactive-intro .bio-eyebrow {
+    color: #657354;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    margin: 0 0 24px;
+}
+
+.bioactive-page .bio-springtail-bioactive-intro h2 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(3rem, 4.5vw, 4.8rem);
+    font-weight: 400;
+    line-height: 1.08;
+    color: var(--bio-forest);
+    margin: 0 0 28px;
+}
+
+.bioactive-page .bio-springtail-bioactive-intro h2 em {
+    display: block;
+    color: #657354;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-springtail-bioactive-intro > p {
+    color: #536057;
+    font-size: 0.95rem;
+    line-height: 1.9;
+    margin: 0 0 24px;
+}
+
+.bioactive-page .bio-springtail-bioactive-intro
+.bio-springtail-bioactive-lead {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    line-height: 1.5;
+    color: var(--bio-moss);
+}
+
+
+/* FIELD NOTE */
+
+.bioactive-page .bio-springtail-bioactive-note {
+    background: #e1e6d9;
+    border-left: 3px solid var(--bio-sage);
+    border-radius: 0 12px 12px 0;
+    padding: 28px;
+    margin-top: 35px;
+}
+
+.bioactive-page .bio-springtail-bioactive-note span {
+    display: block;
+    color: var(--bio-moss);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    margin-bottom: 14px;
+}
+
+.bioactive-page .bio-springtail-bioactive-note p {
+    color: #405044;
+    font-size: 0.9rem;
+    line-height: 1.85;
+    margin: 0;
+}
+
+
+/* RIGHT EDUCATIONAL TOPICS */
+
+.bioactive-page .bio-springtail-bioactive-topics {
+    border-top: 1px solid #cdd4c3;
+}
+
+.bioactive-page .bio-springtail-bioactive-topic {
+    padding: 30px 0;
+    border-bottom: 1px solid #cdd4c3;
+}
+
+.bioactive-page .bio-springtail-bioactive-topic > span {
+    display: block;
+    color: #657354;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    margin-bottom: 15px;
+}
+
+.bioactive-page .bio-springtail-bioactive-topic h3 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.7rem, 2.5vw, 2.3rem);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--bio-forest);
+    margin: 0 0 18px;
+}
+
+.bioactive-page .bio-springtail-bioactive-topic p {
+    color: #536057;
+    font-size: 0.95rem;
+    line-height: 1.85;
+    margin: 0 0 15px;
+}
+
+.bioactive-page .bio-springtail-bioactive-topic p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+    .bioactive-page .bio-springtail-bioactive {
+        padding: 75px 6vw;
+    }
+
+    .bioactive-page .bio-springtail-bioactive-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .bioactive-page .bio-springtail-bioactive {
+        padding: 60px 6vw;
+    }
+
+    .bioactive-page .bio-springtail-bioactive-note {
+        padding: 22px;
+    }
+
+    .bioactive-page .bio-springtail-bioactive-topic {
+        padding: 25px 0;
+    }
+
+}
+
+/* ========================================
+   SPRINGTAILS — SUPPLIES
+======================================== */
+
+.bioactive-page .bio-springtail-supplies {
+    background: #17251f;
+    padding: 100px 7vw;
+    color: var(--bio-cream);
+    scroll-margin-top: 100px;
+}
+
+.bioactive-page .bio-springtail-supplies-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+
+/* SECTION HEADING */
+
+.bioactive-page .bio-springtail-supplies-heading {
+    max-width: 750px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.bioactive-page .bio-springtail-supplies-heading .bio-eyebrow {
+    color: #d8b991;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    margin: 0 0 20px;
+}
+
+.bioactive-page .bio-springtail-supplies-heading h2 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2.8rem, 4.5vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--bio-cream);
+    margin: 0 0 25px;
+}
+
+.bioactive-page .bio-springtail-supplies-heading h2 em {
+    display: block;
+    color: #c5d0b4;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-springtail-supplies-heading > p:last-child {
+    color: #d1d8ca;
+    font-size: 1rem;
+    line-height: 1.9;
+    margin: 0;
+}
+
+
+/* SUPPLY ESSENTIALS */
+
+.bioactive-page .bio-springtail-supplies-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.bioactive-page .bio-springtail-supply {
+    background: #22362b;
+    border: 1px solid rgba(232, 223, 204, 0.15);
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.bioactive-page .bio-springtail-supply > span {
+    display: block;
+    color: #d8b991;
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+}
+
+.bioactive-page .bio-springtail-supply h3 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--bio-cream);
+    margin: 0 0 15px;
+}
+
+.bioactive-page .bio-springtail-supply p {
+    color: #d1d8ca;
+    font-size: 0.9rem;
+    line-height: 1.85;
+    margin: 0;
+}
+
+
+/* AFFILIATE SHOP */
+
+.bioactive-page .bio-springtail-supplies-shop {
+    max-width: 850px;
+    margin: 55px auto 0;
+    padding: 45px 35px 0;
+    border-top: 1px solid rgba(232, 223, 204, 0.2);
+    text-align: center;
+}
+
+.bioactive-page .bio-springtail-supplies-shop .bio-eyebrow {
+    color: #d8b991;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    margin: 0 0 18px;
+}
+
+.bioactive-page .bio-springtail-supplies-shop h3 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 400;
+    color: var(--bio-cream);
+    margin: 0 0 18px;
+}
+
+.bioactive-page .bio-springtail-supplies-shop > p {
+    color: #d1d8ca;
+    font-size: 0.95rem;
+    line-height: 1.85;
+    margin: 0 0 24px;
+}
+
+
+/* SHOP BUTTON */
+
+.bioactive-page .bio-springtail-supplies-button {
+    display: inline-block;
+    background: #e8dfcc;
+    color: #17251f;
+    border: 1px solid #e8dfcc;
+    border-radius: 6px;
+    padding: 15px 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.25s ease,
+                transform 0.25s ease;
+}
+
+.bioactive-page .bio-springtail-supplies-button:hover {
+    background: #ffffff;
+    color: #17251f;
+    transform: translateY(-2px);
+}
+
+.bioactive-page .bio-springtail-supplies-button:focus-visible {
+    outline: 2px solid #d8b991;
+    outline-offset: 4px;
+}
+
+.bioactive-page .bio-springtail-supplies-shop
+.bio-springtail-discount {
+    color: #d8b991;
+    font-size: 0.85rem;
+    margin: 20px 0 0;
+}
+
+.bioactive-page .bio-springtail-supplies-shop
+.bio-springtail-disclosure {
+    max-width: 550px;
+    margin: 18px auto 0;
+    color: #b8c2b5;
+    font-size: 0.75rem;
+    line-height: 1.7;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+    .bioactive-page .bio-springtail-supplies {
+        padding: 75px 6vw;
+    }
+
+    .bioactive-page .bio-springtail-supplies-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .bioactive-page .bio-springtail-supplies {
+        padding: 60px 6vw;
+    }
+
+    .bioactive-page .bio-springtail-supplies-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bioactive-page .bio-springtail-supply {
+        padding: 24px;
+    }
+
+    .bioactive-page .bio-springtail-supplies-shop {
+        margin-top: 40px;
+        padding: 35px 0 0;
+    }
+
+}
+
+/* ========================================
+   SPRINGTAILS — CLOSING SECTION
+======================================== */
+
+.bioactive-page .bio-springtail-closing {
+    background: #f5f1e8;
+    padding: 90px 7vw;
+    text-align: center;
+}
+
+.bioactive-page .bio-springtail-closing-inner {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.bioactive-page .bio-springtail-closing .bio-eyebrow {
+    color: #657354;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    margin: 0 0 22px;
+}
+
+.bioactive-page .bio-springtail-closing h2 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2.5rem, 4.5vw, 4rem);
+    font-weight: 400;
+    line-height: 1.15;
+    color: var(--bio-forest);
+    margin: 0 0 25px;
+}
+
+.bioactive-page .bio-springtail-closing h2 em {
+    display: block;
+    color: #657354;
+    font-weight: 400;
+}
+
+.bioactive-page .bio-springtail-closing-description {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #536057;
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+
+/* CLOSING BUTTONS */
+
+.bioactive-page .bio-springtail-closing-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.bioactive-page .bio-springtail-closing-primary,
+.bioactive-page .bio-springtail-closing-secondary {
+    display: inline-block;
+    padding: 15px 28px;
+    border: 1px solid var(--bio-moss);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.25s ease,
+                color 0.25s ease,
+                transform 0.25s ease;
+}
+
+.bioactive-page .bio-springtail-closing-primary {
+    background: var(--bio-moss);
+    color: #f5f1e8;
+}
+
+.bioactive-page .bio-springtail-closing-primary:hover {
+    background: var(--bio-forest);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.bioactive-page .bio-springtail-closing-secondary {
+    background: transparent;
+    color: var(--bio-moss);
+}
+
+.bioactive-page .bio-springtail-closing-secondary:hover {
+    background: #e1e6d9;
+    color: var(--bio-forest);
+    transform: translateY(-2px);
+}
+
+.bioactive-page .bio-springtail-closing-primary:focus-visible,
+.bioactive-page .bio-springtail-closing-secondary:focus-visible {
+    outline: 2px solid var(--bio-moss);
+    outline-offset: 4px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    .bioactive-page .bio-springtail-closing {
+        padding: 60px 6vw;
+    }
+
+    .bioactive-page .bio-springtail-closing-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .bioactive-page .bio-springtail-closing-primary,
+    .bioactive-page .bio-springtail-closing-secondary {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 320px;
+    }
+
+}
+
+/* Image Coming Soon Placeholder */
+
+.bioactive-page .bio-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #304b3b;
+}
+
+.bioactive-page .bio-image-placeholder span {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--bio-cream);
+    opacity: 0.65;
+    text-align: center;
+}

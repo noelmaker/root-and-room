@@ -1,0 +1,954 @@
+
+/* ========================================
+   ROOT & ROOM — SHARED ENTRANCE
+   BASE STYLES
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body.landing-page {
+    background: #EAE5DA;
+    color: #344537;
+    font-family: Georgia, "Times New Roman", serif;
+    min-height: 100vh;
+}
+
+
+/* ========================================
+   ENTRANCE HEADER
+======================================== */
+
+.landing-header {
+    text-align: center;
+    padding: 65px 24px 55px;
+    background: #EAE5DA;
+}
+
+.landing-eyebrow {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #827C6B;
+    margin-bottom: 18px;
+}
+
+.landing-brand {
+    font-size: clamp(42px, 5vw, 72px);
+    font-weight: 400;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    color: #344537;
+}
+
+.landing-brand span {
+    font-style: italic;
+    color: #A18A6C;
+}
+
+.landing-tagline {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #716C60;
+    margin-top: 20px;
+}
+
+.landing-header::after {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 2px;
+    background: #A18A6C;
+    margin: 28px auto 0;
+}
+
+
+/* ========================================
+   TEMPORARY PANEL SPACING
+   (We'll style these next!)
+======================================== */
+
+.landing-worlds {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 450px;
+}
+
+.landing-world {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    text-decoration: none;
+}
+
+.landing-world-plants {
+    background: #D8DCCF;
+    color: #344537;
+}
+
+.landing-world-rot {
+    background: #302923;
+    color: #E8DFCC;
+}
+
+
+/* ========================================
+   BASIC FOOTER
+======================================== */
+
+.landing-footer {
+    text-align: center;
+    padding: 28px 20px;
+    background: #EAE5DA;
+    color: #716C60;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* ========================================
+   ROOT & ROOM — BOTANICAL PANEL
+======================================== */
+
+.landing-world-plants {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
+    background:
+        linear-gradient(
+            135deg,
+            #E1E4D8 0%,
+            #D8DCCF 55%,
+            #C8D1C0 100%
+        );
+
+    color: #344537;
+    min-height: 570px;
+
+    transition: background 0.4s ease;
+}
+
+/* Soft decorative glow */
+
+.landing-world-plants::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(255, 255, 255, 0.55),
+            transparent 55%
+        );
+
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Panel content */
+
+.landing-world-plants .landing-world-content {
+    position: relative;
+    max-width: 470px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Small introductory label */
+
+.landing-world-plants .landing-world-eyebrow {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #667C65;
+    margin-bottom: 22px;
+}
+
+/* Main heading */
+
+.landing-world-plants h2 {
+    font-size: clamp(42px, 4vw, 68px);
+    font-weight: 400;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.landing-world-plants h2 em {
+    color: #9A8469;
+    font-weight: 400;
+}
+
+/* Description */
+
+.landing-world-plants .landing-world-description {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.9;
+    color: #596558;
+    max-width: 400px;
+    margin-bottom: 35px;
+}
+
+/* Explore button */
+
+.landing-world-plants .landing-world-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 15px 24px;
+
+    background: #344537;
+    color: #F4F1E8;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    border-radius: 3px;
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Hover effects */
+
+.landing-world-plants:hover .landing-world-button {
+    background: #506951;
+    transform: translateY(-3px);
+}
+
+.landing-world-plants:hover h2 em {
+    color: #7D684F;
+}
+
+/* Keyboard accessibility */
+
+.landing-world-plants:focus-visible {
+    outline: 3px solid #344537;
+    outline-offset: -6px;
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 768px) {
+    .landing-worlds {
+        grid-template-columns: 1fr;
+    }
+
+    .landing-world-plants {
+        min-height: 440px;
+        padding: 55px 28px;
+    }
+
+    .landing-world-plants h2 {
+        font-size: 46px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .landing-world-plants,
+    .landing-world-plants .landing-world-button {
+        transition: none;
+    }
+}
+
+/* ========================================
+   ROUNDED ENTRANCE CARDS
+======================================== */
+
+/* Space between the two worlds */
+
+.landing-worlds {
+    gap: 24px;
+    padding: 0 5vw 55px;
+}
+
+/* Rounded corners for both cards */
+
+.landing-world {
+    border-radius: 28px;
+    overflow: hidden;
+    min-width: 0;
+    box-shadow: 0 12px 35px rgba(33, 29, 26, 0.08);
+}
+
+/* Slightly rounder buttons */
+
+.landing-world-button {
+    border-radius: 12px !important;
+}
+
+/* Mobile spacing */
+
+@media (max-width: 768px) {
+    .landing-worlds {
+        gap: 20px;
+        padding: 0 20px 40px;
+    }
+
+    .landing-world {
+        border-radius: 24px;
+    }
+}
+
+/* ========================================
+   ROOT & ROT — BIOACTIVE PANEL
+======================================== */
+
+.landing-world-rot {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(182, 155, 119, 0.13),
+            transparent 50%
+        ),
+        linear-gradient(
+            145deg,
+            #302923 0%,
+            #3B3027 55%,
+            #211D1A 100%
+        );
+
+    color: #E8DFCC;
+    min-height: 570px;
+
+    transition: box-shadow 0.3s ease;
+}
+
+/* Subtle earthy glow */
+
+.landing-world-rot::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 15% 85%,
+            rgba(201, 173, 138, 0.09),
+            transparent 55%
+        );
+
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Panel content */
+
+.landing-world-rot .landing-world-content {
+    position: relative;
+    max-width: 470px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Small introductory label */
+
+.landing-world-rot .landing-world-eyebrow {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #B69B77;
+    margin-bottom: 22px;
+}
+
+/* Main heading */
+
+.landing-world-rot h2 {
+    font-size: clamp(42px, 4vw, 68px);
+    font-weight: 400;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #E8DFCC;
+}
+
+.landing-world-rot h2 em {
+    color: #C9AD8A;
+    font-weight: 400;
+}
+
+/* Description */
+
+.landing-world-rot .landing-world-description {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.9;
+    color: #DED3C4;
+    max-width: 400px;
+    margin-bottom: 35px;
+}
+
+/* Explore button */
+
+.landing-world-rot .landing-world-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 15px 24px;
+
+    background: #B69B77;
+    color: #211D1A;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    border-radius: 12px;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Hover effects */
+
+.landing-world-rot:hover .landing-world-button {
+    background: #C9AD8A;
+    transform: translateY(-3px);
+}
+
+.landing-world-rot:hover h2 em {
+    color: #E0C4A0;
+}
+
+/* Keyboard accessibility */
+
+.landing-world-rot:focus-visible {
+    outline: 3px solid #C9AD8A;
+    outline-offset: -6px;
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 768px) {
+    .landing-world-rot {
+        min-height: 440px;
+        padding: 55px 28px;
+    }
+
+    .landing-world-rot h2 {
+        font-size: 46px;
+    }
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .landing-world-rot,
+    .landing-world-rot .landing-world-button {
+        transition: none;
+    }
+}
+
+/* ========================================
+   ROOT & ROOM — ORIGINAL BRAND COLORS
+======================================== */
+
+.landing-world-plants {
+    background:
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(232, 217, 168, 0.65),
+            transparent 50%
+        ),
+        linear-gradient(
+            145deg,
+            #F7F1E3 0%,
+            #E8D9A8 100%
+        );
+
+    color: #3A2C24;
+}
+
+/* Warm decorative glow */
+
+.landing-world-plants::before {
+    background:
+        radial-gradient(
+            circle at 15% 85%,
+            rgba(196, 154, 69, 0.12),
+            transparent 55%
+        );
+}
+
+/* Small introductory label */
+
+.landing-world-plants .landing-world-eyebrow {
+    color: #6B5140;
+}
+
+/* Main heading */
+
+.landing-world-plants h2 {
+    color: #3A2C24;
+}
+
+/* Ampersand */
+
+.landing-world-plants h2 em {
+    color: #B86F52;
+}
+
+/* Description */
+
+.landing-world-plants .landing-world-description {
+    color: #6B5140;
+}
+
+/* Explore button */
+
+.landing-world-plants .landing-world-button {
+    background: #3A2C24;
+    color: #F7F1E3;
+}
+
+/* Button hover */
+
+.landing-world-plants:hover .landing-world-button {
+    background: #6B5140;
+}
+
+/* Heading hover */
+
+.landing-world-plants:hover h2 em {
+    color: #C49A45;
+}
+
+/* Keyboard focus */
+
+.landing-world-plants:focus-visible {
+    outline-color: #C49A45;
+}
+
+/* ========================================
+   ROOT & ROT — ORIGINAL BRAND PALETTE
+======================================== */
+
+.landing-world-rot {
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(120, 133, 104, 0.18),
+            transparent 50%
+        ),
+        linear-gradient(
+            145deg,
+            #304B3B 0%,
+            #17251F 65%,
+            #101B16 100%
+        );
+
+    color: #E8DFCC;
+}
+
+/* Soft moss glow */
+
+.landing-world-rot::before {
+    background:
+        radial-gradient(
+            circle at 15% 85%,
+            rgba(182, 155, 119, 0.10),
+            transparent 55%
+        );
+}
+
+/* Eyebrow */
+
+.landing-world-rot .landing-world-eyebrow {
+    color: #B69B77;
+}
+
+/* Heading */
+
+.landing-world-rot h2 {
+    color: #E8DFCC;
+}
+
+.landing-world-rot h2 em {
+    color: #B69B77;
+}
+
+/* Description */
+
+.landing-world-rot .landing-world-description {
+    color: #E8DFCC;
+}
+
+/* Button */
+
+.landing-world-rot .landing-world-button {
+    background: #B69B77;
+    color: #17251F;
+}
+
+/* Hover */
+
+.landing-world-rot:hover .landing-world-button {
+    background: #E8DFCC;
+}
+
+.landing-world-rot:hover h2 em {
+    color: #E8DFCC;
+}
+
+/* Keyboard focus */
+
+.landing-world-rot:focus-visible {
+    outline-color: #B69B77;
+}
+
+/* ========================================
+   SHARED ENTRANCE — BRAND COLORS
+======================================== */
+
+body.landing-page {
+    background: #F7F1E3;
+    color: #3A2C24;
+}
+
+/* Header */
+
+.landing-header {
+    background: #F7F1E3;
+}
+
+.landing-eyebrow {
+    color: #6B5140;
+}
+
+.landing-brand {
+    color: #3A2C24;
+}
+
+.landing-brand span {
+    color: #B86F52;
+}
+
+.landing-tagline {
+    color: #6B5140;
+}
+
+.landing-header::after {
+    background: #C49A45;
+}
+
+/* Footer */
+
+.landing-footer {
+    background: #F7F1E3;
+    color: #6B5140;
+}
+
+/* ========================================
+   ENTRANCE CARDS — FRAMED PHOTOGRAPHS
+======================================== */
+
+.landing-world-image {
+    width: 100%;
+    margin-bottom: 35px;
+    padding: 7px;
+    border: 1px solid;
+    border-radius: 18px;
+}
+
+.landing-world-image img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 11px;
+}
+
+/* Botanical image frame */
+
+.landing-world-plants .landing-world-image {
+    border-color: rgba(107, 81, 64, 0.4);
+    background: rgba(247, 241, 227, 0.35);
+}
+
+/* Bioactive image frame */
+
+.landing-world-rot .landing-world-image {
+    border-color: rgba(182, 155, 119, 0.5);
+    background: rgba(232, 223, 204, 0.05);
+}
+
+/* Adjust cards for added images */
+
+.landing-world {
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.landing-world-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .landing-world {
+        padding: 28px;
+    }
+
+    .landing-world-image img {
+        height: 200px;
+    }
+}
+
+/* ========================================
+   ENTRANCE — WIDER FEATURE PHOTOGRAPHS
+======================================== */
+
+.landing-world-content {
+    max-width: 540px !important;
+}
+
+.landing-world-image {
+    width: 100%;
+    max-width: none;
+}
+
+.landing-world-image img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .landing-world-image img {
+        height: 210px;
+    }
+}
+
+/* ========================================
+   DECORATIVE BOTANICAL BACKGROUND
+======================================== */
+
+body.landing-page {
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Decorative illustration container */
+
+.landing-botanical-art {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+    color: #6B5140;
+}
+
+/* Keep actual content above artwork */
+
+.landing-header,
+.landing-worlds,
+.landing-footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* Monstera illustration */
+
+.landing-art-monstera {
+    position: absolute;
+    width: 280px;
+    height: auto;
+    top: 20px;
+    right: -65px;
+    opacity: 0.12;
+    transform: rotate(18deg);
+}
+
+/* Fern illustration */
+
+.landing-art-fern {
+    position: absolute;
+    width: 290px;
+    height: auto;
+    bottom: 10px;
+    left: -65px;
+    opacity: 0.12;
+    transform: rotate(-15deg);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .landing-art-monstera {
+        width: 170px;
+        right: -60px;
+        top: 15px;
+        opacity: 0.08;
+    }
+
+    .landing-art-fern {
+        width: 180px;
+        left: -65px;
+        bottom: 0;
+        opacity: 0.08;
+    }
+}
+
+/* ========================================
+   CANVA BOTANICAL BACKGROUND
+======================================== */
+
+body.landing-page {
+    background-color: #F7F1E3;
+    background-image: url("images/landing-background.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+/* Allow the background to show through */
+
+.landing-header,
+.landing-footer {
+    background: transparent;
+}
+
+/* Hide our previous SVG drawings */
+
+.landing-botanical-art {
+    display: none;
+}
+
+/* ========================================
+   SOFTEN BOTANICAL BACKGROUND
+======================================== */
+
+body.landing-page {
+    background-color: #F7F1E3;
+
+    background-image:
+        linear-gradient(
+            rgba(247, 241, 227, 0.78),
+            rgba(247, 241, 227, 0.78)
+        ),
+        url("images/landing-background.jpg");
+
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Keep header and footer transparent */
+
+.landing-header,
+.landing-footer {
+    background: transparent;
+}
+
+/* ========================================
+   ENTRANCE — INTERACTIVE CARDS
+======================================== */
+
+/* Both cards */
+
+.landing-world {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+    will-change: transform;
+}
+
+/* Gently lift the entire card */
+
+.landing-world:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 22px 50px rgba(33, 29, 26, 0.16);
+}
+
+/* Keep buttons stationary */
+
+.landing-world-plants:hover .landing-world-button,
+.landing-world-rot:hover .landing-world-button {
+    transform: none;
+}
+
+/* Slight emphasis on keyboard focus */
+
+.landing-world:focus-visible {
+    transform: translateY(-5px);
+}
+
+/* Respect reduced motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    .landing-world,
+    .landing-world:hover,
+    .landing-world:focus-visible {
+        transform: none;
+        transition: none;
+    }
+}
+
+/* ========================================
+   ENTRANCE — PAGE FADE TRANSITION
+======================================== */
+
+body.landing-page {
+    opacity: 1;
+    transition: opacity 0.45s ease;
+}
+
+body.landing-page.landing-exiting {
+    opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body.landing-page {
+        transition: none;
+    }
+}
+
+/* ========================================
+   KEEP AMPERSAND COLORS CONSISTENT
+======================================== */
+
+/* Root & Room */
+
+.landing-world-plants h2 em,
+.landing-world-plants:hover h2 em {
+    color: #B86F52;
+}
+
+/* Root & Rot */
+
+.landing-world-rot h2 em,
+.landing-world-rot:hover h2 em {
+    color: #B69B77;
+}
